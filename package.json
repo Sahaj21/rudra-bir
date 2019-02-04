@@ -1,0 +1,25 @@
+{
+  "name": "rudra-bir",
+  "version": "1.0.0",
+  "description": "This is a website for an Adventure agency based in Bir Billing named Rudra Adventure",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sahaj21/rudra-bir.git"
+  },
+  "keywords": [
+    "Bir"
+  ],
+  "author": "Sahaj Kulshrestha",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Sahaj21/rudra-bir/issues"
+  },
+  "homepage": "https://github.com/Sahaj21/rudra-bir#readme",
+  "dependencies": {
+    "node-sass": "^4.11.0"
+  }
+}
