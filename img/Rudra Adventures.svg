@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="125" height="50" viewBox="0 0 125 50">
+    <defs>
+        <style>
+            .cls-1{fill:#3bb4c4;font-size:21px;font-family:Montserrat-Bold,Montserrat;font-weight:700}
+        </style>
+    </defs>
+    <text id="Rudra_Adventures" class="cls-1" data-name="Rudra Adventures" transform="translate(1 20)">
+        <tspan x="0" y="0">Rudra</tspan><tspan x="0" y="25">Adventures</tspan>
+    </text>
+</svg>
