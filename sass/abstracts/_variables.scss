@@ -1,0 +1,29 @@
+
+// -------------------
+// COLOR VARIABLES
+// -------------------
+
+// BLACK
+$color-dark-1: #303030;
+$color-dark-2: #363636;
+
+// GREY
+$color-grey-1: #808080;
+$color-grey-2: #686868;
+$color-grey-3: #b2b1b1;
+
+
+// -------------
+// FONTS
+// -------------
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,700,900');
+$font-primary: 'Montserrat', sans-serif;
+
+// ----------------------
+// RESPONSIVE BREAKPOINTS
+// ----------------------
+
+$bp-largest: 75em; // 1200px
+$bp-large: 62.5em; // 1000px
+$bp-medium: 50em; // 800px
+$bp-small: 37.5em; // 600px

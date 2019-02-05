@@ -1,0 +1,26 @@
+// ---------
+// ABSTRACT
+// ---------
+@import './abstracts/variables';
+
+
+// ------
+// BASE
+// ------
+@import "./base/base";
+@import "./base/typography";
+
+// ----------
+// SECTIONS
+// ----------
+@import './sections/navigation';
+@import './sections/header';
+@import './sections/aboutRudra';
+@import './sections/aboutBir';
+@import './sections/courses';
+@import './sections/team';
+@import './sections/reach';
+@import './sections/blogs';
+@import './sections/travellers';
+@import './sections/contact';
+@import './sections/footer';
