@@ -22,7 +22,7 @@ body {
 
 .container {
   display: grid;
-  grid-template-rows: repeat(11, min-content);
+  grid-template-rows: min-content 90vh repeat(9, min-content);
   grid-template-columns: [start-space] 1fr [start-space-end center-start] repeat(10, minmax(min-content, 1fr)) [center-end end-space-start] 1fr [end-space-end]; }
 
 .navigation {
@@ -67,10 +67,42 @@ body {
   color: #363636; }
 
 .header {
-  grid-column: 1/-1; }
+  grid-column: 1/-1;
+  display: grid;
+  grid-template-rows: repeat(6, 1fr);
+  grid-template-columns: repeat(6, minmax(min-content, 1fr));
+  font-size: 1.8rem; }
+  .header_lists {
+    grid-row: 5/-1;
+    align-items: center;
+    text-align: right;
+    list-style: none;
+    padding: 1rem; }
+  .header_intro {
+    grid-row: 1/4;
+    grid-column: 2/4;
+    justify-self: center;
+    align-self: center;
+    z-index: 100;
+    color: #ffffff;
+    font-size: 8.2rem;
+    font-weight: bold; }
+    .header_intro span {
+      display: block;
+      margin-bottom: -1rem; }
+  .header_slider {
+    grid-row: 1/6;
+    grid-column: 2/-1; }
+    .header_slider img {
+      width: 100%;
+      height: 100%; }
+  .header_box {
+    grid-row: 5/7;
+    grid-column: 2/7; }
 
-.about {
-  grid-column: 1/-1; }
+.aboutRudra {
+  grid-column: 1/-1;
+  grid-row: 3/span 1; }
 
 .aboutBir {
   grid-column: 1/-1; }
@@ -95,3 +127,19 @@ body {
 
 .footer {
   grid-column: 1/-1; }
+
+.popupBox {
+  width: 80%;
+  height: 50%;
+  position: relative;
+  top: 30%;
+  left: 8%;
+  background: #ffffff;
+  box-shadow: 1rem 1rem 7rem rgba(0, 0, 0, 0.2); }
+
+.form {
+  width: 100%;
+  height: 100%;
+  display: flex; }
+  .form_group {
+    display: inline-block; }
