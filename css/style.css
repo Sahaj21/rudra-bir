@@ -264,17 +264,30 @@ body {
   .footer p {
     font-wieght: 900;
     color: black; }
-
-.list {
-  list-style: none; }
-  .list a {
+  .footer a {
     text-decoration: none;
-    color: #b2b1b1; }
-
-.footer-part {
-  margin: 0 4rem;
-  display: inline-block;
-  list-style: none; }
+    color: #b2b1b1;
+    display: block; }
+  .footer .list {
+    list-style: none; }
+  .footer .footer-part {
+    margin: 0 4rem;
+    display: inline-block;
+    list-style: none; }
+  .footer .footer-part {
+    margin: 0 4rem;
+    display: inline-block;
+    list-style: none; }
+  .footer .color-bar {
+    width: 3rem;
+    height: 0.3rem;
+    background: #3bb4c4;
+    display: block;
+    margin: 0.4rem 0; }
+  .footer .footer__part-2 {
+    width: 80vw;
+    margin: auto;
+    border-top: 1px solid black; }
 
 .color-bar {
   width: 3rem;
