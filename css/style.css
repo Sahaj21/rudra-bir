@@ -234,6 +234,18 @@ body {
     grid-column: 3/4;
     grid-row: 3/6; }
 
+.desc {
+  display: grid;
+  align-items: center;
+  align-content: space-around; }
+
+.blogs-back {
+  grid-row: 8/9;
+  grid-column: 1/-1;
+  width: 100%;
+  height: 50%;
+  align-self: flex-end; }
+
 .team {
   grid-column: 1/-1; }
 
@@ -241,7 +253,19 @@ body {
   grid-column: 1/-1; }
 
 .blogs {
-  grid-column: 1/-1; }
+  grid-column: 2/12;
+  display: grid;
+  height: 90vh;
+  grid-template-rows: repeat(6, 1fr);
+  grid-template-columns: repeat(4, minmax(min-content, 1fr));
+  grid-row-gap: 4rem; }
+  .blogs_desc {
+    grid-column: 1/3;
+    grid-row: 1/3; }
+  .blogs .heading-2 {
+    transform: translateX(14rem); }
+  .blogs .para {
+    transform: translateX(14rem); }
 
 .travellers {
   grid-column: 1/-1; }
@@ -356,8 +380,7 @@ body {
     display: grid;
     align-content: space-around;
     justify-content: center;
-    opacity: 0;
-    transition: all .3s ease-out; }
+    opacity: 0; }
   .card:hover .card_cost {
     opacity: 1; }
   .card_btn {
@@ -371,3 +394,57 @@ body {
 
 .full {
   width: 100%; }
+
+.blog-card {
+  grid-row: 3/6;
+  grid-column: 2/4;
+  display: grid;
+  grid-template-rows: repeat(5, 1fr);
+  grid-template-columns: 3rem repeat(3, 1fr) 3rem; }
+  .blog-card--img {
+    grid-column: 2/3;
+    grid-row: 1/3; }
+    .blog-card--img img {
+      width: 90%; }
+  .blog-card--content {
+    grid-row: 2/6;
+    grid-column: 1/-1;
+    box-shadow: 0 25px 73px 0 rgba(0, 0, 0, 0.06);
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: .5fr 1fr; }
+    .blog-card--content .hr-full {
+      grid-column: 1/-1;
+      grid-row: 2/3;
+      width: 90%;
+      margin: 0 auto;
+      height: 2px;
+      background: #b8b8b8;
+      align-self: flex-start; }
+  .blog-card--info {
+    font-size: 2rem;
+    grid-row: 1/2;
+    grid-column: 2/3;
+    margin-left: 1rem; }
+    .blog-card--info---content {
+      grid-column: 1/3;
+      grid-row: 2/4;
+      justify-self: right;
+      text-align: right;
+      font-size: 2rem;
+      font-weight: 500;
+      align-self: center;
+      width: 80%;
+      color: #686868;
+      padding-right: 3rem; }
+    .blog-card--info .heading-6 {
+      font-weight: 500; }
+    .blog-card--info .hr {
+      width: 2rem;
+      height: 2px;
+      background: #3bb4c4; }
+    .blog-card--info .place {
+      font-weight: normal;
+      color: #b8b8b8; }
+      .blog-card--info .place span {
+        display: block; }

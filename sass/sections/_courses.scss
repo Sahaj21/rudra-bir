@@ -2,7 +2,6 @@
     grid-column: 2/12;
     display: grid;
     height: 90vh;
-    // grid-template-rows: repeat(6, minmax(min-content, 1fr));
     grid-template-rows: repeat(6, 1fr);
     grid-template-columns: repeat(3, minmax(min-content, 1fr));
     grid-gap: 10rem;
@@ -29,4 +28,18 @@
         grid-column: 3/4;
         grid-row: 3/6;
     }
+}
+
+.desc{
+    display: grid;
+    align-items: center;
+    align-content: space-around;
+}
+
+.blogs-back{
+    grid-row: 8/9;
+    grid-column: 1/-1;
+    width: 100%;
+    height: 50%;
+    align-self: flex-end;
 }
