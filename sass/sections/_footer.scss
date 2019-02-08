@@ -15,14 +15,20 @@
 	}
 	.list{
 	list-style:none;
+	
+
+	li{
+		margin: 1.7rem 0;
+	}
 	}
 	.footer-part{
 	margin: 0 4rem;
 	display:inline-block;
-	list-style: none;	
+	list-style: none;
+	padding-bottom:10rem;	
 	}
 	.footer-part{
-	margin: 0 4rem;
+	margin: 0 3rem;
 	display:inline-block;
 	list-style: none;	
 	}
@@ -34,22 +40,31 @@
     margin: 0.4rem 0;    
     }
     .footer__part-2{	
-    width:80vw;
-    margin:auto;
-    border-top: 1px solid black;
+	    width:80vw;
+	    margin:auto;
+	    border-top: 1px solid black;
+		.color-bar{
+			width: 3rem;
+		    height: 0.3rem;
+		    background:$color-primary;
+		    display: block;
+		    margin: 0.4rem 0;    
+	    }
+	    .footer__part-2{	
+		    margin-bottom:3rem;
+		    width:80vw;
+		    margin:auto;
+		    border-top: 1px solid black;
+		    p{
+		    	color:$color-grey-3;
+		    }
+	    }
+	    .footer2-container{
+    display:flex;
+    justify-content:space-between;
+    }
     }
 }
 	
 	
-  .color-bar{
-	width: 3rem;
-    height: 0.3rem;
-    background:$color-primary;
-    display: block;
-    margin: 0.4rem 0;    
-    }
-    footer__part-2{	
-    width:80vw;
-    margin:auto;
-    border-top: 1px solid black;
-    }
+  
