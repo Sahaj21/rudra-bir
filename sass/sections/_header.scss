@@ -3,7 +3,7 @@
     display: grid;
     grid-template-rows: repeat(6, 1fr);
     grid-template-columns: repeat(6, minmax(min-content, 1fr));
-    transform:translateY(-12rem);
+    transform:translateY(-14rem);
     font-size: 1.8rem;
 
     &_lists{
