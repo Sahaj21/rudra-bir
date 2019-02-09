@@ -1,3 +1,40 @@
 .contact{
     grid-column: 1/-1;
+    position:relative;
+    .booking-popup{
+    	transform: translateY(15rem);
+    	position:absolute;
+	    width: 80%;
+	    height: 50%;
+	    position: relative;
+	    top: 30%;
+	    left: 8%;
+	    box-shadow: rgba(0, 0, 0, 0.1) 1rem 1rem 7rem;
+	    background: rgb(255, 255, 255);
+	    padding:30px;
+	    padding-left:60px;
+	    button{
+	    	margin-left:80px;
+	    	margin-bottom:10px;
+	    	position:absolute;
+	    	top:47px;
+		    transform: translateY(-10px);
+	    	}
+	    
+	    p{  
+	    	display:inline-block;
+	    	width:70%;
+	    	font-size:26px;
+	    	color:$color-grey-4;
+	    	font-weight:600;
+	    }
+	    .popup-heading{
+	    	font-size:32px;
+	    	font-weight:bold;
+	    	color:$color-dark-3;
+
+	    }
+	  }
+
+
 }
