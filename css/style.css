@@ -253,20 +253,51 @@ body {
   grid-column: 1/-1; }
 
 .contact {
-  grid-column: 1/-1; }
+  grid-column: 1/-1;
+  position: relative; }
+  .contact .booking-popup {
+    transform: translateY(15rem);
+    position: absolute;
+    width: 80%;
+    height: 50%;
+    position: relative;
+    top: 30%;
+    left: 8%;
+    box-shadow: rgba(0, 0, 0, 0.1) 1rem 1rem 7rem;
+    background: white;
+    padding: 30px;
+    padding-left: 60px; }
+    .contact .booking-popup button {
+      margin-left: 80px;
+      margin-bottom: 10px;
+      position: absolute;
+      top: 47px;
+      transform: translateY(-10px); }
+    .contact .booking-popup p {
+      display: inline-block;
+      width: 70%;
+      font-size: 26px;
+      color: #848484;
+      font-weight: 600; }
+    .contact .booking-popup .popup-heading {
+      font-size: 32px;
+      font-weight: bold;
+      color: #272727; }
 
 .footer {
   grid-column: 1/-1;
   background-color: #b2b1b10a;
   height: 30rem;
-  font-size: 2.5rem;
+  font-size: 20px;
   font-wieght: bolder; }
   .footer p {
-    font-wieght: 900;
-    color: black; }
+    font-weight: bold;
+    font-size: 22px;
+    color: #292929; }
   .footer a {
     text-decoration: none;
     color: #b2b1b1;
+    font-weight: 500;
     display: block; }
   .footer .list {
     list-style: none; }
@@ -282,11 +313,14 @@ body {
   .footer .footer__part-1 {
     display: flex;
     justify-content: space-between;
-    padding-top: 20rem;
+    padding-top: 25rem;
     padding-bottom: 10rem;
     padding-right: 10rem; }
+    .footer .footer__part-1 .footer-contact-us .info {
+      font-size: 20px;
+      font-weight: normal; }
   .footer .footer-rudra {
-    margin-left: 50px;
+    margin-left: 60px;
     width: 258px;
     height: 108px;
     object-fit: contain;
@@ -300,7 +334,7 @@ body {
     text-align: left;
     color: #3bb4c4; }
   .footer .color-bar {
-    width: 3rem;
+    width: 3.7rem;
     height: 0.3rem;
     background: #3bb4c4;
     display: block;
@@ -308,9 +342,9 @@ body {
   .footer .footer__part-2 {
     padding-top: 50px;
     padding-bottom: 30px;
-    width: 85vw;
+    width: 90vw;
     margin: auto;
-    border-top: 1px solid #b2b1b1; }
+    border-top: 1.5px solid #b2b1b1; }
     .footer .footer__part-2 .color-bar {
       width: 3rem;
       height: 0.3rem;
@@ -318,7 +352,9 @@ body {
       display: block;
       margin: 0.4rem 0; }
     .footer .footer__part-2 p {
-      color: #808080; }
+      color: #707070;
+      font-size: 20px;
+      font-weight: normal; }
     .footer .footer__part-2 .footer2-container {
       font-size: 1.7rem;
       display: flex;
@@ -326,7 +362,8 @@ body {
       .footer .footer__part-2 .footer2-container .logos img {
         margin-right: 30px; }
       .footer .footer__part-2 .footer2-container .location p {
-        font-color: #707070; }
+        font-color: #707070;
+        font-size: 20px; }
 
 .popupBox {
   width: 80%;
@@ -379,6 +416,9 @@ body {
   background-color: #ffffff; }
   .button--white {
     color: #3bb4c4; }
+  .button--blue {
+    background-color: #3bb4c4;
+    color: white; }
 
 .margin-12 {
   margin-top: 12rem !important; }
