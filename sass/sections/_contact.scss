@@ -35,23 +35,22 @@
     			}
 
     		    .img-container{
-    			grid-column:2/3;    			
-    		    height:400px;
-    		    position:relative;
-	    	width: 330px;
-	    	display:inline-block;
-	      border:1px solid $color-primary;
-	      	margin-left:100px;
-	      	.img-popup{
-	      		position:absolute;	
-	      		bottom:0;
-	      		right:0;
-	      		background-color:white;
-	      		padding :10px;
-	      		transform:translateY(10px) translateX(20px);
-         	    box-shadow: rgba(0, 0, 0, 0.1) 1rem 1rem 7rem;
-
-
+    		    
+	    			grid-column:2/3;    			
+	    		    height:400px;
+	    		    position:relative;
+		    		width: 330px;
+		    		display:inline-block;
+		      		border:1px solid $color-primary;
+		      		margin-left:100px;
+		      		.img-popup{
+		      		position:absolute;	
+		      		bottom:0;
+		      		right:0;
+		      		background-color:white;
+		      		padding :10px;
+		      		transform:translateY(10px) translateX(20px);
+	         	    box-shadow: rgba(0, 0, 0, 0.1) 1rem 1rem 7rem;
 	      	}
 	      img{
 	      	margin-left:15px;
