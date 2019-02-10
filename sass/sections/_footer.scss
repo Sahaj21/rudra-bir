@@ -2,9 +2,9 @@
     grid-column: 1/-1;
     background-color:#b2b1b10a;
     height:30rem;
-    font-size:20px;
-    font-wieght:bolder;
-  	p{
+    font-size:2rem;
+    font-weight:bolder;
+	p{
 	    font-weight:bold;
 	    font-size:22px;	
   		color:#292929;
@@ -104,7 +104,7 @@
     .location{
 
     	p{
-    	    	 font-color:$color-footer;
+    	    	 color:$color-footer;
     	    	 font-size:20px;
 
     	}
