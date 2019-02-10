@@ -1,3 +1,100 @@
 .contact{
     grid-column: 1/-1;
+    position:relative;
+    	.contact-info{
+    			p{
+    			font-size:28px;
+    			}
+    			h3{
+    			transform:translateX(-10rem);
+    			color:$color-dark-3;
+    			font-weight:500;
+    			}
+    			h1{
+    			color:$color-dark-3;    			
+    			}
+    			display:grid;
+    			grid-template-columns:200px 450px 300px 100px 50px 550px auto;
+    			grid-template-rows:450px 250px 50px;
+    			.querry-box{
+
+    				grid-column:6/7;
+
+    			}
+    			.number{
+    				grid-column: 3/4 ;
+    				grid-row:2/3;
+    			}
+    			.booking-popup{
+    				grid-row:3/4;
+    				grid-column:2/7;
+
+    			}
+    			.email-id{
+    				grid-column:6/7;    			
+    			}
+
+    		    .img-container{
+    		    
+	    			grid-column:2/3;    			
+	    		    height:400px;
+	    		    position:relative;
+		    		width: 330px;
+		    		display:inline-block;
+		      		border:1px solid $color-primary;
+		      		margin-left:100px;
+		      		.img-popup{
+		      		position:absolute;	
+		      		bottom:0;
+		      		right:0;
+		      		background-color:white;
+		      		padding :10px;
+		      		transform:translateY(10px) translateX(20px);
+	         	    box-shadow: rgba(0, 0, 0, 0.1) 1rem 1rem 7rem;
+	      	}
+	      img{
+	      	margin-left:15px;
+		    height:375px;
+	    	transform:translateY(-10px) scaleY(1.1);
+	      }
+	    }
+    	
+    }
+    .booking-popup{
+    	grid-column:2/7;
+    	transform: translateY(5rem);
+    	position:absolute;
+	    width: 100%;
+	    height:200px;
+	    position: relative;
+	    top: 30%;
+	    left: 0%;
+	    box-shadow: rgba(0, 0, 0, 0.1) 1rem 1rem 7rem;
+	    background: rgb(255, 255, 255);
+	    padding:30px;
+	    padding-left:60px;
+	    button{
+	    	margin-left:80px;
+	    	margin-bottom:10px;
+	    	position:absolute;
+	    	top:47px;
+		    transform: translateY(-10px);
+	    	}
+	    
+	    p{  
+	    	display:inline-block;
+	    	width:70%;
+	    	font-size:26px;
+	    	color:$color-grey-4;
+	    	font-weight:600;
+	    }
+	    .popup-heading{
+	    	font-size:32px;
+	    	font-weight:bold;
+	    	color:$color-dark-3;
+
+	    }
+	  }
+
+
 }
