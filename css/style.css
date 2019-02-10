@@ -255,11 +255,29 @@ body {
 .contact {
   grid-column: 1/-1;
   position: relative; }
+  .contact .contact-info .img-container {
+    height: 400px;
+    position: relative;
+    width: 330px;
+    display: inline-block;
+    border: 1px solid #3bb4c4;
+    margin-left: 100px; }
+    .contact .contact-info .img-container .img-popup {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      background-color: white;
+      padding: 10px;
+      transform: translateY(10px) translateX(20px);
+      box-shadow: rgba(0, 0, 0, 0.1) 1rem 1rem 7rem; }
+    .contact .contact-info .img-container img {
+      margin-left: 15px;
+      height: 375px;
+      transform: translateY(-10px) scaleY(1.1); }
   .contact .booking-popup {
-    transform: translateY(15rem);
+    transform: translateY(5rem);
     position: absolute;
     width: 80%;
-    height: 50%;
     position: relative;
     top: 30%;
     left: 8%;
