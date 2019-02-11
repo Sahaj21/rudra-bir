@@ -1,3 +1,123 @@
 .reach{
     grid-column: 1/-1;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(16, 1fr);
+    height: 160vh;
+
+    &_desc{
+        grid-column: 2/7;
+        grid-row: 1/4;
+        z-index: 5;
+    }
+
+    &_box-right{
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 15rem 2rem;
+
+        &-rect{
+            grid-row: 1/2;
+            grid-column: 2/3;
+            display: grid;
+            justify-items: center;
+
+            .img-con{
+                width: 72%;
+                height: 100%;
+
+                img{
+                    padding: 1rem;
+                    width: 100%;
+                    object-fit: contain;
+                    box-shadow: 0 25px 73px 0 rgba(0, 0, 0, 0.1);
+                    position: relative;
+                    top: 4rem;
+                    z-index: 100;
+                    background: white;
+                }
+
+            }
+        }
+
+        &-content{
+            grid-row: 2/3;
+            grid-column: 1/-1;
+            border: 1px solid $color-primary;
+            padding: 2rem 1rem 1rem 1rem;
+        }
+    }
+
+
+    &_box{
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 2rem 15rem 1fr;
+
+        &-rect{
+            grid-row: 1/2;
+            grid-column: 2/3;
+            display: grid;
+            justify-items: center;
+
+            .img-con{
+                width: 72%;
+                height: 100%;
+
+                img{
+                    padding: 1rem;
+                    width: 100%;
+                    object-fit: contain;
+                    box-shadow: 0 25px 73px 0 rgba(0, 0, 0, 0.1);
+                    position: relative;
+                    top: 4rem;
+                    z-index: 100;
+                    background: white;
+                }
+
+            }
+        }
+
+        &-content{
+            grid-row: 2/3;
+            grid-column: 1/-1;
+            border: 1px solid $color-primary;
+            padding: 2rem 1rem 1rem 1rem;
+        }
+    }
+
+    &_world{
+        grid-row: 1/5;
+        grid-column: 5/11;
+        background: url('../../img/Mask\ Group\ 1@2x.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .plane{
+        grid-row: 5/7;
+        grid-column: 2/6;
+    }
+
+    .bus{
+        grid-row: 11/13;
+        grid-column: 2/8;
+    }
+
+    .train{
+        grid-row: 8/10;
+        grid-column: 5/10;
+        text-align: right;
+    }
+
+    .taxi{
+        grid-column: 5/10;
+        grid-row: 15/17;
+        text-align: right;
+
+        span{
+            display: block;
+        }
+    }
 }

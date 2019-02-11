@@ -6,4 +6,20 @@
     left: 8%;
     background: $color-white;
     box-shadow: 1rem 1rem 7rem rgba(0, 0, 0, 0.2);
+
+
+
+    input[type=number] {
+        width: 16rem;
+        height: 7rem;
+        min-width: 42px;
+        min-height: 52px;
+        text-align: left;
+        -moz-border-radius: 1px;
+        -webkit-border-radius: 1px;
+        border-radius: 1px;
+        text-align: center;
+        color: $color-dark-1;
+        font-size: 2rem;
+    }
 }
