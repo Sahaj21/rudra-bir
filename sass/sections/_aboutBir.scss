@@ -1,3 +1,118 @@
 .aboutBir{
-    grid-column: 1/-1;
+    grid-row: 4/span 1;
+    grid-column: 3/12;
+    line-height: 1.22;
+
+    display: grid;
+    grid-template-rows: repeat(8, minmax(min-content, 1fr));
+    grid-template-columns: repeat(9, minmax(min-content, 1fr));
+
+        &_left-know{
+            grid-row: 2/4;
+            grid-column: 5/9;
+
+        }
+
+        .heading-2{
+            grid-row: 2/4;
+            grid-column: 5/9;
+        }
+
+        .para-1{
+            grid-row: 4/7;
+            grid-column: 5/10;
+            
+        }
+
+        .para-2{
+            grid-row: 6/7;
+            grid-column: 5/10;
+            transform: translateY(5rem);
+        }
+
+        .btn{
+            margin-top: 5rem;
+            grid-row: 7/8;
+            align-self: center;
+            grid-column: 5/9;
+        }
+
+
+
+        .img{
+            object-fit: cover;
+            width: 100%;
+            max-width: 100%;
+            position: relative;
+
+            &:hover img{
+                scale: 1.1;
+                transform: translateY(-.5rem);
+                box-shadow: 1rem 1rem 7rem rgba(0, 0, 0, 0.2);
+            }
+
+            &:hover .button--pureWhite{
+                opacity: 1;
+            }
+
+        }
+
+        img{
+            transition: all .2s ease-in;
+        }
+
+
+        .left-1 {
+            //justify-self: right;
+            grid-column: 1/5;
+            grid-row: 2/6;
+            align-self: center;
+            justify-self: left;
+            position: relative;
+            width: 100%;
+            max-width: 100%;
+            transform: translateX(-15rem);
+        }
+
+        
+        .button--pureWhite{
+            width: 17.4rem;
+            height: 6rem;
+            border: none;
+            color: $color-primary;
+            position: absolute;
+            bottom: -2rem;
+            right: -2rem;
+            box-shadow: 1rem 1rem 7rem rgba(0, 0, 0, 0.2);
+            opacity: 0;
+            transition: opacity .3s ease-in;
+            &:hover{
+                background-color:$color-primary;
+                color:white;
+            }
+        }
+}
+
+.leftTranslate{
+    transform: translateX(-2rem);
+}
+
+.headingLeft{
+    font-size: 3.2rem;
+    font-weight: bold;
+    color: $color-dark-3;
+}
+
+.heading-2{
+    font-size: 6rem;
+    font-weight: bold;
+    color: $color-dark-3;
+    display: block;
+}
+
+.para{
+    font-size: 2.8rem;
+    font-weight: 500;
+    line-height: 1.89;
+    color: $color-grey-2;
 }
