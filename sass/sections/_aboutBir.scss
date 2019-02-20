@@ -1,3 +1,98 @@
 .aboutBir{
     grid-column: 1/-1;
+    height: 90vh;
+    display: grid;
+    grid-template-rows: repeat(8, minmax(min-content, 1fr));
+    grid-template-columns: repeat(9, minmax(min-content, 1fr));
+
+        &_right-about{
+            grid-row: 1/2;
+            grid-column: 6/8;
+            align-self: flex-end;
+        }
+
+        .heading-2{
+            grid-row: 2/3;
+            grid-column: 6/10;
+        }
+
+        .para-1{
+            grid-row: 3/6;
+            grid-column: 6/10;
+            align-self: center;
+        }
+
+        .para-2{
+            grid-row: 6/7;
+            grid-column: 6/10;
+        }
+
+        .btn{
+            grid-row: 7/8;
+            grid-column: 6/9;
+            align-self: flex-end;
+            margin: 0 !important;
+        }
+
+        .img{
+            grid-row: 2/8;
+            grid-column: 1/6;
+
+            &-svg{
+                grid-column: 5/6;
+                grid-row: 8/9;
+                transform: translateX(-3rem);
+                align-self: flex-end;
+            }
+
+        }
+
+        img{
+            padding: 3rem 3rem 0 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        
+        .button--pureWhite{
+            width: 17.4rem;
+            height: 6rem;
+            border: none;
+            color: $color-primary;
+            position: absolute;
+            bottom: -2rem;
+            right: -2rem;
+            box-shadow: 1rem 1rem 7rem rgba(0, 0, 0, 0.2);
+            opacity: 0;
+            transition: opacity .3s ease-in;
+            &:hover{
+                background-color:$color-primary;
+                color:white;
+            }
+        }
+}
+
+.leftTranslate{
+    transform: translateX(-2rem);
+}
+
+.headingLeft{
+    font-size: 3.2rem;
+    font-weight: bold;
+    color: $color-dark-3;
+}
+
+.heading-2{
+    font-size: 6rem;
+    font-weight: bold;
+    color: $color-dark-3;
+    display: block;
+}
+
+.para{
+    font-size: 2.8rem;
+    font-weight: 500;
+    line-height: 1.89;
+    color: $color-grey-2;
 }

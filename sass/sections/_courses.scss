@@ -1,11 +1,91 @@
+.img-svg-courses-1{
+    grid-column: 1/2;
+    grid-row: 10/11;
+    transform: translate(7rem,-8rem);
+
+    .svg-1{
+        background: url('../../img/Rectangle\ 184.svg');
+        background-size: 125%;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 20rem;
+        height: 20rem;
+    }
+}
+
+.img-svg-courses-2{
+    grid-column: 1/2;
+    grid-row: 10/11;
+    transform: translate(-2rem,5rem);
+
+    .svg-2{
+        background: url('../../img/Rectangle\ 186.svg');
+        background-size: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 20rem;
+        height: 20rem;
+    }
+}
+
+.img-svg-coursess-3{
+    grid-column: 12/13;
+    grid-row: 10/11;
+    transform: translate(0rem, -10rem);
+
+    .svg-3{
+        background: url('../../img/Rectangle\ 184.svg');
+        background-size: 125%;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 20rem;
+        height: 20rem;
+    }
+}
+
+.img-svg-coursess-4{
+    grid-column: 12/13;
+    grid-row: 10/11 ;
+    justify-self: right;
+    align-self: flex-start;
+    transform: translate(0rem, 6rem);
+
+    .svg-4{
+        background: url('../../img/Rectangle\ 186.svg');
+        background-size: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 20rem;
+        height: 20rem;
+    }
+}
+
 .courses{
     grid-column: 2/12;
     display: grid;
     height: 90vh;
-    // grid-template-rows: repeat(6, minmax(min-content, 1fr));
     grid-template-rows: repeat(6, 1fr);
     grid-template-columns: repeat(3, minmax(min-content, 1fr));
     grid-gap: 10rem;
+
+    .img-svg-courses-1{
+        grid-column: 1/2;
+        grid-row: 1/2;
+        display: grid;
+        justify-items: right;
+        align-items: flex-start;
+
+        .svg-1{
+            background: url('../../img/Rectangle\ 184.svg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-size: 125%;
+            background-position: 2rem -5rem;
+            width: 20rem;
+            height: 20rem;
+
+        }
+    }
 
     &_desc{
         grid-column: 3/4;
@@ -28,5 +108,50 @@
     &_card-3{
         grid-column: 3/4;
         grid-row: 3/6;
+    }
+}
+
+.desc{
+    display: grid;
+    align-items: center;
+    align-content: space-around;
+}
+
+.blogs-back{
+    grid-row: 8/9;
+    grid-column: 1/-1;
+    width: 100%;
+    height: 50%;
+    align-self: flex-end;
+}
+
+.img-svg-courses-3{
+    grid-column: 12/13;
+    grid-row: 6/7;
+    display: grid;
+    justify-items: right;
+    align-items: flex-end;
+    // position: relative;
+    transform: translate(4rem, -54rem);
+
+    .svg-3{
+        background: url('../../img/Rectangle\ 186.svg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-size: 125%;
+        background-position: 2rem -5rem;
+        width: 18rem;
+        height: 18rem;
+
+        .svg-13{
+            background: url('../../img/Rectangle\ 184.svg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-size: 125%;
+            // background-position: 2rem -5rem;
+            width: 20rem;
+            height: 20rem;
+            transform: translate(-0.5rem, -8rem);
+        }
     }
 }
