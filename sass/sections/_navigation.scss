@@ -17,7 +17,8 @@
         
         &_list{
             padding: 3rem;
-
+            cursor: pointer;
+            font-weight: bold;
             &-img{
                 width: 12rem;
             }
@@ -50,6 +51,6 @@
     }
 }
 
-.active{
-    color: $color-dark-2;
-}
+// .active{
+//     color: $color-dark-2;
+// }

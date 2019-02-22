@@ -23,7 +23,7 @@ body {
 
 .container {
   display: grid;
-  grid-template-rows: min-content 90vh 100vh repeat(8, min-content);
+  grid-template-rows: min-content repeat(10, min-content);
   grid-template-columns: [start-space] minmax(min-content, 1fr) [start-space-end center-start] repeat(10, minmax(min-content, 1fr)) [center-end end-space-start] 1fr [end-space-end];
   grid-row-gap: 15rem; }
 
@@ -42,7 +42,9 @@ body {
     flex-direction: row;
     justify-content: space-around; }
     .navigation .nav_list {
-      padding: 3rem; }
+      padding: 3rem;
+      cursor: pointer;
+      font-weight: bold; }
       .navigation .nav_list-img {
         width: 12rem; }
       .navigation .nav_list_call {
@@ -65,9 +67,6 @@ body {
           display: flex;
           flex-direction: column; }
 
-.active {
-  color: #363636; }
-
 .header {
   grid-column: 1/-1;
   display: grid;
@@ -76,11 +75,13 @@ body {
   transform: translateY(-14rem);
   font-size: 1.8rem; }
   .header_lists {
-    grid-row: 5/-1;
+    grid-row: 4/6;
     align-items: center;
     text-align: right;
     list-style: none;
-    padding: 1rem; }
+    padding: 2.5rem; }
+  .header_list {
+    padding: 1rem 0; }
   .header_intro {
     grid-row: 1/4;
     grid-column: 2/4;
@@ -96,12 +97,48 @@ body {
   .header_slider {
     grid-row: 1/6;
     grid-column: 2/-1; }
-    .header_slider img {
+    .header_slider div {
       width: 100%;
       height: 100%; }
+      .header_slider div img {
+        width: 100%;
+        height: 100%; }
   .header_box {
     grid-row: 5/7;
     grid-column: 2/6; }
+
+.slick-dots {
+  position: absolute;
+  bottom: 2rem;
+  right: 3rem;
+  width: auto;
+  pointer-events: none; }
+
+.slick-dots li button:before {
+  font-size: 2rem;
+  color: transparent; }
+
+li.slick-active button:before {
+  color: white !important; }
+
+.slick-dots li.slick-active button:before {
+  opacity: 1 !important;
+  color: white; }
+
+.slick-dots li button {
+  font-size: 0;
+  line-height: 0;
+  display: block;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  border-radius: 50%;
+  border: 4px solid white;
+  outline: none;
+  background: transparent; }
+
+.active {
+  font-weight: bold; }
 
 .aboutRudra {
   grid-row: 3/span 1;

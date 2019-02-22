@@ -33,7 +33,7 @@ body {
 
 .container{
     display: grid;
-    grid-template-rows: min-content 90vh 100vh repeat(8, min-content);
+    grid-template-rows: min-content repeat(10, min-content);
     grid-template-columns: [start-space] minmax(min-content, 1fr) [start-space-end center-start] 
     repeat(10, minmax(min-content, 1fr)) [center-end end-space-start] 
     1fr [end-space-end];

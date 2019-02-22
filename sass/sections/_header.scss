@@ -7,11 +7,15 @@
     font-size: 1.8rem;
 
     &_lists{
-        grid-row: 5/-1;
+        grid-row: 4/6;
         align-items: center;
         text-align: right;
         list-style: none;
-        padding: 1rem;
+        padding: 2.5rem;
+    }
+
+    &_list{
+        padding: 1rem 0;
     }
 
     &_intro{
@@ -34,9 +38,14 @@
         grid-row: 1/6;
         grid-column: 2/-1;
 
-        img{
+        div{
             width: 100%;
             height: 100%;
+
+            img{
+                width: 100%;
+                height: 100%;
+            }
         }
     }
 
@@ -50,4 +59,47 @@
 
 
 
+}
+
+.slick-dots{
+    position: absolute;
+    bottom: 2rem;
+    right: 3rem;
+    width: auto;
+        pointer-events: none;    
+}
+
+.slick-dots li button:before{
+    font-size: 2rem;
+    color: transparent;
+}
+
+li.slick-active button:before{
+    color: white !important;
+}
+
+.slick-dots li.slick-active button:before{
+    opacity: 1 !important;
+    color: white;
+}
+
+
+.slick-dots li button {
+    font-size: 0;
+    line-height: 0;
+    display: block;
+    width: 20px;
+    height: 20px;
+
+    cursor: pointer;
+    border-radius: 50%;
+    border: 4px solid white;
+    outline: none;
+    background: transparent;
+}
+
+
+
+.active{
+    font-weight: bold;
 }
