@@ -6,6 +6,10 @@
     transform:translateY(-14rem);
     font-size: 1.8rem;
 
+    @include respond(tab-port){
+        font-size: 1.2rem;
+    }
+
     &_lists{
         grid-row: 4/6;
         align-items: center;
