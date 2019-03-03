@@ -30,6 +30,7 @@
             padding: 0;
             // justify-self: left;
             margin: 0 auto;
+            size: 10px;
         }
 
         @include respond(phone){
@@ -147,12 +148,13 @@ li.slick-active button:before{
     font-size: 0;
     line-height: 0;
     display: block;
-    width: 20px;
-    height: 20px;
+    width: 16px;
+    height: 16px;
+    margin: 2px;
 
     cursor: pointer;
     border-radius: 50%;
-    border: 4px solid white;
+    border: 2px solid white;
     outline: none;
     background: transparent;
 }

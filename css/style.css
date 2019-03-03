@@ -60,7 +60,9 @@ body {
       cursor: pointer;
       font-weight: bold; }
       .navigation .nav_list-img {
-        width: 12rem; }
+        width: 6rem; }
+      .navigation .nav_list:hover {
+        color: black; }
       .navigation .nav_list_call {
         display: grid;
         grid-template-rows: repeat(2, min-content);
@@ -107,7 +109,8 @@ body {
         z-index: 3;
         color: white;
         padding: 0;
-        margin: 0 auto; } }
+        margin: 0 auto;
+        size: 10px; } }
     @media only screen and (max-width: 37.5em) {
       .header_lists {
         grid-column: 5/7; } }
@@ -190,11 +193,12 @@ li.slick-active button:before {
   font-size: 0;
   line-height: 0;
   display: block;
-  width: 20px;
-  height: 20px;
+  width: 16px;
+  height: 16px;
+  margin: 2px;
   cursor: pointer;
   border-radius: 50%;
-  border: 4px solid white;
+  border: 2px solid white;
   outline: none;
   background: transparent; }
 

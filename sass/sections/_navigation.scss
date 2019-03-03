@@ -20,7 +20,10 @@
             cursor: pointer;
             font-weight: bold;
             &-img{
-                width: 12rem;
+                width: 6rem;
+            }
+            &:hover{
+                color: black;
             }
 
             &_call{

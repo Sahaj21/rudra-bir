@@ -3,6 +3,7 @@ document.addEventListener("DOMContentLoaded", function() {
     var sHome= document.getElementById('smooth-home');
     var sTeam= document.getElementById('smooth-team');
     var sCourses= document.getElementById('smooth-courses');
+    var sLocate= document.getElementById('smooth-locate');
 
     let j =0;
     var text = document.querySelectorAll('.header_list');
@@ -14,6 +15,9 @@ document.addEventListener("DOMContentLoaded", function() {
     })
     sCourses.addEventListener('click', function(){
         smoothScroll('.courses', 1000);
+    })
+    sLocate.addEventListener('click', function(){
+        window.location = "https://goo.gl/maps/assDxxgGKFp";
     })
 
     $('.header_slider').slick({
