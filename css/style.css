@@ -88,8 +88,10 @@ body {
   display: grid;
   grid-template-rows: repeat(6, 1fr);
   grid-template-columns: repeat(6, minmax(min-content, 1fr));
-  transform: translateY(-14rem);
+  transform: translateY(-17rem);
   font-size: 1.8rem; }
+  .header .negative-top {
+    margin-top: -4rem; }
   @media only screen and (max-width: 56.25em) {
     .header {
       font-size: 1.1rem; } }
@@ -125,11 +127,11 @@ body {
   .header_intro {
     grid-row: 1/4;
     grid-column: 2/4;
-    justify-self: center;
+    justify-self: flex-end;
     align-self: center;
     z-index: 100;
     color: #ffffff;
-    font-size: 8.2rem;
+    font-size: 7rem;
     font-weight: bold; }
     @media only screen and (max-width: 56.25em) {
       .header_intro {
