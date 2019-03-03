@@ -961,12 +961,16 @@ li.slick-active button:before {
   height: 100%;
   display: flex;
   justify-content: space-around;
-  align-content: center;
-  flex-wrap: wrap; }
+  align-content: center; }
+  @media only screen and (max-width: 37.5em) {
+    .form {
+      flex-wrap: wrap; } }
   .form__group {
     align-self: center;
-    width: 45%;
     margin: 1rem 0; }
+    @media only screen and (max-width: 37.5em) {
+      .form__group {
+        width: 45%; } }
   .form .center {
     display: flex;
     justify-content: center; }

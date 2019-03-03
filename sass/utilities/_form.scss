@@ -5,17 +5,19 @@
     display: flex;
     justify-content: space-around;
     align-content: center;
-    flex-wrap: wrap;
 
     @include respond(phone){
-        // flex-direction: column;
+        flex-wrap: wrap;
 
     }
 
     &__group {
         align-self: center;
-        width: 45%;
         margin: 1rem 0;
+
+        @include respond(phone){
+            width: 45%;
+        }
     }
 
     .center{
