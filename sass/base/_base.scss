@@ -37,5 +37,5 @@ body {
     grid-template-columns: [start-space] minmax(min-content, 1fr) [start-space-end center-start] 
     repeat(10, minmax(min-content, 1fr)) [center-end end-space-start] 
     1fr [end-space-end];
-    grid-row-gap: 15rem;
+    grid-row-gap: 5rem;
 }

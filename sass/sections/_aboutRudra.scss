@@ -4,7 +4,7 @@
     line-height: 1.22;
 
     display: grid;
-    grid-template-rows: repeat(10, minmax(min-content, 1fr));
+    grid-template-rows: repeat(10, min-content(1fr));
     grid-template-columns: repeat(9, minmax(min-content, 1fr));
 
         &_left-know{
@@ -112,8 +112,12 @@
 
 .headingLeft{
     font-size: 3.2rem;
-    font-weight: bold;
+    //font-weight: bold;
     color: $color-dark-3;
+
+    @include respond(sd-screen){
+        font-size: 2.5rem !important; 
+    }
 }
 
 .heading-2{
@@ -121,6 +125,10 @@
     font-weight: bold;
     color: $color-dark-3;
     display: block;
+
+    @include respond(sd-screen){
+        font-size: 4.5rem !important;       
+    }
 }
 
 .para{
@@ -128,6 +136,12 @@
     font-weight: 500;
     line-height: 1.89;
     color: $color-grey-2;
+
+    @include respond(sd-screen){
+    font-size: 2.2rem !important;
+    font-weight: 400 !important;
+    line-height: 1.5 !important;
+    }
 }
 
 .img-svg{
