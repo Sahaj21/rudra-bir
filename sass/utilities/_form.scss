@@ -5,9 +5,22 @@
     display: flex;
     justify-content: space-around;
     align-content: center;
+    flex-wrap: wrap;
+
+    @include respond(phone){
+        // flex-direction: column;
+
+    }
 
     &__group {
         align-self: center;
+        width: 45%;
+        margin: 1rem 0;
+    }
+
+    .center{
+        display: flex;
+        justify-content: center;
     }
 
     &__input {
@@ -18,7 +31,8 @@
         width: 50%;
         display: block;
         transition: all .3s;
-
+        margin: auto;
+        
         &:focus {
             outline: none;
             // box-shadow: 0 1rem 2rem rgba($color-black, .1);

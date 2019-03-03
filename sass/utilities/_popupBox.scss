@@ -1,13 +1,27 @@
 .popupBox{
     width: 80%;
-    height: 50%;
+    height: 15rem;
     position: relative;
     top: 30%;
     left: 8%;
     background: $color-white;
     box-shadow: 1rem 1rem 7rem rgba(0, 0, 0, 0.2);
 
+    @include respond(tab-port){
+        width: 80%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
 
+    @include respond(phone){
+        width: 100%;
+        height: auto;
+        top: 0%;
+        left: 0%;
+        transform: translate(0%, 0%);
+        box-shadow: none;
+    }
 
     input[type=number] {
         width: 16rem;

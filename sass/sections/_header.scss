@@ -7,7 +7,12 @@
     font-size: 1.8rem;
 
     @include respond(tab-port){
-        font-size: 1.2rem;
+        font-size: 1.1rem;
+    }
+
+    @include respond (phone){
+        // grid-template-columns: repeat(5, minmax(min-content, 1fr)) 5rem;
+        grid-template-rows: repeat(5, 1fr) min-content;
     }
 
     &_lists{
@@ -15,11 +20,33 @@
         align-items: center;
         text-align: right;
         list-style: none;
-        padding: 2.5rem;
+        padding: 3rem;
+
+        @include respond(tab-port){
+            grid-column: 1/2;
+            grid-row: 3/6;
+            z-index: 3;
+            color: white;
+            padding: 0;
+            // justify-self: left;
+            margin: 0 auto;
+        }
+
+        @include respond(phone){
+            grid-column: 5/7;
+        }
     }
 
     &_list{
         padding: 1rem 0;
+
+        @include respond(tab-port){
+            padding: .5rem 0;
+        }
+
+        @include respond(phone){
+            padding: .2rem 0;
+        }
     }
 
     &_intro{
@@ -32,6 +59,16 @@
         font-size: 8.2rem;
         font-weight: bold;
 
+        @include respond(tab-port){
+            font-size: 4rem;
+            grid-column: 1/3;
+            align-self: flex-start;
+        }
+
+        @include respond(tab-port){
+            font-size: 3rem;
+        }
+
         span{
             display: block;
             margin-bottom: -1rem;
@@ -41,6 +78,10 @@
     &_slider{
         grid-row: 1/6;
         grid-column: 2/-1;
+
+        @include respond(tab-port){
+            grid-column: 1/-1;
+        }
 
         div{
             width: 100%;
@@ -56,9 +97,15 @@
     &_box{
         grid-row: 5/7;
         grid-column: 2/6;
-        // display: grid;
-        // justify-items: center;
-        // align-items: center;
+        
+        @include respond(tab-port){
+            grid-column: 1/-1;
+        }
+
+        @include respond(phone){
+            grid-row: 6/7;
+            transform: translateY(-4rem);
+        }
     }
 
 
@@ -70,7 +117,15 @@
     bottom: 2rem;
     right: 3rem;
     width: auto;
-        pointer-events: none;    
+    pointer-events: none; 
+    
+    @include respond(tab-port){
+        top: 2rem;
+    }
+
+    @include respond(phone){
+        display: none !important;
+    }
 }
 
 .slick-dots li button:before{
