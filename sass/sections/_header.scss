@@ -10,6 +10,10 @@
         margin-top: -4rem;
     }
 
+    @include respond(big-desktop){
+        
+    }
+
     @include respond(tab-port){
         font-size: 1.1rem;
     }
@@ -83,6 +87,7 @@
     &_slider{
         grid-row: 1/6;
         grid-column: 2/-1;
+        position: relative;
 
         @include respond(tab-port){
             grid-column: 1/-1;
