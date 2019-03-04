@@ -22,7 +22,7 @@
             <li class="nav_list" id="smooth-courses">Courses</li>
             <li class="nav_list" id="smooth-locate" >Locate Us</li>
             <li class="nav_list" id="smooth-rooms">Rooms</li>
-            <li class="nav_list nav_list_call">
+            <li class="nav_list nav_list_call" onclick="location.href='#popup-email'">
                 Call Us:
                 <div class="nav_list_call-phone">
                     <span class="nav_list_call-phone-1">+91-97361 83064</span>
@@ -153,7 +153,7 @@
                 </div>
                 <div class="card_header">01<span>The Basic Course</span></div>
                 <div class="card_btn">
-                    <button class="card_btn full button button--white">Book Now</button>
+                    <a class="full button button--white" onclick="location.href='#popup'"><span>Book Now</span></a>
                 </div>
             </div>
         </div>
@@ -172,7 +172,7 @@
                 </div>
                 <div class="card_header">02<span>Second Step P3</span></div>
                 <div class="card_btn">
-                    <button class="card_btn full button button--white">Book Now</button>
+                        <a class="full button button--white" onclick="location.href='#popup'"><span>Book Now</span></a>
                 </div>
             </div>
         </div>
@@ -191,7 +191,7 @@
                 </div>
                 <div class="card_header">03<span>Cross country Coaching</span></div>
                 <div class="card_btn">
-                    <button class="card_btn full button button--white">Book Now</button>
+                        <a class="full button button--white" onclick="location.href='#popup'"><span>Book Now</span></a>
                 </div>
             </div>
         </div>
@@ -448,7 +448,7 @@
                 </div>
             </div>
             <div class="querry-box">
-                 <h3>For any Queries</h3>
+                <h3>For any Queries</h3>
                 <h1>Contact Us Now</h1>
                 <h3>Address</h3>
                 <p>Rudra Adventures ,</p>
@@ -472,10 +472,9 @@
                 </p>
             </div>
             <div class="booking-popup">
-                     <p class="popup-heading">Let the adventure Begin</p>
-                     <p class="popup-info">Explore Bir Billing with us and bookyour travel package now</p>
-                     <button class="btn button button--blue">Book Now</button>
-
+                    <p class="popup-heading">Let the adventure Begin</p>
+                    <p class="popup-info">Explore Bir Billing with us and bookyour travel package now</p>
+                    <button class="btn button button--blue">Book Now</button>
             </div>
         </div>
 
@@ -555,10 +554,58 @@
     
     </footer>
 
+    <div class="popup" id="popup">
+        <div class="popup__content">
+        <div class="popup__left">
+            <img src="img/1@2x.png" alt="Tour Photo" class="popup__img">
+            <img src="img/Paragliding-fun.jpg" alt="Tour Photo" class="popup__img">
+        </div>
+        <div class="popup__right">
+            <a href="#section-tours" class="popup__close">&times;</a>
+            <h2 class="heading-secondary u-margin-bottom-medium">Start booking now</h2>
+            <h2 class="heading-tertiary u-margin-bottom-small">Important &ndash; Please read this term before booking</h2>
+            <p class="popup__text" lang="en">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ipsa molestiae obcaecati rem minus quae laudantium consequuntur earum incidunt facilis veritatis alias quo, vitae dolorem culpa repudiandae nobis! Exercitationem, ratione.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, quibusdam unde? Ipsum eligendi voluptatem, quibusdam debitis facere soluta dignissimos accusantium explicabo quo in similique, alias obcaecati, animi suscipit! Vitae, labore?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum amet molestias id architecto odio temporibus mollitia facilis culpa blanditiis exercitationem pariatur quidem placeat obcaecati, eius ullam, adipisci iusto. Exercitationem, sunt!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere similique cum nemo animi nulla fuga aliquid earum harum, laboriosam recusandae, excepturi, ipsum et dolore? Repellendus quasi culpa dolores voluptatum iste?
+
+            </p>
+            <a class="full button button--white" onclick="location.href='#popup'"><span>Book Now</span></a>
+        </div>
+        </div>
+    </div>
+
+    <div class="popup" id="popup-email">
+        <div class="popup__content popup__content-email">
+            <div class="popup__right">
+                <a href="#section-tours" class="popup__close">&times;</a>
+                <h2 class="heading-secondary u-margin-bottom-medium">Contact Us</h2>
+                <form action="#" class="form-contact">
+                        <div class="form-contact__group">
+                        <input id="name" type="text" class="form-contact__input" placeholder="Full Name" required>
+                        <label for="name" class="form-contact__label">Full name</label>
+                        </div>
+        
+                        <div class="form-contact__group">
+                        <input id="email" type="email" class="form-contact__input" placeholder="email" required>
+                        <label for="email" class="form-contact__label">
+                            Email
+                        </label>
+                        </div>
+        
+                        <div class="form-contact__group">
+                            <a class="full button button--white" onclick="location.href='#popup'"><span>Book Now</span></a>
+                        </div>
+                    </form>
+            </div>
+        </div>
+    </div>
+
     <script src="./js/smooth.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-<script type="text/javascript" src="slick-1.8.1/slick/slick.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick-1.8.1/slick/slick.min.js"></script>
 				
     <!-- <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script> -->
 </body>
