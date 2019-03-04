@@ -1,9 +1,15 @@
+//import { link } from "fs";
+
 document.addEventListener("DOMContentLoaded", function() {
 
     var sHome= document.getElementById('smooth-home');
     var sTeam= document.getElementById('smooth-team');
     var sCourses= document.getElementById('smooth-courses');
     var sLocate= document.getElementById('smooth-locate');
+    var fblogolink= document.getElementById('fb-logo');
+    var iglogolink= document.getElementById('ig-logo');
+    var twlogolink= document.getElementById('tw-logo');
+
 
     let j =0;
     var text = document.querySelectorAll('.header_list');
@@ -18,6 +24,15 @@ document.addEventListener("DOMContentLoaded", function() {
     })
     sLocate.addEventListener('click', function(){
         window.location = "https://goo.gl/maps/assDxxgGKFp";
+    })
+    fblogolink.addEventListener('click', function(){
+        window.location = "https://www.facebook.com/rudra.adventures/";
+    })    
+    iglogolink.addEventListener('click', function(){
+        window.location = "https://www.instagram.com/rudra.adventures/";
+    })    
+    twlogolink.addEventListener('click', function(){
+        window.location = "https://twitter.com/AdventuresRudra";
     })
 
     $('.header_slider').slick({

@@ -35,6 +35,12 @@
         transition: all .3s;
         margin: auto;
         
+
+        @include respond(sd-screen){
+            height: 5rem;
+            font-size: 1.8rem;
+        }
+
         &:focus {
             outline: none;
             // box-shadow: 0 1rem 2rem rgba($color-black, .1);
@@ -57,6 +63,10 @@
         margin-top: .7rem;
         display: block;
         transition: all .4s;
+    }
+
+    @include respond(sd-screen){
+        font-size: 1rem;
     }
 
     &__input:placeholder-shown + &__label {

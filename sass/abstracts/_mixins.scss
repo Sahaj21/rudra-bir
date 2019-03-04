@@ -32,7 +32,10 @@ $breakpoint arguments choices
     @if $breakpoint == tab-land {
         @media only screen and (max-width: 75em) { @content };  //1200px
     }
+    @if $breakpoint == sd-screen {
+        @media only screen and (max-width: 90em) { @content };  //1200px
+    }
     @if $breakpoint == big-desktop {
-        @media only screen and (min-width: 85em) { @content };  //1800px
+        @media only screen and (min-width: 90em) { @content };  //1300px
     }
 }

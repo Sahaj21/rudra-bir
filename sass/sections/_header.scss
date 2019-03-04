@@ -3,11 +3,15 @@
     display: grid;
     grid-template-rows: repeat(6, 1fr);
     grid-template-columns: repeat(6, minmax(min-content, 1fr));
-    transform:translateY(-17rem);
+    transform:translateY(-6rem);
     font-size: 1.8rem;
 
     .negative-top{
         margin-top: -4rem;
+    }
+
+    @include respond(sd-screen){
+        grid-template-rows: repeat(1, 1fr);        
     }
 
     @include respond(tab-port){
@@ -24,6 +28,11 @@
         text-align: right;
         list-style: none;
         padding: 3rem;
+
+
+        @include respond(sd-screen){
+            font-size: 1.4rem;
+        }
 
         @include respond(tab-port){
             grid-column: 1/2;
@@ -71,6 +80,10 @@
 
         @include respond(tab-port){
             font-size: 3rem;
+        }
+        @include respond(sd-screen){
+            font-size: 5rem;
+            
         }
 
         @include respond(big-desktop){

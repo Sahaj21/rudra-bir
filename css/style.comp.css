@@ -39,7 +39,7 @@ body {
   display: grid;
   grid-template-rows: min-content repeat(10, min-content);
   grid-template-columns: [start-space] minmax(min-content, 1fr) [start-space-end center-start] repeat(10, minmax(min-content, 1fr)) [center-end end-space-start] 1fr [end-space-end];
-  grid-row-gap: 15rem; }
+  grid-row-gap: 5rem; }
 
 .navigation {
   grid-column: 1/-1;
@@ -51,11 +51,15 @@ body {
   font-stretch: normal;
   line-height: 1.23;
   letter-spacing: normal; }
+  @media only screen and (max-width: 90em) {
+    .navigation {
+      font-size: 1.8rem; } }
   .navigation .nav {
     display: flex;
     flex-direction: row;
     justify-content: space-around; }
     .navigation .nav_list {
+      grid-column: 1/-1;
       padding: 3rem;
       cursor: pointer;
       font-weight: bold; }
@@ -68,8 +72,8 @@ body {
         grid-template-rows: repeat(2, min-content);
         grid-template-columns: repeat(2, max-content);
         align-items: center;
-        grid-column-gap: 1rem;
-        transform: translateY(-1.5rem);
+        grid-column-gap: 2rem;
+        transform: translateY(-1rem);
         font-weight: bold;
         font-style: normal;
         font-stretch: normal;
@@ -82,16 +86,22 @@ body {
           grid-column: 2/-1;
           display: flex;
           flex-direction: column; }
+          @media only screen and (max-width: 90em) {
+            .navigation .nav_list_call-phone {
+              font-size: 1.8rem; } }
 
 .header {
   grid-column: 1/-1;
   display: grid;
   grid-template-rows: repeat(6, 1fr);
   grid-template-columns: repeat(6, minmax(min-content, 1fr));
-  transform: translateY(-17rem);
+  transform: translateY(-6rem);
   font-size: 1.8rem; }
   .header .negative-top {
     margin-top: -4rem; }
+  @media only screen and (max-width: 90em) {
+    .header {
+      grid-template-rows: repeat(1, 1fr); } }
   @media only screen and (max-width: 56.25em) {
     .header {
       font-size: 1.1rem; } }
@@ -104,6 +114,9 @@ body {
     text-align: right;
     list-style: none;
     padding: 3rem; }
+    @media only screen and (max-width: 90em) {
+      .header_lists {
+        font-size: 1.4rem; } }
     @media only screen and (max-width: 56.25em) {
       .header_lists {
         grid-column: 1/2;
@@ -141,7 +154,10 @@ body {
     @media only screen and (max-width: 56.25em) {
       .header_intro {
         font-size: 3rem; } }
-    @media only screen and (min-width: 85em) {
+    @media only screen and (max-width: 90em) {
+      .header_intro {
+        font-size: 5rem; } }
+    @media only screen and (min-width: 90em) {
       .header_intro {
         justify-self: center; } }
     .header_intro span {
@@ -216,7 +232,7 @@ li.slick-active button:before {
   grid-column: 3/12;
   line-height: 1.22;
   display: grid;
-  grid-template-rows: repeat(10, minmax(min-content, 1fr));
+  grid-template-rows: repeat(10, min-content(1fr));
   grid-template-columns: repeat(9, minmax(min-content, 1fr)); }
   .aboutRudra_left-know {
     grid-row: 1/2;
@@ -292,20 +308,30 @@ li.slick-active button:before {
 
 .headingLeft {
   font-size: 3.2rem;
-  font-weight: bold;
   color: #272727; }
+  @media only screen and (max-width: 90em) {
+    .headingLeft {
+      font-size: 2.5rem !important; } }
 
 .heading-2 {
   font-size: 6rem;
   font-weight: bold;
   color: #272727;
   display: block; }
+  @media only screen and (max-width: 90em) {
+    .heading-2 {
+      font-size: 4.5rem !important; } }
 
 .para {
   font-size: 2.8rem;
   font-weight: 500;
   line-height: 1.89;
   color: #686868; }
+  @media only screen and (max-width: 90em) {
+    .para {
+      font-size: 2.2rem !important;
+      font-weight: 400 !important;
+      line-height: 1.5 !important; } }
 
 .img-svg {
   grid-row: 3/4;
@@ -945,6 +971,9 @@ li.slick-active button:before {
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%); } }
+  @media only screen and (max-width: 90em) {
+    .popupBox {
+      height: 10rem; } }
   @media only screen and (max-width: 37.5em) {
     .popupBox {
       width: 100%;
@@ -965,6 +994,10 @@ li.slick-active button:before {
     text-align: center;
     color: #303030;
     font-size: 2rem; }
+    @media only screen and (max-width: 90em) {
+      .popupBox input[type=number] {
+        font-size: 1.6rem;
+        height: 5rem; } }
 
 .form {
   width: 100%;
@@ -993,6 +1026,10 @@ li.slick-active button:before {
     display: block;
     transition: all .3s;
     margin: auto; }
+    @media only screen and (max-width: 90em) {
+      .form__input {
+        height: 5rem;
+        font-size: 1.8rem; } }
     .form__input:focus {
       outline: none; }
   .form__label {
@@ -1002,6 +1039,9 @@ li.slick-active button:before {
     margin-top: .7rem;
     display: block;
     transition: all .4s; }
+  @media only screen and (max-width: 90em) {
+    .form {
+      font-size: 1rem; } }
   .form__input:placeholder-shown + .form__label {
     opacity: 0;
     visibility: hidden;
@@ -1032,6 +1072,11 @@ li.slick-active button:before {
   .button--blue {
     background-color: #3bb4c4;
     color: white; }
+  @media only screen and (max-width: 90em) {
+    .button {
+      width: 20rem;
+      height: 6rem;
+      font-size: 1.8rem; } }
 
 .margin-12 {
   margin-top: 12rem !important; }
