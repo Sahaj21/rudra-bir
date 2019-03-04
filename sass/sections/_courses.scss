@@ -63,8 +63,7 @@
 .courses{
     grid-column: 2/12;
     display: grid;
-    height: 90vh;
-    grid-template-rows: repeat(6, 1fr);
+    grid-template-rows: repeat(6, min-content);
     grid-template-columns: repeat(3, minmax(min-content, 1fr));
     grid-gap: 10rem;
 

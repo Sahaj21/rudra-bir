@@ -6,8 +6,23 @@
     justify-content: space-around;
     align-content: center;
 
+    @include respond(phone){
+        flex-wrap: wrap;
+
+    }
+
     &__group {
         align-self: center;
+        margin: 1rem 0;
+
+        @include respond(phone){
+            width: 45%;
+        }
+    }
+
+    .center{
+        display: flex;
+        justify-content: center;
     }
 
     &__input {
@@ -18,6 +33,13 @@
         width: 50%;
         display: block;
         transition: all .3s;
+        margin: auto;
+        
+
+        @include respond(sd-screen){
+            height: 5rem;
+            font-size: 1.8rem;
+        }
 
         &:focus {
             outline: none;
@@ -41,6 +63,10 @@
         margin-top: .7rem;
         display: block;
         transition: all .4s;
+    }
+
+    @include respond(sd-screen){
+        font-size: 1rem;
     }
 
     &__input:placeholder-shown + &__label {

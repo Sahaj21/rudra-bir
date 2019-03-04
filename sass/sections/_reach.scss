@@ -2,8 +2,7 @@
     grid-column: 1/-1;
     display: grid;
     grid-template-columns: repeat(10, 1fr);
-    grid-template-rows: repeat(16, 1fr);
-    height: 160vh;
+    grid-template-rows: repeat(16, min-content);
 
     &_desc{
         grid-column: 2/7;
