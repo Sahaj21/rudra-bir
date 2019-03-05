@@ -32,6 +32,7 @@
 
         @include respond(sd-screen){
             font-size: 1.4rem;
+            transform: translateY(-4.6rem);
         }
 
         @include respond(tab-port){
@@ -151,8 +152,10 @@
 }
 
 .slick-dots li button:before{
-    font-size: 2rem;
+    font-size: 1.2rem !important;
     color: transparent;
+    top: 0;
+    left: -1px;
 }
 
 li.slick-active button:before{
@@ -166,11 +169,11 @@ li.slick-active button:before{
 
 
 .slick-dots li button {
-    font-size: 0;
+    font-size: 1px;
     line-height: 0;
     display: block;
-    width: 16px;
-    height: 16px;
+    width: 4px;
+    height: 4px;
     margin: 2px;
 
     cursor: pointer;

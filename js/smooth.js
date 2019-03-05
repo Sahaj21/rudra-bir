@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", function() {
     $('.header_slider').slick({
         slidesToShow: 1 ,
         slidesToScroll: 1,
-        autoplay: true,
+        autoplay: false,
         autoplaySpeed: 800,
         dots: true,
     });

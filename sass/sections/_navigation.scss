@@ -17,13 +17,18 @@
         display: flex;
         flex-direction: row;
         justify-content: space-around;
+
+        .rudra-logo-header{
+            color: $color-primary;
+            transform: translateY(-1rem);
+        }
         
         &_list{
             grid-column: 1/-1;
             padding: 3rem;
             cursor: pointer;
-            font-weight: bold;
-  
+            font-weight: 600;
+
             &-img{
                 width: 6rem;
             }
