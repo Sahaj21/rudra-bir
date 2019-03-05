@@ -38,7 +38,7 @@ body {
 .container {
   display: grid;
   grid-template-rows: min-content repeat(10, min-content);
-  grid-template-columns: [start-space] minmax(min-content, 1fr) [start-space-end center-start] repeat(10, minmax(min-content, 1fr)) [center-end end-space-start] 0.5fr [end-space-end] 2fr;
+  grid-template-columns: minmax(min-content, 1fr) [start-space] minmax(min-content, 1fr) [start-space-end center-start] repeat(10, minmax(min-content, 1fr)) [center-end end-space-start] 0.5fr [end-space-end] 2fr;
   grid-row-gap: 5rem; }
 
 .navigation {
@@ -252,14 +252,14 @@ li.slick-active button:before {
     grid-row: 2/4;
     grid-column: 1/6; }
   .aboutRudra .para-1 {
-    grid-row: 4/7;
+    grid-row: 3/6;
     grid-column: 1/5; }
   .aboutRudra .para-2 {
-    grid-row: 8/9;
+    grid-row: 6/8;
     grid-column: 1/5; }
   .aboutRudra .btn {
-    margin-top: 12rem;
-    grid-row: 9/11;
+    margin-top: 8rem;
+    grid-row: 6/11;
     align-self: center;
     grid-column: 1/4; }
   .aboutRudra .img {
@@ -343,7 +343,7 @@ li.slick-active button:before {
     .para {
       font-size: 2.2rem !important;
       font-weight: 400 !important;
-      line-height: 1.5 !important; } }
+      line-height: 1.8 !important; } }
 
 .img-svg {
   grid-row: 3/5;
