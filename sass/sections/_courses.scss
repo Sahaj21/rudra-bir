@@ -3,6 +3,10 @@
     grid-row: 10/11;
     transform: translate(7rem,-8rem);
 
+    @include respond(sd-screen){
+    transform: translate(0,0);    
+    }
+
     .svg-1{
         background: url('../../img/Rectangle\ 184.svg');
         background-size: 125%;
@@ -60,12 +64,23 @@
     }
 }
 
+.heading-courses-2 {
+    @include respond(sd-screen){
+        transform: translate(6rem, -3rem);  
+    }
+}
+
 .courses{
+    padding-top: 10rem;
     grid-column: 2/12;
     display: grid;
     grid-template-rows: repeat(6, min-content);
     grid-template-columns: repeat(3, minmax(min-content, 1fr));
     grid-gap: 10rem;
+
+    @include respond(sd-screen){
+        grid-gap: 2rem;       
+    }
 
     .img-svg-courses-1{
         grid-column: 1/2;
@@ -92,6 +107,14 @@
         display: grid;
         align-items: center;
         align-content: space-around;
+    }
+
+    .desc-para-heading {
+        @include respond(sd-screen){
+            transform: translate(6.3rem, -4.5rem);
+            line-height: 1.3 !important;
+        }
+
     }
 
     &_card-1{
