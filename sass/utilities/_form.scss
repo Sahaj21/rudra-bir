@@ -30,15 +30,23 @@
         background-color: rgba($color-white, .5);
         border: none;
         border-bottom: .1rem solid $color-grey-2;
+        color:  $color-grey-3-1;
         width: 50%;
         display: block;
         transition: all .3s;
         margin: auto;
+        width: 11rem !important;
+        text-align: left !important;
+        transform: translateY(1rem);
+
+        ::-webkit-input-placeholder {
+            color: red;
+        }
         
 
         @include respond(sd-screen){
             height: 5rem;
-            font-size: 1.8rem;
+            font-size: 2rem !important;
         }
 
         &:focus {
