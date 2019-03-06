@@ -112,6 +112,11 @@
     grid-template-rows: repeat(5, 1fr);
     grid-template-columns: 3rem repeat(3, 1fr) 3rem;
 
+    @include respond(sd-screen){
+        transform: translate(0rem, -8rem);
+  
+    }
+   
     &--img{
         grid-column: 2/3;
         grid-row: 1/3;
