@@ -12,10 +12,20 @@
 
     .heading-2{
         transform: translateX(14rem);
+
+        @include respond(sd-screen){
+            transform: translate(14rem,-5rem);
+      
+        }
     }
 
     .para{
         transform: translateX(14rem);
+
+        @include respond(sd-screen){
+            transform: translate(14.5rem,-8.2rem);      
+        }
+        
     }
 
     &_svg{
