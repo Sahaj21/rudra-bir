@@ -15,7 +15,7 @@
     }
 
     @include respond(sd-screen){
-       height: 10rem;
+        height: 10rem;
 
     }
 
@@ -45,6 +45,23 @@
             font-size: 1.6rem;
             height: 5rem;
 
+        }
+    }
+
+    &-con{
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        &__header{
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: $color-dark-3;
+        }
+    
+        &__desc{
+            font-size: 2rem;
         }
     }
 }

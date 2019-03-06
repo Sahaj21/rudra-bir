@@ -41,7 +41,7 @@ document.addEventListener("DOMContentLoaded", function() {
         dots: true,
     });
 
-    $('.header_slider').on('afterChange', function(event, slick, currentSlide){
+    $('.header_slider').on('beforeChange', function(event, slick, currentSlide){
         text[j].classList.remove("active");
         j++;
         if(j==4){
