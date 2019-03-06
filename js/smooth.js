@@ -1,5 +1,3 @@
-//import { link } from "fs";
-
 document.addEventListener("DOMContentLoaded", function() {
 
     var sHome= document.getElementById('smooth-home');
@@ -38,7 +36,7 @@ document.addEventListener("DOMContentLoaded", function() {
     $('.header_slider').slick({
         slidesToShow: 1 ,
         slidesToScroll: 1,
-        autoplay: false,
+        autoplay: true,
         autoplaySpeed: 800,
         dots: true,
     });

@@ -38,4 +38,8 @@ body {
     repeat(10, minmax(min-content, 1fr)) [center-end end-space-start] 
     .5fr [end-space-end] 2fr;
     grid-row-gap: 5rem;
+
+    @include respond(sd-screen){
+        grid-template-rows: min-content 70rem repeat(9, min-content);
+    }
 }
