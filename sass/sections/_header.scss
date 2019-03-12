@@ -110,9 +110,17 @@
             width: 100%;
             height: 100%;
 
+            @include respond(sd-screen){
+                height: 98%;
+            }
+
             img{
                 width: 100%;
                 height: 100%;
+                
+                @include respond(sd-screen){
+                    object-fit: cover;
+                }
             }
         }
     }
@@ -148,6 +156,10 @@
 
     @include respond(phone){
         display: none !important;
+    }
+
+    @include respond(sd-screen){
+        bottom: 5.5rem;
     }
 
     li{

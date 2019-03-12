@@ -16,7 +16,8 @@
 
     @include respond(sd-screen){
         height: 10rem;
-
+        transform: translateY(-4rem);
+        width: 71%;
     }
 
     @include respond(phone){

@@ -25,11 +25,21 @@
 
     &--white{
         color: $color-primary;
+
+        &:hover{
+            color: white;
+            background: $color-primary;
+        }
     }
 
     &--blue{
         background-color: $color-primary;
         color:white;
+
+        &:hover{
+            color: $color-primary;
+            background: white;
+        }
     }
 
     @include respond(sd-screen){
