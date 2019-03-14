@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", function() {
         smoothScroll('.courses', 1000);
     })
     sLocate.addEventListener('click', function(){
-        window.location = "https://goo.gl/maps/assDxxgGKFp";
+        window.open("https://goo.gl/maps/assDxxgGKFp", '_blank');
     })
     fblogolink.addEventListener('click', function(){
         window.location = "https://www.facebook.com/rudra.adventures/";
@@ -34,6 +34,14 @@ document.addEventListener("DOMContentLoaded", function() {
     })
 
     $('.header_slider').slick({
+        slidesToShow: 1 ,
+        slidesToScroll: 1,
+        autoplay: false,
+        autoplaySpeed: 800,
+        dots: true,
+    });
+
+    $('.review_slider').slick({
         slidesToShow: 1 ,
         slidesToScroll: 1,
         autoplay: false,

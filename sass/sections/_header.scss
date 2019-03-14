@@ -140,67 +140,66 @@
     }
 
 
-
-}
-
-.slick-dots{
-    position: absolute;
-    bottom: 1.5rem;
-    right: 4rem;
-    width: auto;
-    pointer-events: none; 
+    .slick-dots{
+        position: absolute;
+        bottom: 1.5rem;
+        right: 4rem;
+        width: auto;
+        pointer-events: none; 
+        
+        @include respond(tab-port){
+            top: 2rem;
+        }
     
-    @include respond(tab-port){
-        top: 2rem;
+        @include respond(phone){
+            display: none !important;
+        }
+    
+        @include respond(sd-screen){
+            bottom: 5.5rem;
+        }
+    
+        li{
+            width: 26px;    
+        }
     }
-
-    @include respond(phone){
-        display: none !important;
+    
+    .slick-dots li button:before{
+        font-size: 1.2rem !important;
+        color: transparent;
+        top: 0;
+        left: -1px;
     }
-
-    @include respond(sd-screen){
-        bottom: 5.5rem;
+    
+    li.slick-active button:before{
+        color: white !important;
     }
-
-    li{
-        width: 26px;    
+    
+    .slick-dots li.slick-active button:before{
+        opacity: 1 !important;
+        color: white;
+    }
+    
+    
+    .slick-dots li button {
+        font-size: 1px;
+        line-height: 0;
+        display: block;
+        width: 4px;
+        height: 4px;
+        margin: 2px;
+    
+        cursor: pointer;
+        border-radius: 50%;
+        border: 2px solid white;
+        outline: none;
+        background: transparent;
+    }
+    
+    
+    
+    .active{
+        font-weight: bold;
     }
 }
 
-.slick-dots li button:before{
-    font-size: 1.2rem !important;
-    color: transparent;
-    top: 0;
-    left: -1px;
-}
-
-li.slick-active button:before{
-    color: white !important;
-}
-
-.slick-dots li.slick-active button:before{
-    opacity: 1 !important;
-    color: white;
-}
-
-
-.slick-dots li button {
-    font-size: 1px;
-    line-height: 0;
-    display: block;
-    width: 4px;
-    height: 4px;
-    margin: 2px;
-
-    cursor: pointer;
-    border-radius: 50%;
-    border: 2px solid white;
-    outline: none;
-    background: transparent;
-}
-
-
-
-.active{
-    font-weight: bold;
-}

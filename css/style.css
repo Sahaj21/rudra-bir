@@ -202,53 +202,47 @@ body {
       .header_box {
         grid-row: 6/7;
         transform: translateY(-4rem); } }
-
-.slick-dots {
-  position: absolute;
-  bottom: 1.5rem;
-  right: 4rem;
-  width: auto;
-  pointer-events: none; }
-  @media only screen and (max-width: 56.25em) {
-    .slick-dots {
-      top: 2rem; } }
-  @media only screen and (max-width: 37.5em) {
-    .slick-dots {
-      display: none !important; } }
-  @media only screen and (max-width: 90em) {
-    .slick-dots {
-      bottom: 5.5rem; } }
-  .slick-dots li {
-    width: 26px; }
-
-.slick-dots li button:before {
-  font-size: 1.2rem !important;
-  color: transparent;
-  top: 0;
-  left: -1px; }
-
-li.slick-active button:before {
-  color: white !important; }
-
-.slick-dots li.slick-active button:before {
-  opacity: 1 !important;
-  color: white; }
-
-.slick-dots li button {
-  font-size: 1px;
-  line-height: 0;
-  display: block;
-  width: 4px;
-  height: 4px;
-  margin: 2px;
-  cursor: pointer;
-  border-radius: 50%;
-  border: 2px solid white;
-  outline: none;
-  background: transparent; }
-
-.active {
-  font-weight: bold; }
+  .header .slick-dots {
+    position: absolute;
+    bottom: 1.5rem;
+    right: 4rem;
+    width: auto;
+    pointer-events: none; }
+    @media only screen and (max-width: 56.25em) {
+      .header .slick-dots {
+        top: 2rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .header .slick-dots {
+        display: none !important; } }
+    @media only screen and (max-width: 90em) {
+      .header .slick-dots {
+        bottom: 5.5rem; } }
+    .header .slick-dots li {
+      width: 26px; }
+  .header .slick-dots li button:before {
+    font-size: 1.2rem !important;
+    color: transparent;
+    top: 0;
+    left: -1px; }
+  .header li.slick-active button:before {
+    color: white !important; }
+  .header .slick-dots li.slick-active button:before {
+    opacity: 1 !important;
+    color: white; }
+  .header .slick-dots li button {
+    font-size: 1px;
+    line-height: 0;
+    display: block;
+    width: 4px;
+    height: 4px;
+    margin: 2px;
+    cursor: pointer;
+    border-radius: 50%;
+    border: 2px solid white;
+    outline: none;
+    background: transparent; }
+  .header .active {
+    font-weight: bold; }
 
 .aboutRudra {
   grid-row: 3/span 1;
@@ -937,6 +931,9 @@ li.slick-active button:before {
     @media only screen and (max-width: 90em) {
       .blogs .para {
         transform: translate(14.5rem, -8.2rem); } }
+  .blogs .review_slider {
+    grid-row: 3/6;
+    grid-column: 2/6; }
   .blogs_svg {
     grid-row: 3/4;
     grid-column: 1/2;
@@ -1263,6 +1260,10 @@ li.slick-active button:before {
       .popup-gen__img {
         display: inline-block;
         width: 49%; } }
+    .popup-gen__img--team {
+      width: 100%;
+      display: block;
+      padding-top: 15rem; }
   .popup-gen__text {
     font-size: 1.4rem;
     margin-bottom: 4rem;
@@ -1477,13 +1478,12 @@ li.slick-active button:before {
   .blog-card--img {
     grid-column: 2/3;
     grid-row: 1/3;
-    display: flex;
-    align-items: flex-end;
-    transform: translateY(2rem); }
+    align-items: flex-end; }
     .blog-card--img img {
-      width: 90%; }
+      width: 18.4rem;
+      z-index: 100; }
   .blog-card-svg {
-    grid-row: 1/3;
+    grid-row: 3/3;
     grid-column: 4/6;
     justify-items: right;
     align-items: center;
@@ -1533,6 +1533,47 @@ li.slick-active button:before {
       color: #848484; }
       .blog-card--info .place span {
         display: block; }
+  .blog-card .slick-dots {
+    position: absolute;
+    bottom: 1.5rem;
+    right: 4rem;
+    width: auto;
+    pointer-events: none; }
+    @media only screen and (max-width: 56.25em) {
+      .blog-card .slick-dots {
+        top: 2rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .blog-card .slick-dots {
+        display: none !important; } }
+    @media only screen and (max-width: 90em) {
+      .blog-card .slick-dots {
+        bottom: 5.5rem; } }
+    .blog-card .slick-dots li {
+      width: 26px; }
+  .blog-card .slick-dots li button:before {
+    font-size: 1.2rem !important;
+    color: transparent;
+    top: 0;
+    left: -1px; }
+  .blog-card li.slick-active button:before {
+    color: #848484 !important; }
+  .blog-card .slick-dots li.slick-active button:before {
+    opacity: 1 !important;
+    color: #848484; }
+  .blog-card .slick-dots li button {
+    font-size: 1px;
+    line-height: 0;
+    display: block;
+    width: 4px;
+    height: 4px;
+    margin: 2px;
+    cursor: pointer;
+    border-radius: 50%;
+    border: 2px solid white;
+    outline: none;
+    background: transparent; }
+  .blog-card .active {
+    font-weight: bold; }
 
 .popup {
   height: 100vh;
