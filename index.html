@@ -61,7 +61,7 @@
                             Travellers
                         </label>
                     </div>
-                    <div class="form__group center">
+                    <div class="form__group center" id="bookNow">
                         <button class="button button--blue">Book Now</button>
                     </div>
                 </form>
@@ -80,7 +80,7 @@
                     Contact us anytime to 
                     start your adventure in the sky!
             </div>
-            <button class="btn button button--white">Contact Now</button>
+            <button class="btn button button--white" onclick="window.location.href='#contact'">Contact Now</button>
             <div class="img-svg">
                 <div class="svg-1"></div>
                 <div class="svg-2"></div>
@@ -121,7 +121,7 @@
                     Bir Billing Hosted Paragliding World cup in 2015. 
                     This was “First Paragliding World Cup of India.”
             </div>
-            <button class="btn button button--white">Know More</button>
+            <button class="btn button button--white" onclick="window.location.href='#popup-knowMore'">Know More</button>
     </section>
     <div class="img-svg-courses-2">
         <div class="svg-2"></div>
@@ -442,7 +442,7 @@
     </section>
     <div class="blogs-back"></div>
 
-    <section class="contact">
+    <section class="contact" id="contact">
 
         <div class="courses_desc desc-contact">
             <div class="heading-left leftTranslate">FOR ANY QUERY</div>
@@ -493,7 +493,7 @@
                     <div class="popupBox-con__desc">Explore Bir Billing with us and book your travel package now.</div>
                 </div>
                 <div class="form__group center">
-                    <button class="button button--blue">Book Now</button>
+                    <button class="button button--blue" onclick="window.location.href='#smooth-home'">Book Now</button>
                 </div>
             </div>
         </div>
@@ -614,25 +614,47 @@
     
     </footer>
 
-    <div class="popup" id="popup">
-        <div class="popup__content">
-        <div class="popup__left">
-            <img src="img/1@2x.png" alt="Tour Photo" class="popup__img">
-            <img src="img/Paragliding-fun.jpg" alt="Tour Photo" class="popup__img">
-        </div>
-        <div class="popup__right">
-            <a href="#section-tours" class="popup__close">&times;</a>
-            <h2 class="heading-secondary u-margin-bottom-medium">Start booking now</h2>
-            <h2 class="heading-tertiary u-margin-bottom-small">Important &ndash; Please read this term before booking</h2>
-            <p class="popup__text" lang="en">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ipsa molestiae obcaecati rem minus quae laudantium consequuntur earum incidunt facilis veritatis alias quo, vitae dolorem culpa repudiandae nobis! Exercitationem, ratione.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, quibusdam unde? Ipsum eligendi voluptatem, quibusdam debitis facere soluta dignissimos accusantium explicabo quo in similique, alias obcaecati, animi suscipit! Vitae, labore?
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum amet molestias id architecto odio temporibus mollitia facilis culpa blanditiis exercitationem pariatur quidem placeat obcaecati, eius ullam, adipisci iusto. Exercitationem, sunt!
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere similique cum nemo animi nulla fuga aliquid earum harum, laboriosam recusandae, excepturi, ipsum et dolore? Repellendus quasi culpa dolores voluptatum iste?
+    <div class="popup-gen" id="popup-knowMore">
+        <div class="popup-gen__content">
+            <div class="popup-gen__left">
+                <img src="img/1@2x.png" alt="Tour Photo" class="popup-gen__img">
+                <img src="img/Paragliding-fun.jpg" alt="Tour Photo" class="popup-gen__img">
+            </div>
+            <div class="popup-gen__right">
+                <a href="#section-tours" class="popup-gen__close">&times;</a>
+                <h2 class="heading-secondary u-margin-bottom-medium">Start booking now</h2>
+                <h2 class="heading-tertiary u-margin-bottom-small">Important &ndash; Please read this term before booking</h2>
+                <p class="popup-gen__text" lang="en">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ipsa molestiae obcaecati rem minus quae laudantium consequuntur earum incidunt facilis veritatis alias quo, vitae dolorem culpa repudiandae nobis! Exercitationem, ratione.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, quibusdam unde? Ipsum eligendi voluptatem, quibusdam debitis facere soluta dignissimos accusantium explicabo quo in similique, alias obcaecati, animi suscipit! Vitae, labore?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum amet molestias id architecto odio temporibus mollitia facilis culpa blanditiis exercitationem pariatur quidem placeat obcaecati, eius ullam, adipisci iusto. Exercitationem, sunt!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere similique cum nemo animi nulla fuga aliquid earum harum, laboriosam recusandae, excepturi, ipsum et dolore? Repellendus quasi culpa dolores voluptatum iste?
 
-            </p>
-            <a class="full button button--white" onclick="location.href='#popup'"><span>Book Now</span></a>
+                </p>
+                <a class="full button button--white" onclick="window.location.href='#smooth-home'"><span>Book Now</span></a>
+            </div>
         </div>
+    </div>
+
+    <div class="popup-gen" id="popup">
+        <div class="popup-gen__content">
+            <div class="popup-gen__left">
+                <img src="img/1@2x.png" alt="Tour Photo" class="popup-gen__img">
+                <img src="img/Paragliding-fun.jpg" alt="Tour Photo" class="popup-gen__img">
+            </div>
+            <div class="popup-gen__right">
+                <a href="#section-tours" class="popup-gen__close">&times;</a>
+                <h2 class="heading-secondary u-margin-bottom-medium">Start booking now</h2>
+                <h2 class="heading-tertiary u-margin-bottom-small">Important &ndash; Please read this term before booking</h2>
+                <p class="popup-gen__text" lang="en">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ipsa molestiae obcaecati rem minus quae laudantium consequuntur earum incidunt facilis veritatis alias quo, vitae dolorem culpa repudiandae nobis! Exercitationem, ratione.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, quibusdam unde? Ipsum eligendi voluptatem, quibusdam debitis facere soluta dignissimos accusantium explicabo quo in similique, alias obcaecati, animi suscipit! Vitae, labore?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum amet molestias id architecto odio temporibus mollitia facilis culpa blanditiis exercitationem pariatur quidem placeat obcaecati, eius ullam, adipisci iusto. Exercitationem, sunt!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere similique cum nemo animi nulla fuga aliquid earum harum, laboriosam recusandae, excepturi, ipsum et dolore? Repellendus quasi culpa dolores voluptatum iste?
+
+                </p>
+                <a class="full button button--white" onclick="window.location.href='#smooth-home'"><span>Book Now</span></a>
+            </div>
         </div>
     </div>
 
@@ -668,7 +690,6 @@
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="slick-1.8.1/slick/slick.min.js"></script>
-				
     <!-- <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script> -->
 </body>
 </html>
