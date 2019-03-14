@@ -255,6 +255,9 @@ li.slick-active button:before {
 .active {
   color: #272727; }
 
+span {
+  display: block; }
+
 .aboutRudra {
   grid-row: 3/span 1;
   grid-column: 2/13;
@@ -308,7 +311,7 @@ li.slick-active button:before {
     position: relative;
     transform: translateX(-2.8rem); }
     .aboutRudra .img-desc {
-      font-size: 2rem;
+      font-size: 1.8rem;
       font-weight: 700;
       color: #272727; }
     .aboutRudra .img:hover .button--pureWhite {
@@ -356,6 +359,10 @@ li.slick-active button:before {
     width: 13rem;
     font-size: 1.5rem;
     height: 4rem; }
+    @media only screen and (max-width: 90em) {
+      .aboutRudra .button--pureWhite {
+        bottom: 3.4rem;
+        right: .5rem; } }
     .aboutRudra .button--pureWhite:hover {
       background-color: #3bb4c4;
       color: white; }
@@ -405,7 +412,7 @@ li.slick-active button:before {
   grid-column: 6/7;
   display: flex;
   justify-self: right;
-  transform: translate(5rem, 2rem); }
+  transform: translate(5rem, 0.2rem); }
   .img-svg .svg-1 {
     width: 2.5rem;
     height: 2.5rem;
@@ -413,6 +420,9 @@ li.slick-active button:before {
     margin-right: 1.4rem;
     align-self: baseline;
     transform: translateY(4rem); }
+    @media only screen and (max-width: 90em) {
+      .img-svg .svg-1 {
+        margin-right: 1.8rem; } }
   .img-svg .svg-2 {
     width: 8.5rem;
     height: 8.5rem;
@@ -495,7 +505,7 @@ li.slick-active button:before {
       color: white; }
 
 .leftTranslate-about {
-  transform: translate(-0.2rem);
+  transform: translate(-0.8rem);
   font-weight: bold;
   color: #272727; }
 
