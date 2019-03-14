@@ -43,9 +43,10 @@
     }
 
     @include respond(sd-screen){
-        width: 20rem;
-        height: 6rem;
-        font-size: 2rem;
+        width: 18rem;
+        height: 5.5rem;
+        font-size: 1.5rem;
+        letter-spacing: -0.05rem;
     }
 
     // &--center{

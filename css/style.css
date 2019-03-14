@@ -102,7 +102,7 @@ body {
   grid-column: 1/-1;
   display: grid;
   grid-template-rows: repeat(6, 1fr);
-  grid-template-columns: 30rem repeat(5, minmax(min-content, 1fr));
+  grid-template-columns: repeat(6, minmax(min-content, 1fr));
   transform: translateY(-6rem);
   font-size: 1.8rem; }
   .header .negative-top {
@@ -125,7 +125,7 @@ body {
     @media only screen and (max-width: 90em) {
       .header_lists {
         font-size: 1.4rem;
-        transform: translateY(-4.6rem); } }
+        transform: translateY(-12.6rem); } }
     @media only screen and (max-width: 56.25em) {
       .header_lists {
         grid-column: 1/2;
@@ -139,7 +139,12 @@ body {
       .header_lists {
         grid-column: 5/7; } }
   .header_list {
-    padding: 1rem 0; }
+    padding: 1rem 0;
+    font-weight: 500;
+    color: #b2b1b1; }
+    @media only screen and (max-width: 90em) {
+      .header_list {
+        padding: .4rem 0; } }
     @media only screen and (max-width: 56.25em) {
       .header_list {
         padding: .5rem 0; } }
@@ -185,7 +190,7 @@ body {
       height: 100%; }
       @media only screen and (max-width: 90em) {
         .header_slider div {
-          height: 96%; } }
+          height: 95%; } }
       .header_slider div img {
         width: 100%;
         height: 100%; }
@@ -217,7 +222,7 @@ body {
       display: none !important; } }
   @media only screen and (max-width: 90em) {
     .slick-dots {
-      bottom: 5.5rem; } }
+      bottom: 10.5rem; } }
   .slick-dots li {
     width: 26px; }
 
@@ -248,7 +253,7 @@ li.slick-active button:before {
   background: transparent; }
 
 .active {
-  font-weight: bold; }
+  color: #272727; }
 
 .aboutRudra {
   grid-row: 3/span 1;
@@ -258,6 +263,11 @@ li.slick-active button:before {
   display: grid;
   grid-template-rows: repeat(10, min-content(1fr));
   grid-template-columns: repeat(9, minmax(min-content, 1fr)); }
+  @media only screen and (max-width: 90em) {
+    .aboutRudra {
+      margin-top: -9rem;
+      margin-right: -5.8rem;
+      transform: translateX(-2rem); } }
   .aboutRudra_left-know {
     grid-row: 1/2;
     grid-column: 1/4;
@@ -267,23 +277,30 @@ li.slick-active button:before {
     grid-column: 1/6; }
     @media only screen and (max-width: 90em) {
       .aboutRudra .heading-2 {
-        transform: translateY(-1.5rem); } }
+        transform: translate(0.7rem, -2.5rem); } }
   .aboutRudra .para-1 {
     grid-row: 3/5;
     grid-column: 1/5;
-    transform: translateY(-2rem); }
+    transform: translateY(-4.8rem); }
+    @media only screen and (max-width: 90em) {
+      .aboutRudra .para-1 {
+        font-size: 2rem !important; } }
   .aboutRudra .para-2 {
     grid-row: 6/8;
     grid-column: 1/5; }
     @media only screen and (max-width: 90em) {
       .aboutRudra .para-2 {
         grid-row: 5/6;
-        transform: translateY(-2rem); } }
+        transform: translateY(-8rem);
+        font-size: 2rem !important; } }
   .aboutRudra .btn {
     grid-row: 6/8;
     align-self: center;
     grid-column: 1/4;
     margin-left: 2.8rem; }
+    @media only screen and (max-width: 90em) {
+      .aboutRudra .btn {
+        transform: translateY(-6rem); } }
   .aboutRudra .img {
     object-fit: cover;
     width: 100%;
@@ -316,7 +333,7 @@ li.slick-active button:before {
     width: 93%;
     max-width: 100%; }
   .aboutRudra .trans {
-    transform: translate(-3rem, -9rem); }
+    transform: translate(-3rem, -12.7rem); }
   .aboutRudra .img-3 {
     grid-column: 8/10;
     grid-row: 6/10;
@@ -360,7 +377,7 @@ li.slick-active button:before {
   color: #272727; }
   @media only screen and (max-width: 90em) {
     .headingLeft {
-      font-size: 2.5rem !important; } }
+      font-size: 2.1rem !important; } }
 
 .heading-2 {
   font-size: 6rem;
@@ -369,7 +386,8 @@ li.slick-active button:before {
   display: block; }
   @media only screen and (max-width: 90em) {
     .heading-2 {
-      font-size: 4.5rem !important; } }
+      font-size: 4.1rem !important;
+      padding-left: 1.8rem !important; } }
 
 .para {
   font-size: 2.8rem;
@@ -378,7 +396,7 @@ li.slick-active button:before {
   color: #686868; }
   @media only screen and (max-width: 90em) {
     .para {
-      font-size: 2.2rem !important;
+      font-size: 1.5rem !important;
       font-weight: 600 !important;
       line-height: 1.8 !important; } }
 
@@ -412,32 +430,50 @@ li.slick-active button:before {
   grid-template-columns: repeat(9, minmax(min-content, 1fr)); }
   .aboutBir_right-about {
     grid-row: 1/2;
-    grid-column: 6/8;
-    align-self: flex-end; }
+    grid-column: 5/8;
+    align-self: flex-end;
+    font-size: 2.2rem; }
   .aboutBir .heading-2 {
     grid-row: 2/3;
-    grid-column: 6/10; }
+    grid-column: 5/10; }
+  @media only screen and (max-width: 90em) {
+    .aboutBir #heading-3 {
+      transform: translate(1.5rem, 0.5rem); } }
   .aboutBir .para-1 {
     grid-row: 3/6;
-    grid-column: 6/10;
-    line-height: 1.5; }
+    grid-column: 5/10;
+    line-height: 1.5;
+    transform: translateX(1.5rem); }
+    .aboutBir .para-1 span {
+      display: block; }
   .aboutBir .para-2 {
     padding-top: 4rem;
     grid-row: 5/7;
-    grid-column: 6/10; }
+    grid-column: 5/10;
+    transform: translateX(1.5rem); }
+    .aboutBir .para-2 span {
+      display: block; }
   .aboutBir .btn {
     grid-row: 7/8;
-    grid-column: 6/9;
+    grid-column: 5/9;
     align-self: flex-end;
-    margin: 0 0 0 2.8rem  !important; }
+    margin: 0 0 0 2.8rem  !important;
+    transform: translate(1.5rem); }
   .aboutBir .img {
     grid-row: 2/8;
-    grid-column: 1/6; }
+    grid-column: 1/6;
+    width: 63rem; }
     .aboutBir .img-svg {
       grid-column: 5/6;
       grid-row: 8/9;
       transform: translateX(-3rem);
       align-self: flex-end; }
+      @media only screen and (max-width: 90em) {
+        .aboutBir .img-svg {
+          transform: translateX(0rem);
+          grid-column: 4/5; }
+          .aboutBir .img-svg .svg-1 {
+            transform: translateY(0rem); } }
   .aboutBir img {
     padding: 3rem 3rem 0 0;
     width: 100%;
@@ -458,10 +494,18 @@ li.slick-active button:before {
       background-color: #3bb4c4;
       color: white; }
 
-.leftTranslate {
-  transform: translateX(-2rem);
+.leftTranslate-about {
+  transform: translate(-0.2rem);
   font-weight: bold;
   color: #272727; }
+
+.leftTranslate {
+  transform: translate(-0.2rem);
+  font-weight: bold;
+  color: #272727; }
+  @media only screen and (max-width: 90em) {
+    .leftTranslate {
+      transform: translate(1.8rem, 2rem); } }
 
 .headingLeft {
   font-size: 3.2rem;
@@ -482,6 +526,10 @@ li.slick-active button:before {
   font-weight: bold;
   color: #686868;
   padding-left: 2.8rem; }
+  @media only screen and (max-width: 90em) {
+    .para {
+      color: #686868 !important;
+      font-size: 2rem !important; } }
 
 .img-svg-courses-1 {
   grid-column: 1/2;
@@ -1162,8 +1210,8 @@ li.slick-active button:before {
       transform: translate(-50%, -50%); } }
   @media only screen and (max-width: 90em) {
     .popupBox {
-      height: 10rem;
-      transform: translateY(-4rem);
+      height: 9.1rem;
+      transform: translateY(-10rem);
       width: 71%; } }
   @media only screen and (max-width: 37.5em) {
     .popupBox {
@@ -1387,9 +1435,10 @@ li.slick-active button:before {
       background: white; }
   @media only screen and (max-width: 90em) {
     .button {
-      width: 20rem;
-      height: 6rem;
-      font-size: 2rem; } }
+      width: 18rem;
+      height: 5.5rem;
+      font-size: 1.5rem;
+      letter-spacing: -0.05rem; } }
 
 .margin-12 {
   margin-top: 12rem !important; }
