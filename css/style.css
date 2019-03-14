@@ -682,6 +682,10 @@ li.slick-active button:before {
           font-weight: 700;
           width: 82%;
           text-align: right; } }
+      .team .img-container-rect-popup:hover {
+        background-color: #3bb4c4; }
+        .team .img-container-rect-popup:hover p {
+          color: white; }
   .team .img-container-2 {
     grid-row: 7/9;
     grid-column: 1/2; }
@@ -1320,10 +1324,7 @@ li.slick-active button:before {
     line-height: 1.21;
     display: grid;
     align-content: space-around;
-    opacity: 0;
     transition: all .3s ease-out; }
-  .card:hover .card_duration {
-    opacity: 1; }
   .card_header {
     grid-row: 2/3;
     grid-column: 2/-1;
@@ -1343,17 +1344,15 @@ li.slick-active button:before {
     grid-column: 3/4;
     display: grid;
     align-content: space-around;
-    justify-content: center;
-    opacity: 0; }
-  .card:hover .card_cost {
+    justify-content: center; }
+  .card_cost {
     opacity: 1; }
   .card_btn {
     grid-column: 2/-2;
     grid-row: 3/4;
     justify-self: center;
-    width: 100%;
-    opacity: 0; }
-  .card:hover .card_btn {
+    width: 100%; }
+  .card_btn {
     opacity: 1; }
 
 .full {
