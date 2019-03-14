@@ -10,7 +10,7 @@
     letter-spacing: normal;
 
     @include respond(sd-screen){
-        font-size: 1.8rem;
+        font-size: 1.6rem;
     }
 
     .nav{
@@ -25,7 +25,8 @@
         
         &_list{
             grid-column: 1/-1;
-            padding: 3rem;
+            padding: 2rem;
+            padding-bottom: 1rem;
             cursor: pointer;
             font-weight: 600;
 
@@ -59,7 +60,7 @@
                     flex-direction: column;
 
                     @include respond(sd-screen){
-                        font-size: 1.8rem;
+                        font-size: 1.6rem;
                     }
                 }
 
