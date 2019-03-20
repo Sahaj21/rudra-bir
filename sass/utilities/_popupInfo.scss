@@ -22,7 +22,7 @@
 
     &__content {
         @include absCenter;
-        width: 75%;
+        width: 92%;
         background-color: $color-white;
         box-shadow: 0 2rem 4rem rgba($color-dark-3, .2);
         display: table;
@@ -40,10 +40,16 @@
     &__left {
         width: 33.3333333%;
         display: table-cell;
+        padding: 3.9rem 0 0 4rem;
 
         @include respond(tab-land) {
             width: 100%;
             display: block;
+        }
+
+        a{
+            width: 100%;
+            margin: 3.8rem 0 !important;
         }
     }
 
@@ -51,7 +57,9 @@
         width: 66.6666667%;
         display: table-cell;
         vertical-align: middle;
-        padding: 3rem 5rem;
+        // padding: 3rem 5rem;
+        transform: translateY(-1rem);
+        padding: 2.5rem 5rem 0rem 5rem;
 
         @include respond(tab-land) {
             width: 100%;
@@ -62,11 +70,16 @@
             display: block;
             padding: 0rem 2rem;
         }
+
+        .heading-secondary{
+            margin-bottom: -.6rem !important;
+        }
     }
 
     &__img {
         width: 100%;
         display: block;
+        // padding: 3.9rem 0 0 4rem;
 
         @include respond(tab-land) {
             display: inline-block;
@@ -81,8 +94,9 @@
     }
 
     &__text {
-        font-size: 1.4rem;
+        font-size: 1.7rem;
         margin-bottom: 4rem;
+        text-align: justify;
 
         -moz-column-count: 2;
         -moz-column-gap: 4rem;
@@ -131,6 +145,7 @@
             display: inline-block;
             transition: all .2s;
             line-height: 1;
+            transform: translateY(1rem);
         }
         &:hover {
             color: $color-primary;

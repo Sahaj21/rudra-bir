@@ -191,12 +191,22 @@
 	.below-pop{
 		grid-row: 10/13;
 		grid-column: 1/-1;
+
+		@include respond(sd-screen){
+			justify-self: center;
+		}
 		
 		.flex{
 			display: flex;
 			justify-content: space-around;
 			flex-direction: row;
 			height: 15rem !important;
+			@include respond(sd-screen){
+				width: 96.9rem;
+				left: 0;
+				height: 12rem !important;
+				transform: translateY(.7rem);
+			}
 		}
 
 		.form__group{

@@ -7,12 +7,17 @@
 	
 	@include respond(sd-screen){
 		padding: 0 5rem 0 5rem;
+		font-size: 1.6rem;
 	}
 	
 	p{
 	    font-weight:bold;
 	    font-size:22px;	
-  		color:#292929;
+		  color:#292929;
+		  
+		  @include respond(sd-screen){
+			font-size: inherit;
+		  }
   	}
   	a{
 	text-decoration:none;
@@ -48,16 +53,22 @@
 			    padding-bottom:10rem;
 				padding-right:10rem;
 				
+				
 				@include respond(sd-screen){
 					padding-top: 10rem;
 					padding-right: 5.5rem;
+					padding-left: 1rem;
 				}
 			    .footer-contact-us{
 
 			     .info{
 					color: $color-dark-1;
 			     	font-size:20px;
-			     	font-weight:600;
+					 font-weight:600;
+					 
+					 @include respond(sd-screen){
+						font-size: inherit;
+					}
 			     }
 			    }		
 		}
@@ -75,31 +86,52 @@
 	  letter-spacing: normal;
 	  text-align: left;
 	  color: #3bb4c4;
+
+	  @include respond(sd-screen){
+		margin-left: 4rem;
+		font-size: 3rem;
+	  }
 	}
 	.color-bar{
 	width: 3.7rem;
     height: 0.3rem;
     background:$color-primary;
     display: block;
-    margin: 0.4rem 0;    
+	margin: 0.4rem 0;
+	margin-bottom: 2.5rem;
     }
     .footer__part-2{
-    	padding: 3rem 0;  		
+		padding: 3rem 0;
+		padding-left: 5rem;
 	    width:90vw;
 	    margin:auto;
-	    border-top: 1.5px solid $color-grey-3;
+		border-top: 1.5px solid $color-grey-3;
+		
+		@include respond(sd-screen){
+			// margin-left: .5rem;
+			padding-left: 0;
+			width: 86vw;
+		}
+
 		.color-bar{
 			width: 3rem;
 		    height: 0.3rem;
 		    background:$color-primary;
 		    display: block;
 		    margin: 0.4rem 0;    
-	    }
+		}
+		span{
+			display: inline-block;
+		}
 	    
 	     p{
 		    	color:$color-grey-1;
 		    	font-size:20px;
-		    	font-weight: 600;
+				font-weight: 600;
+				
+				@include respond(sd-screen){
+					font-size: 1.5rem;
+				}
 		    }
 
 
@@ -108,13 +140,17 @@
 	    .footer2-container{
     	 font-size:1.7rem;
     	 display:flex;
-   		 justify-content:space-between;
+			justify-content:space-between;
+			.copyrigths{
+				width: 21rem;
+			}
      .logos{
      	img{
 		 margin-right:30px;
 		 
 		 @include respond(sd-screen){
-			width: 3.2rem;
+			width: 2.8rem;
+			margin: 0rem 1rem;
 		 }
      	}
 

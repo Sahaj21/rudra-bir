@@ -55,14 +55,28 @@
         flex-direction: column;
         justify-content: center;
 
+        @include respond(sd-screen){
+            line-height: 1.5;
+        }
+
         &__header{
             font-size: 2.5rem;
             font-weight: 700;
             color: $color-dark-3;
+            
+            @include respond(sd-screen){
+                transform: translate(2rem);
+            }
         }
     
         &__desc{
             font-size: 2rem;
+
+            @include respond(sd-screen){
+                margin-left: 2rem;
+                font-weight: 600;
+                font-size: 1.8rem;
+            }
         }
     }
 }

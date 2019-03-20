@@ -1235,11 +1235,20 @@ span {
   .contact .below-pop {
     grid-row: 10/13;
     grid-column: 1/-1; }
+    @media only screen and (max-width: 90em) {
+      .contact .below-pop {
+        justify-self: center; } }
     .contact .below-pop .flex {
       display: flex;
       justify-content: space-around;
       flex-direction: row;
       height: 15rem !important; }
+      @media only screen and (max-width: 90em) {
+        .contact .below-pop .flex {
+          width: 96.9rem;
+          left: 0;
+          height: 12rem !important;
+          transform: translateY(0.7rem); } }
     .contact .below-pop .form__group {
       display: inline-block; }
 
@@ -1249,10 +1258,17 @@ span {
   height: 30rem;
   font-size: 2rem;
   font-weight: 700; }
+  @media only screen and (max-width: 90em) {
+    .footer {
+      padding: 0 5rem 0 5rem;
+      font-size: 1.6rem; } }
   .footer p {
     font-weight: bold;
     font-size: 22px;
     color: #292929; }
+    @media only screen and (max-width: 90em) {
+      .footer p {
+        font-size: inherit; } }
   .footer a {
     text-decoration: none;
     color: #808080;
@@ -1281,11 +1297,15 @@ span {
     @media only screen and (max-width: 90em) {
       .footer .footer__part-1 {
         padding-top: 10rem;
-        padding-right: 5.5rem; } }
+        padding-right: 5.5rem;
+        padding-left: 1rem; } }
     .footer .footer__part-1 .footer-contact-us .info {
       color: #303030;
       font-size: 20px;
       font-weight: 600; }
+      @media only screen and (max-width: 90em) {
+        .footer .footer__part-1 .footer-contact-us .info {
+          font-size: inherit; } }
   .footer .footer-rudra {
     margin-left: 60px;
     width: 258px;
@@ -1300,36 +1320,54 @@ span {
     letter-spacing: normal;
     text-align: left;
     color: #3bb4c4; }
+    @media only screen and (max-width: 90em) {
+      .footer .footer-rudra {
+        margin-left: 4rem;
+        font-size: 3rem; } }
   .footer .color-bar {
     width: 3.7rem;
     height: 0.3rem;
     background: #3bb4c4;
     display: block;
-    margin: 0.4rem 0; }
+    margin: 0.4rem 0;
+    margin-bottom: 2.5rem; }
   .footer .footer__part-2 {
     padding: 3rem 0;
+    padding-left: 5rem;
     width: 90vw;
     margin: auto;
     border-top: 1.5px solid #b2b1b1; }
+    @media only screen and (max-width: 90em) {
+      .footer .footer__part-2 {
+        padding-left: 0;
+        width: 86vw; } }
     .footer .footer__part-2 .color-bar {
       width: 3rem;
       height: 0.3rem;
       background: #3bb4c4;
       display: block;
       margin: 0.4rem 0; }
+    .footer .footer__part-2 span {
+      display: inline-block; }
     .footer .footer__part-2 p {
       color: #808080;
       font-size: 20px;
       font-weight: 600; }
+      @media only screen and (max-width: 90em) {
+        .footer .footer__part-2 p {
+          font-size: 1.5rem; } }
     .footer .footer__part-2 .footer2-container {
       font-size: 1.7rem;
       display: flex;
       justify-content: space-between; }
+      .footer .footer__part-2 .footer2-container .copyrigths {
+        width: 21rem; }
       .footer .footer__part-2 .footer2-container .logos img {
         margin-right: 30px; }
         @media only screen and (max-width: 90em) {
           .footer .footer__part-2 .footer2-container .logos img {
-            width: 3.2rem; } }
+            width: 2.8rem;
+            margin: 0rem 1rem; } }
       .footer .footer__part-2 .footer2-container .location p {
         color: #707070;
         font-size: 20px; }
@@ -1381,12 +1419,23 @@ span {
     display: flex;
     flex-direction: column;
     justify-content: center; }
+    @media only screen and (max-width: 90em) {
+      .popupBox-con {
+        line-height: 1.5; } }
     .popupBox-con__header {
       font-size: 2.5rem;
       font-weight: 700;
       color: #272727; }
+      @media only screen and (max-width: 90em) {
+        .popupBox-con__header {
+          transform: translate(2rem); } }
     .popupBox-con__desc {
       font-size: 2rem; }
+      @media only screen and (max-width: 90em) {
+        .popupBox-con__desc {
+          margin-left: 2rem;
+          font-weight: 600;
+          font-size: 1.8rem; } }
 
 .popup-gen {
   height: 100vh;
@@ -1409,7 +1458,7 @@ span {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 75%;
+    width: 92%;
     background-color: #ffffff;
     box-shadow: 0 2rem 4rem rgba(39, 39, 39, 0.2);
     display: table;
@@ -1422,16 +1471,21 @@ span {
       width: 40%; }
   .popup-gen__left {
     width: 33.3333333%;
-    display: table-cell; }
+    display: table-cell;
+    padding: 3.9rem 0 0 4rem; }
     @media only screen and (max-width: 75em) {
       .popup-gen__left {
         width: 100%;
         display: block; } }
+    .popup-gen__left a {
+      width: 100%;
+      margin: 3.8rem 0 !important; }
   .popup-gen__right {
     width: 66.6666667%;
     display: table-cell;
     vertical-align: middle;
-    padding: 3rem 5rem; }
+    transform: translateY(-1rem);
+    padding: 2.5rem 5rem 0rem 5rem; }
     @media only screen and (max-width: 75em) {
       .popup-gen__right {
         width: 100%;
@@ -1440,6 +1494,8 @@ span {
       .popup-gen__right {
         display: block;
         padding: 0rem 2rem; } }
+    .popup-gen__right .heading-secondary {
+      margin-bottom: -.6rem !important; }
   .popup-gen__img {
     width: 100%;
     display: block; }
@@ -1452,8 +1508,9 @@ span {
       display: block;
       padding-top: 15rem; }
   .popup-gen__text {
-    font-size: 1.4rem;
+    font-size: 1.7rem;
     margin-bottom: 4rem;
+    text-align: justify;
     -moz-column-count: 2;
     -moz-column-gap: 4rem;
     -moz-column-rule: 1px solid #848484;
@@ -1488,7 +1545,8 @@ span {
     text-decoration: none;
     display: inline-block;
     transition: all .2s;
-    line-height: 1; }
+    line-height: 1;
+    transform: translateY(1rem); }
   .popup-gen__close:hover {
     color: #3bb4c4; }
 
@@ -1880,6 +1938,24 @@ span {
     line-height: 1; }
   .popup__close:hover {
     color: #3bb4c4; }
+
+#popup-form .popup__right {
+  padding: 3rem 4rem; }
+
+#popup-form .form-contact {
+  overflow-y: scroll;
+  height: 45rem;
+  padding: 0 2rem; }
+
+#popup-form .popup__content-email {
+  width: 36%; }
+
+#popup-form .form-contact__group:not(:last-child) {
+  margin-bottom: 1.1rem; }
+
+#popup-form .heading-secondary {
+  padding: 0 2rem;
+  color: #3bb4c4; }
 
 .form-contact {
   display: flex;
