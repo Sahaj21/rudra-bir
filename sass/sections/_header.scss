@@ -90,7 +90,7 @@
         }
         @include respond(sd-screen){
             font-size: 5rem;
-            transform: translate(-14rem, -8rem);
+            transform: translate(-14rem, -11.8rem);
         }
 
         @include respond(big-desktop){
@@ -162,7 +162,7 @@
         }
     
         @include respond(sd-screen){
-            bottom: 5.5rem;
+            bottom: 10.5rem;
         }
     
         li{

@@ -42,10 +42,18 @@
         grid-column: 2/3;
         font-size: 2.2rem;
         line-height: 1.21;
+        font-weight: 600;
         display: grid;
         align-content: space-around;
         //opacity: 0;
         transition: all .3s ease-out;
+
+        @include respond(sd-screen){
+            font-size: 1.7rem;
+            padding: 1.2rem 0 0 0;
+            transform: translate(1.5rem,0);
+
+        }
     }
 
     &:hover &_duration{
@@ -68,17 +76,28 @@
     }
 
     &--value{
-        font-weight: 500;
+        font-weight: 600;
         color: $color-primary;
+
+        @include respond(sd-screen){
+            transform: translate(0rem,-0.6rem);
+        }
     }
 
     &_cost{
         grid-row: 1/2;
         grid-column: 3/4;
         display: grid;
+        font-weight: 600;
         align-content: space-around;
         justify-content: center;
         //opacity: 0;
+
+        @include respond(sd-screen){
+            font-size: 1.7rem;
+            padding: 1.2rem 0 0 0;
+            transform: translate(1.7rem,0);
+        }
         
     }
 
@@ -93,6 +112,10 @@
         // height: 7.5rem;
         width: 100%;
         //opacity: 0;
+
+        @include respond(sd-screen){
+            margin: 0.6rem 0 0.6rem 0;
+        }
     }
 
     &_btn{
