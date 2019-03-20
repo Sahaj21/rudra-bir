@@ -3,6 +3,7 @@
     display: grid;
     grid-template-rows: repeat(8, minmax(min-content, 1fr));
     grid-template-columns: repeat(9, minmax(min-content, 1fr));
+    transform: translateY(-9rem);
 
         &_right-about{
             grid-row: 1/2;

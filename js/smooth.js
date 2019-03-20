@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function() {
         smoothScroll('.header', 1000);
     })
     sTeam.addEventListener('click', function(){
-        smoothScroll('.team', 1000);
+        smoothScroll('.heading-team-1', 1000);
     })
     sCourses.addEventListener('click', function(){
         smoothScroll('.courses', 1000);

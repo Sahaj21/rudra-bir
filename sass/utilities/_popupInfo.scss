@@ -61,6 +61,10 @@
         transform: translateY(-1rem);
         padding: 2.5rem 5rem 0rem 5rem;
 
+        .weight{
+            font-weight: 600;
+        }
+
         @include respond(tab-land) {
             width: 100%;
             display: block;
@@ -89,7 +93,7 @@
         &--team{
             width: 100%;
             display: block;
-            padding-top: 15rem;
+            // padding-top: 15rem;
         }
     }
 
