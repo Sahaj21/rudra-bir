@@ -44,6 +44,27 @@
 		}
 	}
 
+	.heading-team-1{
+		@include respond(sd-screen){
+			transform: translate(-8rem,0);
+			font-size: 2.3rem; 
+        }
+	}
+
+	.heading-team-2{
+		@include respond(sd-screen){
+			transform: translate(-5rem,0);
+			font-size: 2.3rem; 
+        }
+	}
+
+	.para-team{
+		@include respond(sd-screen){
+			transform: translate(-6rem,0);
+			line-height: 1.5 !important;
+        }
+	}
+
 	.img-container-rect{
 		width: 22rem;
 		height: 85%;
@@ -52,6 +73,11 @@
 		flex-direction: column-reverse;
 		align-items: center;
 		position: relative;
+
+		@include respond(sd-screen){
+			transform: translate(-5.8rem, 0);
+
+		}
 
 		
 
@@ -71,10 +97,11 @@
 
 			@include respond(sd-screen){
 				padding: 2px 30px 2px 20px;
-				font-size: 1.8rem;
+				font-size: 1.45rem;
 				font-weight: 700;
-				width: 82%;
+				width: 80%;
 				text-align: right;
+				transform:translate(1rem,1rem) ;
 			}
 
 			&:hover {

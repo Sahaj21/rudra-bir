@@ -5,8 +5,10 @@
     grid-template-columns: repeat(4, minmax(min-content, 1fr));
     grid-row-gap: 4rem;
 
+
     @include respond(sd-screen){
         grid-template-columns: repeat(6, minmax(min-content, 1fr));
+        padding: 0 2rem 0 2rem;
     }
 
     &_desc{
@@ -21,12 +23,26 @@
             transform: translate(14rem,-4.5rem);
         }
     }
+    .heading-travel-1 {
+        @include respond(sd-screen){
+            transform: translate(-7.2rem,0rem);
+            font-size: 2.3rem;
+        }
+    }
 
+    .heading-travel-2 {
+        @include respond(sd-screen){
+            transform: translate(7.7rem,-5.4rem);
+            font-size: 2.3rem;
+        }
+    }
+    
     .para{
         transform: translateX(14rem);
 
         @include respond(sd-screen){
-            transform: translate(14.5rem,-8.2rem);      
+            transform: translate(7.1rem,-11.1rem);
+            line-height: 1.2 !important;      
         }
         
     }

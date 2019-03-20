@@ -7,6 +7,79 @@
 	grid-template-rows: repeat(12, minmax(min-content, 1fr));
 	grid-template-columns: repeat(8, minmax(min-content, 1fr));
 
+	.desc {
+		@include respond(sd-screen){
+			transform: translate(-2.5rem,0);
+		}		
+	}
+
+	.heading-contact-1 {
+		@include respond(sd-screen){
+			transform: translate(-4.0rem,-10rem);
+			font-size: 2.2rem;
+		}
+	}
+
+	.heading-contact-2 {
+		@include respond(sd-screen){
+			transform: translate(2.5rem,-11rem);
+		}
+	}
+
+	.address-trans {
+		@include respond(sd-screen){
+			transform: translate(2.5rem,-11rem);
+		}
+	}
+
+	.add-contact-1 {
+		@include respond(sd-screen){
+			transform: translate(-6.3rem,2rem);
+		}
+	}
+
+	.add-contact-2 {
+		@include respond(sd-screen){
+			transform: translate(-3.3rem,3rem);
+			font-weight: 600;
+			color: $color-grey-1;
+			line-height: 1.4 !important;
+			font-size: 2.1rem !important;
+		}
+	}
+
+	.phone-contact-1 {
+		@include respond(sd-screen){
+			transform: translate(-2.5rem,-5.5rem);
+		}
+	}
+
+	.phone-contact-2 {
+		@include respond(sd-screen){
+			transform: translate(5rem,-4.5rem);
+			font-size: 2rem !important;
+			font-weight: 600;
+			line-height: 1.4 !important;
+			color: $color-grey-1;
+		}
+	}
+
+
+	.email-contact-1 {
+		@include respond(sd-screen){
+			transform: translate(-3.8rem,-6rem);
+		}
+	}
+
+	.email-contact-2 {
+		@include respond(sd-screen){
+			transform: translate(-0.8rem,-6rem);
+			font-size: 2rem !important;
+			font-weight: 600;
+			color: $color-grey-1;
+		}
+	}
+
 	.desc-contact{
 		grid-column: 6/9;
 	}
@@ -26,7 +99,7 @@
 		.line{
 			line-height: 1;
 			font-size: 2.3rem;
-			transform: translateY(.2rem);
+			//transform: translateY(.2rem);
 		}
 	}
 
@@ -54,6 +127,10 @@
 		grid-row: 2/6;
 		justify-self: center;
 
+		@include respond(sd-screen){
+            transform: translate(3.5rem,-5.4rem);
+        }
+
 		&-rect{
 			width: 22rem;
 			height: 85%;
@@ -62,6 +139,10 @@
 			flex-direction: column-reverse;
 			align-items: center;
 			position: relative;
+
+			@include respond(sd-screen){
+				width: 25rem;
+				height: 85%;			}
 	
 			img{
 				width: 90%;
@@ -103,7 +184,7 @@
 		.line{
 			line-height: 1;
 			font-size: 2.5rem;
-			transform: translateY(1rem);
+			//transform: translateY(1rem);
 		}
 	}
 
