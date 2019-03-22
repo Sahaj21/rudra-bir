@@ -69,7 +69,7 @@
 
             @include respond(sd-screen){
                 transform: translate(-2rem,-10rem);
-          
+
             }
 
             img{
@@ -97,4 +97,20 @@
             }
         }
     }
+}
+
+.blog-card--img{
+    img{
+        transform: translate(3rem ,8.8rem);
+        object-fit: contain;
+        width: 15rem !important;
+    }
+}
+
+.blog-card--content .hr-full{
+    margin: 1.2rem auto !important;
+}
+
+.blog-card--info{
+    margin-left: -.9rem !important;
 }

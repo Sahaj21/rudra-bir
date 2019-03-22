@@ -143,10 +143,18 @@
 			justify-content:space-between;
 			.copyrigths{
 				width: 21rem;
+
+				.pixo{
+					cursor: pointer;
+					&:hover{
+						color: $color-primary;
+					}
+				}
 			}
      .logos{
      	img{
 		 margin-right:30px;
+		 cursor: pointer;
 		 
 		 @include respond(sd-screen){
 			width: 2.8rem;

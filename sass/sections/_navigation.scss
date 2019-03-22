@@ -21,6 +21,13 @@
         .rudra-logo-header{
             color: $color-primary;
             transform: translateY(-1rem);
+
+            display: flex;
+
+
+            img{
+                width: 4rem;
+            }
         }
         
         &_list{

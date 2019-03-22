@@ -6,7 +6,7 @@
     <title>Rudra Adventures</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/> -->
-    
+    <link rel="shortcut icon" href="./img/rudra.png" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="slick-1.8.1/slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="slick-1.8.1/slick/slick-theme.css"/>
     <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
@@ -16,7 +16,9 @@
         
         <nav class="nav">
             <!-- <li class="nav_list"><img src="./img/grey-logo.jpg" class="nav_list-img" ></li> -->
-            <li class="nav_list rudra-logo-header" id="smooth-home">Rudra<br> Adventures</li>
+            <li class="nav_list rudra-logo-header" id="smooth-home">
+                <div class="header-text">Rudra<br> Adventures</div>
+            </li>
             <li class="nav_list active" id="smooth-home">Home</li>
             <li class="nav_list" id="smooth-team">Our Team</li>
             <li class="nav_list" id="smooth-courses">Courses</li>
@@ -156,7 +158,7 @@
                 </div>
                 <div class="card_header">01<span>The Basic Course</span></div>
                 <div class="card_btn">
-                    <a class="full button button--white" onclick="location.href='#popup'" onclick='document.location.href="#popup-form"'><span>Book Now</span></a>
+                    <a class="full button button--white" onclick="location.href='#popup-course1'" onclick='document.location.href="#popup-form"'><span>Book Now</span></a>
                 </div>
             </div>
         </div>
@@ -164,18 +166,18 @@
             <div class="card">
                 <div class="card_duration">
                     <div class="card--info">Duration</div>
-                    <div class="card--value">6 DAYS</div>
+                    <div class="card--value">8 DAYS</div>
                 </div>
                 <div class="card_cost">
                     <div class="card--info">Cost</div>
-                    <div class="card--value">N/A</div>
+                    <div class="card--value">25,000 INR</div>
                 </div>
                 <div class="card_img">
                     <img src="./img/Paragliding-fun.jpg" alt="as">
                 </div>
-                <div class="card_header">02<span>Second Step P3</span></div>
+                <div class="card_header">02<span>Intermediate Course</span></div>
                 <div class="card_btn">
-                        <a class="full button button--white" onclick='document.location.href="#popup-form"'><span>Book Now</span></a>
+                        <a class="full button button--white" onclick='document.location.href="#popup-course2"'><span>Book Now</span></a>
                 </div>
             </div>
         </div>
@@ -183,18 +185,18 @@
             <div class="card">
                 <div class="card_duration">
                     <div class="card--info">Duration</div>
-                    <div class="card--value">6 DAYS</div>
+                    <div class="card--value">10 DAYS</div>
                 </div>
                 <div class="card_cost">
                     <div class="card--info">Cost</div>
-                    <div class="card--value">N/A</div>
+                    <div class="card--value">30,000 INR</div>
                 </div>
                 <div class="card_img">
                     <img src="./img/mainpage-box-5L.jpg" alt="as">
                 </div>
-                <div class="card_header">03<span>Cross country Coaching</span></div>
+                <div class="card_header">03<span>Advanced Course</span></div>
                 <div class="card_btn">
-                        <a class="full button button--white" onclick='document.location.href="#popup-form"'><span>Book Now</span></a>
+                        <a class="full button button--white" onclick='document.location.href="#popup-course3"'><span>Book Now</span></a>
                 </div>
             </div>
         </div>
@@ -267,18 +269,18 @@
 
             <div class="img-container-5 img-container" onclick="location.href='#popup-dkku'">
                 <div class="img-container-rect">
-                    <img src="img/Dukkssss.jpg">
+                    <img src="img/sam.jpg">
                     <div class="img-container-rect-popup">
-                        <p>DKKU</p>
+                        <p>SAM THAKUR</p>
                     </div>
                 </div>
             </div>
 
             <div class="img-container-6 img-container" onclick="location.href='#popup-sam'">
                 <div class="img-container-rect">
-                    <img src="img/sam.jpg">
+                    <img src="img/Dukkssss.jpg">
                     <div class="img-container-rect-popup">
-                        <p>SAM THAKUR</p>
+                        <p>DKKU</p>
                     </div>
                 </div>
             </div>
@@ -302,19 +304,19 @@
                         <img src="./img/plane.svg" alt="Plane">
                 </div>
             </div>
-            <div class="reach_box-content reach-plane-box">
+            <div class="reach_box-content reach-plane-box planeWidth">
                 Kangra airport is nearest to the Bir. <br>
                 It is 67.5 km from there.
             </div>
         </div>
-        <div class="reach_box bus">
+        <div class="reach_box bus plane">
             <div class="reach_box--plane">Bus</div>
             <div class="reach_box-rect">
                 <div class="img-con">
                         <img src="./img/bus.svg" alt="Plane">
                 </div>
             </div>
-            <div class="reach_box-content">
+            <div class="reach_box-content busHeight">
                 From Delhi, it takes around fourteen hours to reach Bir.
                 Take the bus going to Pathankot, Baijnath, Manali, 
                 Shimla or Dharamshala. 
@@ -327,7 +329,7 @@
                         <img src="./img/public-transport-subway.svg" alt="Plane">
                 </div>
             </div>
-            <div class="reach_box-content">
+            <div class="reach_box-right-content">
                 The nearest station is in Pathankot 
                 which is 112 km from Bir. 
                 A toy train connects From Pathankot to Ahju.
@@ -337,10 +339,10 @@
             <div class="reach_box-right--train">Taxi</div>
             <div class="reach_box-right-rect">
                 <div class="img-con">
-                        <img src="./img/parked-car.svg" alt="Plane">
+                        <img src="./img/parked-car.svg" alt="Plane" class="taxilogo">
                 </div>
             </div>
-            <div class="reach_box-right-content">
+            <div class="reach_box-right-content taxiBlah">
                 It is the best and convenient way to travel to Bir. 
                 <span>From Pathankot it takes 4-5 hours,</span>
                 <span>from Dharmshala it takes 2 hours,</span>
@@ -419,10 +421,32 @@
                 </div>
                 <div class="blog-card--content">
                     <div class="blog-card--info">
-                        <div class="heading-6">Jenny and Prince</div>
+                        <div class="heading-6">Kshitiz Kumar</div>
                         <div class="hr"></div>
                         <div class="place">
-                            Florida, USA<span>Visited Last Summer</span>
+                            NIT Hamirpur, India<span>Visited Last Summer</span>
+                        </div>
+                    </div>
+                    <div class="hr-full"></div>
+                    <div class="blog-card--info---content">
+                        <p>Best experience ever.</p>
+                        Rewarding, nourishing, rich,
+                        vibrant and brought my heritage to life. 
+                        Formed lasting friendships with 
+                        Rudra Adventures.
+                    </div>
+                </div>
+            </div>
+            <div class="blog-card">
+                <div class="blog-card--img">
+                    <img src="./img/First_Buy_Paragliders_2.jpg" alt="blog">
+                </div>
+                <div class="blog-card--content">
+                    <div class="blog-card--info">
+                        <div class="heading-6">Sahaj</div>
+                        <div class="hr"></div>
+                        <div class="place">
+                            Kanpur, India<span>Visited for Trekking</span>
                         </div>
                     </div>
                     <div class="hr-full"></div>
@@ -444,7 +468,7 @@
                         <div class="heading-6">Jenny and Prince</div>
                         <div class="hr"></div>
                         <div class="place">
-                            Florida, USA<span>Visited Last Summer</span>
+                            Florida, USA<span>Visited Last Summer for Mountain Biking</span>
                         </div>
                     </div>
                     <div class="hr-full"></div>
@@ -463,32 +487,10 @@
                 </div>
                 <div class="blog-card--content">
                     <div class="blog-card--info">
-                        <div class="heading-6">Jenny and Prince</div>
+                        <div class="heading-6">Diksha Rana</div>
                         <div class="hr"></div>
                         <div class="place">
-                            Florida, USA<span>Visited Last Summer</span>
-                        </div>
-                    </div>
-                    <div class="hr-full"></div>
-                    <div class="blog-card--info---content">
-                        <p>Best experience ever.</p>
-                        Rewarding, nourishing, rich,
-                        vibrant and brought my heritage to life. 
-                        Formed lasting friendships with 
-                        Rudra Adventures.
-                    </div>
-                </div>
-            </div>
-            <div class="blog-card">
-                <div class="blog-card--img">
-                    <img src="./img/First_Buy_Paragliders_2.jpg" alt="blog">
-                </div>
-                <div class="blog-card--content">
-                    <div class="blog-card--info">
-                        <div class="heading-6">Jenny and Prince</div>
-                        <div class="hr"></div>
-                        <div class="place">
-                            Florida, USA<span>Visited Last Summer</span>
+                            Una, India<span>Visited Last winter</span>
                         </div>
                     </div>
                     <div class="hr-full"></div>
@@ -567,46 +569,6 @@
             </div>
         </div>
 
-        <!-- <div class="contact-info">
-            <div class="img-container">
-
-                <img src="img/Manjeet.jpg">
-                <div class="img-popup">
-                    <p>Manjeet Thakur</p>
-
-                </div>
-            </div>
-            <div class="querry-box">
-                <h3>For any Queries</h3>
-                <h1>Contact Us Now</h1>
-                <h3>Address</h3>
-                <p>Rudra Adventures ,</p>
-                <p>Near Landing Site</p>
-                <p> BIR, P.O. BIR,TEH. Baijnath ,</p>
-                <p>DISTT. Kangra, PIN Code: 176077</p>
-            </div>
-            <div class="number">
-                <h3>Contact No.</h3>
-                <p>
-                    +91 98162 86512
-                </p>
-                <p>
-                    +91 97361 83064
-                </p>
-            </div>
-            <div class="email-id">
-                <h3>Email Id.</h3>
-                <p>
-                    rudraadventuresbir@gmail.com
-                </p>
-            </div>
-            <div class="booking-popup">
-                    <p class="popup-heading">Let the adventure Begin</p>
-                    <p class="popup-info">Explore Bir Billing with us and bookyour travel package now</p>
-                    <button class="btn button button--blue">Book Now</button>
-            </div>
-        </div> -->
-
     </section>
 
     <footer class="footer">
@@ -666,7 +628,7 @@
     <div class="footer__part-2 footer2-part">
         <div class="footer2-container">
             <div class="copyrigths">
-                <p> &copy;2019 | Pixonoids <span style="color:red;">&hearts;</span> </p>
+                <p> &copy;2019 | <span class="pixo" onclick='window.open("https://www.facebook.com/Pixonoids/")'>Pixonoids</span> <span style="color:red;">&hearts;</span> </p>
             </div>
             <div class="logos">
                 <img id="fb-logo" class="logo-1" src="img/fb-icon.svg" >
@@ -687,7 +649,7 @@
         <div class="popup-gen__content">
             <div class="popup-gen__left">
                 <img src="img/1@2x.png" alt="Tour Photo" class="popup-gen__img">
-                <a class="popup-gen__img button button--white" href="https://en.wikipedia.org/wiki/Bir,_Himachal_Pradesh">Know More</a>
+                <a class="popup-gen__img button button--white" href="https://en.wikipedia.org/wiki/Bir,_Himachal_Pradesh" target="_blank">Know More</a>
             </div>
             <div class="popup-gen__right">
                 <a href="#section-tours" class="popup-gen__close">&times;</a>
@@ -715,23 +677,94 @@
         </div>
     </div>
 
-    <div class="popup-gen" id="popup">
+    <div class="popup-gen" id="popup-course1">
         <div class="popup-gen__content">
             <div class="popup-gen__left">
                 <img src="img/1@2x.png" alt="Tour Photo" class="popup-gen__img">
-                <img src="img/Paragliding-fun.jpg" alt="Tour Photo" class="popup-gen__img">
             </div>
             <div class="popup-gen__right">
                 <a href="#section-tours" class="popup-gen__close">&times;</a>
-                <h2 class="heading-secondary u-margin-bottom-medium">Start booking now</h2>
-                <h2 class="heading-tertiary u-margin-bottom-small">Important &ndash; Please read this term before booking</h2>
-                <p class="popup-gen__text" lang="en">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ipsa molestiae obcaecati rem minus quae laudantium consequuntur earum incidunt facilis veritatis alias quo, vitae dolorem culpa repudiandae nobis! Exercitationem, ratione.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, quibusdam unde? Ipsum eligendi voluptatem, quibusdam debitis facere soluta dignissimos accusantium explicabo quo in similique, alias obcaecati, animi suscipit! Vitae, labore?
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum amet molestias id architecto odio temporibus mollitia facilis culpa blanditiis exercitationem pariatur quidem placeat obcaecati, eius ullam, adipisci iusto. Exercitationem, sunt!
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere similique cum nemo animi nulla fuga aliquid earum harum, laboriosam recusandae, excepturi, ipsum et dolore? Repellendus quasi culpa dolores voluptatum iste?
+                <h2 class="heading-secondary u-margin-bottom-medium">Basic Paragliding Course(P1 & P2)</h2>
+                <p class="popup-gen__text-course" lang="en">
+                    As the name says this is for beginners and casual pilots.
+                    This entry level course in paragliding will introduce you
+                    to basic flight physics, introduction to equipments and gears.
+                    Basic handling and emergency management will be taught.
+                </p>
+                <div class="popup-gen__list">
+                    <ul>
+                        <li>Activity: Intermediate Paragliding Course (P3)</li>
+                        <li>Duration: 5-7 Days.</li>
+                        <li>Location: Landing Ground, Training Hill.</li>
+                        <li>Landing Ground: Basic Flight Physics.</li>
+                        <li>Landing Ground: Ground Practice.</li>
+                        <li>Landing Ground: Introduction to gears and equipments.</li>
+                        <li>Landing Ground: Safety and emergency management.</li>
+                        <li>Solo Flights: Billing to Bir.</li>
+                        <li>Price: : INR-10,000/-</li>
+                        <li>(which does not include any kind of transportation and accommodation.)</li>
+                    </ul>
+                </div>
+                <a class="full button button--white" onclick='document.location.href="#popup-form"'><span>Book Now</span></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="popup-gen" id="popup-course2">
+        <div class="popup-gen__content">
+            <div class="popup-gen__left">
+                <img src="img/1@2x.png" alt="Tour Photo"  class="popup-gen__img--team">
+            </div>
+            <div class="popup-gen__right">
+                <a href="#section-tours" class="popup-gen__close">&times;</a>
+                <h2 class="heading-secondary u-margin-bottom-medium">Intermediate Paragliding Course (P3)</h2>
+                <p class="popup-gen__text-course" lang="en">
+                    This paragliding course is recommended only for people 
+                    with fair knowledge of flight physics and techniques. 
+                    This course is monitored and managed by some of our best 
+                    pilots and national award winners. This is suitable only if you are 
+                    highly familiar and comfortable with all aspects of the flight science.
+                </p>
+                <div class="popup-gen__list">
+                    <ul>
+                        <li>Activity: Intermediate Paragliding Course (P3)</li>
+                        <li>Duration: 5 Days.</li>
+                        <li>Location: Billing.</li>
+                        <li>Take off Site: Intermediate flight techniques.</li>
+                        <li>Solo Flights: Billing to Bir.</li>
+                        <li>Independent take off and landing techniques.</li>
+                        <li> Price: : INR-20,000/-</li>
+                        <li>(which does not include any kind of transportation and accommodation.)</li>
+                    </ul>
+                </div>
+                <a class="full button button--white" onclick='document.location.href="#popup-form"'><span>Book Now</span></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="popup-gen" id="popup-course3">
+        <div class="popup-gen__content">
+            <div class="popup-gen__left">
+                <img src="img/1@2x.png" alt="Tour Photo" class="popup-gen__img--team">
+            </div>
+            <div class="popup-gen__right">
+                <a href="#section-tours" class="popup-gen__close">&times;</a>
+                <h2 class="heading-secondary u-margin-bottom-medium">Basic Paragliding Course(P1 & P2)</h2>
+                <p class="popup-gen__text-course" lang="en">
 
                 </p>
+                <div class="popup-gen__list">
+                    <ul>
+                        <li>Activity: Advanced Paragliding Course(P4)</li>
+                        <li>Duration: 10 Days.</li>
+                        <li>Location: Billing.</li>
+                        <li>Take off Site: Solo cross country flights.</li>
+                        <li>Wind analysis and flight.</li>
+                        <li>Advanced Emergency landing techniques.</li>
+                        <li>Price: : INR-2500/- Day</li>
+                        <li>(Excluding transportation)</li>
+                    </ul>
+                </div>
                 <a class="full button button--white" onclick='document.location.href="#popup-form"'><span>Book Now</span></a>
             </div>
         </div>

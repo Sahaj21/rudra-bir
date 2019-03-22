@@ -70,6 +70,10 @@
         align-self: flex-end;
         padding-left: 1rem;
 
+        @include respond(sd-screen){
+         line-height: 1.4;
+        }
+
         span{
             display: block;
         }
