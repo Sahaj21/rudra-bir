@@ -63,7 +63,10 @@ body {
     justify-content: space-around; }
     .navigation .nav .rudra-logo-header {
       color: #3bb4c4;
-      transform: translateY(-1rem); }
+      transform: translateY(-1rem);
+      display: flex; }
+      .navigation .nav .rudra-logo-header img {
+        width: 4rem; }
     .navigation .nav_list {
       grid-column: 1/-1;
       padding: 2rem;
@@ -200,6 +203,25 @@ body {
   .header_box {
     grid-row: 5/7;
     grid-column: 2/6; }
+    .header_box .popupBox {
+      height: 8.1rem !important; }
+      .header_box .popupBox-con {
+        line-height: 1.2; }
+        .header_box .popupBox-con__header {
+          font-size: 2.3rem; }
+        .header_box .popupBox-con__desc {
+          font-size: 1.5rem; }
+    @media only screen and (max-width: 90em) {
+      .header_box .margin-right {
+        transform: translateX(-3rem);
+        width: 15rem;
+        height: 4.8rem; } }
+    @media only screen and (max-width: 90em) {
+      .header_box .left {
+        transform: translateX(1rem); } }
+    .header_box .flex {
+      display: flex;
+      justify-content: space-between; }
     @media only screen and (max-width: 56.25em) {
       .header_box {
         grid-column: 1/-1; } }
@@ -606,6 +628,9 @@ span {
   .courses--card {
     transform: translate(0, -3rem); } }
 
+.card-width {
+  width: 30%; }
+
 .img-svg-coursess-4 {
   grid-column: 12/13;
   grid-row: 10/11;
@@ -639,6 +664,15 @@ span {
   @media only screen and (max-width: 90em) {
     .courses {
       grid-gap: 2rem; } }
+  .courses .courseSlider {
+    grid-column: 1/-1;
+    grid-row: 3/-1;
+    display: flex;
+    justify-content: space-between; }
+    .courses .courseSlider .slick-track {
+      top: 2rem !important; }
+    .courses .courseSlider .slick-prev::before, .courses .courseSlider .slick-next::before {
+      color: black; }
   .courses .img-svg-courses-1 {
     grid-column: 1/2;
     grid-row: 1/2;
@@ -915,10 +949,27 @@ span {
   @media only screen and (max-width: 90em) {
     .reach {
       padding: 0 5.5rem 0 5.5rem; } }
+  @media only screen and (max-width: 90em) {
+    .reach .taxilogo {
+      top: 6.5rem !important; } }
+  @media only screen and (max-width: 90em) {
+    .reach .taxiBlah {
+      height: 12.5rem;
+      padding-top: 3rem; } }
+  @media only screen and (max-width: 90em) {
+    .reach .busHeight {
+      height: 11rem; } }
+  @media only screen and (max-width: 90em) {
+    .reach .planeWidth {
+      width: 44.9rem;
+      height: 10.7rem; } }
   .reach_desc {
     grid-column: 2/7;
     grid-row: 1/4;
     z-index: 5; }
+    @media only screen and (max-width: 90em) {
+      .reach_desc {
+        transform: translateX(-3rem); } }
   @media only screen and (max-width: 90em) {
     .reach .heading-reach-1 {
       transform: translate(2rem, 0);
@@ -941,13 +992,19 @@ span {
       align-self: flex-end;
       font-weight: 700;
       color: #303030; }
+      @media only screen and (max-width: 90em) {
+        .reach_box-right--train {
+          transform: translateX(4.8rem); } }
     .reach_box-right-rect {
       grid-row: 1/2;
       grid-column: 2/3;
       display: grid;
       justify-items: center; }
+      @media only screen and (max-width: 90em) {
+        .reach_box-right-rect {
+          justify-items: flex-end; } }
       .reach_box-right-rect .img-con {
-        width: 72%;
+        width: 54%;
         height: 100%; }
         .reach_box-right-rect .img-con img {
           padding: 2.7rem;
@@ -958,6 +1015,9 @@ span {
           top: 4rem;
           z-index: 100;
           background: white; }
+          @media only screen and (max-width: 90em) {
+            .reach_box-right-rect .img-con img {
+              top: 5.5rem; } }
     .reach_box-right-content {
       grid-row: 2/3;
       grid-column: 1/-1;
@@ -969,7 +1029,8 @@ span {
           font-size: 2rem;
           font-weight: 600;
           line-height: 1.2;
-          border: 2px solid #3bb4c4; } }
+          border: 2px solid #3bb4c4;
+          height: 11rem; } }
   .reach_box {
     display: grid;
     grid-template-rows: 1fr 1fr;
@@ -980,18 +1041,23 @@ span {
       align-self: flex-end;
       font-weight: 700;
       color: #303030; }
+      @media only screen and (max-width: 90em) {
+        .reach_box--plane {
+          transform: translateX(-5rem); } }
     .reach_box-rect {
       grid-row: 1/2;
       grid-column: 2/3;
       display: grid;
-      justify-items: center;
-      /* 
-            @include respond(sd-screen){
-                transform: translate(-1rem,2rem);
-            } */ }
+      justify-items: center; }
+      @media only screen and (max-width: 90em) {
+        .reach_box-rect {
+          justify-items: flex-start; } }
       .reach_box-rect .img-con {
         width: 72%;
         height: 100%; }
+        @media only screen and (max-width: 90em) {
+          .reach_box-rect .img-con {
+            width: 54%; } }
         .reach_box-rect .img-con img {
           padding: 2.7rem;
           width: 100%;
@@ -1001,6 +1067,9 @@ span {
           top: 4rem;
           z-index: 100;
           background: white; }
+          @media only screen and (max-width: 90em) {
+            .reach_box-rect .img-con img {
+              top: 5rem; } }
     .reach_box-content {
       grid-row: 2/3;
       grid-column: 1/-1;
@@ -1008,7 +1077,7 @@ span {
       padding: 2rem 1rem 1rem 1rem; }
       @media only screen and (max-width: 90em) {
         .reach_box-content {
-          padding: 4rem 3rem 0rem 3rem;
+          padding: 3.8rem 3rem 0rem 2rem;
           font-size: 2rem;
           font-weight: 600;
           line-height: 1.2;
@@ -1023,6 +1092,9 @@ span {
   .reach .plane {
     grid-row: 5/7;
     grid-column: 2/6; }
+    @media only screen and (max-width: 90em) {
+      .reach .plane {
+        transform: translateX(-3.2rem); } }
   .reach .bus {
     grid-row: 11/13;
     grid-column: 2/8; }
@@ -1034,11 +1106,14 @@ span {
     grid-column: 5/10;
     grid-row: 15/17;
     text-align: right; }
+    @media only screen and (max-width: 90em) {
+      .reach .taxi {
+        transform: translateY(-1rem); } }
     .reach .taxi span {
       display: block; }
   @media only screen and (max-width: 90em) {
     .reach .reach-plane-box {
-      padding: 4rem 1rem 0 3rem; } }
+      padding: 3rem 1rem 0 2rem; } }
 
 .blogs {
   grid-column: 2/14;
@@ -1107,6 +1182,17 @@ span {
         width: 100%;
         object-fit: contain;
         padding: 2rem; }
+
+.blog-card--img img {
+  transform: translate(3rem, 8.8rem);
+  object-fit: contain;
+  width: 15rem !important; }
+
+.blog-card--content .hr-full {
+  margin: 1.2rem auto !important; }
+
+.blog-card--info {
+  margin-left: -.9rem !important; }
 
 .travellers {
   grid-column: 1/-1; }
@@ -1276,7 +1362,8 @@ span {
     font-weight: 600;
     display: block; }
   .footer .list {
-    list-style: none; }
+    list-style: none;
+    cursor: pointer; }
     .footer .list li {
       margin: 1.7rem 0; }
   .footer .footer-part-rudra {
@@ -1363,8 +1450,13 @@ span {
       justify-content: space-between; }
       .footer .footer__part-2 .footer2-container .copyrigths {
         width: 21rem; }
+        .footer .footer__part-2 .footer2-container .copyrigths .pixo {
+          cursor: pointer; }
+          .footer .footer__part-2 .footer2-container .copyrigths .pixo:hover {
+            color: #3bb4c4; }
       .footer .footer__part-2 .footer2-container .logos img {
-        margin-right: 30px; }
+        margin-right: 30px;
+        cursor: pointer; }
         @media only screen and (max-width: 90em) {
           .footer .footer__part-2 .footer2-container .logos img {
             width: 2.8rem;
@@ -1449,6 +1541,10 @@ span {
   opacity: 0;
   visibility: hidden;
   transition: all .3s; }
+  .popup-gen ul {
+    list-style: none; }
+  .popup-gen .heading-secondary {
+    font-size: 4.1rem; }
   @supports (-webkit-backdrop-filter: blur(10px)) or (backdrop-filter: blur(10px)) {
     .popup-gen {
       -webkit-backdrop-filter: blur(10px);
@@ -1481,6 +1577,8 @@ span {
     .popup-gen__left a {
       width: 100%;
       margin: 3.8rem 0 !important; }
+  .popup-gen .top {
+    vertical-align: top !important; }
   .popup-gen__right {
     width: 66.6666667%;
     display: table-cell;
@@ -1532,6 +1630,9 @@ span {
         column-gap: 0rem;
         column-rule: none;
         margin-bottom: 1rem; } }
+  .popup-gen__text-course {
+    font-size: 1.7rem;
+    margin: .5rem 0 2rem 0; }
   .popup-gen:target {
     opacity: 1;
     visibility: visible; }
@@ -1551,6 +1652,12 @@ span {
     transform: translateY(1rem); }
   .popup-gen__close:hover {
     color: #3bb4c4; }
+  .popup-gen__list {
+    width: 100%;
+    font-size: 1.7rem; }
+    .popup-gen__list span {
+      font-weight: 600;
+      display: inline-block; }
 
 .form {
   width: 100%;
@@ -1696,6 +1803,9 @@ span {
     color: #ffffff;
     align-self: flex-end;
     padding-left: 1rem; }
+    @media only screen and (max-width: 90em) {
+      .card_header {
+        line-height: 1.4; } }
     .card_header span {
       display: block; }
   .card--value {
