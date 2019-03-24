@@ -49,6 +49,15 @@ document.addEventListener("DOMContentLoaded", function() {
         dots: true,
     });
 
+
+    $('.courseSlider').slick({
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 3
+    });
+
+    
+
     $('.header_slider').on('beforeChange', function(event, slick, currentSlide){
         text[j].classList.remove("active");
         j++;

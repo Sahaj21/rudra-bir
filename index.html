@@ -12,6 +12,9 @@
     <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
 </head>
 <body class="container">
+
+    <!-- Load Facebook SDK for JavaScript -->
+    
     <div class="navigation">
         
         <nav class="nav">
@@ -49,29 +52,19 @@
             <div><img src="./img/camping final.jpg" alt="asd" srcset=""></div>
         </div>
         <div class="header_box">
-            <div class="popupBox">
-                <form action="#" class="form">
-                    <div class="form__group">
-                        <input id="number" type="number" class="form__input" placeholder="Days" required>
-                        <label for="number" class="form__label">
-                            Days
-                        </label>
+                <div class="popupBox flex">
+                    <div class="popupBox-con left">
+                        <div class="popupBox-con__header">Let the adventure Begin</div>
+                        <div class="popupBox-con__desc">Book your travel package now.</div>
                     </div>
-                    <div class="form__group">
-                        <input id="number" type="number" class="form__input" placeholder="Travellers" required>
-                        <label for="number" class="form__label">
-                            Travellers
-                        </label>
+                    <div class="form__group center">
+                        <button class="button button--blue margin-right" onclick='document.location.href="#popup-form"'>Book Now</button>
                     </div>
-                    <div class="form__group center" id="bookNow">
-                        <button class="button button--blue" onclick='document.location.href="#popup-form"'>Book Now</button>
-                    </div>
-                </form>
-            </div>
+                </div>
         </div>
     </header>
 
-    <section class="aboutRudra">
+    <section class="aboutRudra" id="aboutRudra">
             <div class="aboutRudra_left-know headingLeft leftTranslate-about">KNOW ABOUT</div>
             <h2 class="heading-2">Rudra Adventures</h2>
             <div class="para para-1">Welcome to Rudra Adventures.<br>
@@ -104,7 +97,7 @@
             </div>
     </section>
 
-    <section class="aboutBir">
+    <section class="aboutBir" id="aboutBir">
             <div class="img left-1">
                 <img src="./img/patrick-hendry-685717-unsplash@3x.jpg" alt="Paragliding" class="left-1">
             </div>
@@ -133,7 +126,7 @@
             <div class="svg-13"></div>
         </div>
     </div>
-    <section class="courses">
+    <section id="card1" class="courses">
         <div class="img-svg-courses-1">
             <div class="svg-1"></div>
         </div>
@@ -197,6 +190,115 @@
                 <div class="card_header">03<span>Advanced Course</span></div>
                 <div class="card_btn">
                         <a class="full button button--white" onclick='document.location.href="#popup-course3"'><span>Book Now</span></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="packages" class="courses">
+        <div class="img-svg-courses-1">
+            <div class="svg-1"></div>
+        </div>
+        <div class="courses_desc desc">
+            <div class="heading-left heading-courses-1 leftTranslate">KNOW OUR</div>
+            <div class="heading-2 heading-courses-2">Packages</div>
+            <div class="para  desc-para-heading desc-courses-1">Explore our packages on 
+                    Paragliding and more.</div>
+        </div>
+        <div class="courseSlider">
+            <div class="courses_card-1 courses--card card-width">
+                <div class="card">
+                    <div class="card_duration">
+                        <div class="card--info">Duration</div>
+                        <div class="card--value">6 DAYS</div>
+                    </div>
+                    <div class="card_cost">
+                        <div class="card--info">Cost</div>
+                        <div class="card--value">20,000 INR</div>
+                    </div>
+                    <div class="card_img">
+                        <img src="./img/First_Buy_Paragliders_2.jpg" alt="as">
+                    </div>
+                    <div class="card_header">01<span>The Basic Course</span></div>
+                    <div class="card_btn">
+                        <a class="full button button--white" onclick="location.href='#popup-course1'" onclick='document.location.href="#popup-form"'><span>Book Now</span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="courses_card-2 courses--card card-width">
+                <div class="card">
+                    <div class="card_duration">
+                        <div class="card--info">Duration</div>
+                        <div class="card--value">8 DAYS</div>
+                    </div>
+                    <div class="card_cost">
+                        <div class="card--info">Cost</div>
+                        <div class="card--value">25,000 INR</div>
+                    </div>
+                    <div class="card_img">
+                        <img src="./img/Paragliding-fun.jpg" alt="as">
+                    </div>
+                    <div class="card_header">02<span>Intermediate Course</span></div>
+                    <div class="card_btn">
+                            <a class="full button button--white" onclick='document.location.href="#popup-course2"'><span>Book Now</span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="courses_card-3 courses--card card-width">
+                <div class="card">
+                    <div class="card_duration">
+                        <div class="card--info">Duration</div>
+                        <div class="card--value">10 DAYS</div>
+                    </div>
+                    <div class="card_cost">
+                        <div class="card--info">Cost</div>
+                        <div class="card--value">30,000 INR</div>
+                    </div>
+                    <div class="card_img">
+                        <img src="./img/mainpage-box-5L.jpg" alt="as">
+                    </div>
+                    <div class="card_header">03<span>Advanced Course</span></div>
+                    <div class="card_btn">
+                            <a class="full button button--white" onclick='document.location.href="#popup-course3"'><span>Book Now</span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="courses_card-3 courses--card card-width">
+                <div class="card">
+                    <div class="card_duration">
+                        <div class="card--info">Duration</div>
+                        <div class="card--value">10 DAYS</div>
+                    </div>
+                    <div class="card_cost">
+                        <div class="card--info">Cost</div>
+                        <div class="card--value">30,000 INR</div>
+                    </div>
+                    <div class="card_img">
+                        <img src="./img/mainpage-box-5L.jpg" alt="as">
+                    </div>
+                    <div class="card_header">03<span>Advanced Course</span></div>
+                    <div class="card_btn">
+                            <a class="full button button--white" onclick='document.location.href="#popup-course3"'><span>Book Now</span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="courses_card-3 courses--card card-width">
+                <div class="card">
+                    <div class="card_duration">
+                        <div class="card--info">Duration</div>
+                        <div class="card--value">10 DAYS</div>
+                    </div>
+                    <div class="card_cost">
+                        <div class="card--info">Cost</div>
+                        <div class="card--value">30,000 INR</div>
+                    </div>
+                    <div class="card_img">
+                        <img src="./img/mainpage-box-5L.jpg" alt="as">
+                    </div>
+                    <div class="card_header">03<span>Advanced Course</span></div>
+                    <div class="card_btn">
+                            <a class="full button button--white" onclick='document.location.href="#popup-course3"'><span>Book Now</span></a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -363,13 +465,13 @@
         <div class="svg-3"></div>
     </div>
 
-    <section class="courses">
+    <!-- <section class="courses">
         <div class="courses_desc desc">
             <div class="heading-left leftTranslate-blog">READ OUR</div>
             <div class="heading-2">Blogs</div>
             <div class="para">If adventures fascinates you
                 please have a look to our Blog.
-                </div>
+            </div>
         </div>
         <div class="courses_card-1">
             <div class="card card--read">
@@ -399,7 +501,9 @@
                 <div class="card_desc">Paragliding Courses at Billing</div>
             </div>
         </div>
-    </section>
+    </section> -->
+
+    
 
     <section class="blogs">
         <div class="blogs_desc desc">
@@ -417,7 +521,7 @@
         <div class="review_slider">
             <div class="blog-card">
                 <div class="blog-card--img">
-                    <img src="./img/First_Buy_Paragliders_2.jpg" alt="blog">
+                    <img src="./img/kshitij.jpg" alt="blog">
                 </div>
                 <div class="blog-card--content">
                     <div class="blog-card--info">
@@ -439,7 +543,7 @@
             </div>
             <div class="blog-card">
                 <div class="blog-card--img">
-                    <img src="./img/First_Buy_Paragliders_2.jpg" alt="blog">
+                    <img src="./img/sahaj.jpg" alt="blog">
                 </div>
                 <div class="blog-card--content">
                     <div class="blog-card--info">
@@ -582,9 +686,10 @@
             <p>About</p>
             <span class="color-bar"></span>
             <ul class="about-list list"> 
-                <li class="about-list__item"><a href="">Paragliding</a></li>
-                <li class="about-list__item"><a href="">Mountain Biking</a> </li>
-                <li class="about-list__item"><a href="">Courses</a></li>
+                <li class="about-list__item"><a href="#aboutRudra">Paragliding</a></li>
+                <li class="about-list__item"><a href="#aboutBir">Bir Billing</a> </li>
+                <li class="about-list__item"><a href="#card1">Courses</a></li>
+                <li class="about-list__item"><a href="#packages">Packages</a></li>
                 
 
             </ul>
@@ -593,18 +698,19 @@
             <p>Support</p>
             <span class="color-bar"> </span>
             <ul class="support-list list">
-                <li class="support-list__item"><a href="">Paragliding</a></li>
-                <li class="support-list__item"><a href="">Mountain Biking</a></li>
-                <li class="support-list__item"><a href="">Courses</a></li>
+                <li class="support-list__item"><a href="https://paraglidingearth.com/" target="_blank">Paragliding Earth</a></li>
+                <li class="support-list__item"><a href="http://pwca.org/" target="_black">PWCA</a></li>
+                <li class="support-list__item"><a href="https://www.redbull.com/in-en/tags/mtb" target="_black">MTB</a></li>
+                <li class="support-list__item"><a href="http://www.paraglidingassociationofindia.org/" target="_black">PAI</a></li>
             </ul>
         </div>
         <div class="footer-blogs footer-part">
-            <p>Blogs</p>
+            <p>Courses</p>
             <span class="color-bar"></span>
             <ul class="blogs-list list">
-                <li class="blogs-list__item"><a href="">Paragliding</a></li>
-                <li class="blogs-list__item"><a href="">Mountain Biking</a></li>
-                <li class="blogs-list__item"><a href="">Other</a></li>
+                <li class="blogs-list__item"><a href="#card1">The Basic</a></li>
+                <li class="blogs-list__item"><a href="#card1">The Intermediate</a></li>
+                <li class="blogs-list__item"><a href="#card1">The Advanced</a></li>
 
             </ul>
             
@@ -681,8 +787,9 @@
         <div class="popup-gen__content">
             <div class="popup-gen__left">
                 <img src="img/1@2x.png" alt="Tour Photo" class="popup-gen__img">
+                <a class="popup-gen__img button button--blue"  onclick='document.location.href="#popup-form"'>Book Now</a>
             </div>
-            <div class="popup-gen__right">
+            <div class="popup-gen__right top">
                 <a href="#section-tours" class="popup-gen__close">&times;</a>
                 <h2 class="heading-secondary u-margin-bottom-medium">Basic Paragliding Course(P1 & P2)</h2>
                 <p class="popup-gen__text-course" lang="en">
@@ -693,19 +800,19 @@
                 </p>
                 <div class="popup-gen__list">
                     <ul>
-                        <li>Activity: Intermediate Paragliding Course (P3)</li>
-                        <li>Duration: 5-7 Days.</li>
-                        <li>Location: Landing Ground, Training Hill.</li>
-                        <li>Landing Ground: Basic Flight Physics.</li>
-                        <li>Landing Ground: Ground Practice.</li>
-                        <li>Landing Ground: Introduction to gears and equipments.</li>
-                        <li>Landing Ground: Safety and emergency management.</li>
-                        <li>Solo Flights: Billing to Bir.</li>
-                        <li>Price: : INR-10,000/-</li>
+                        <li><span>Activity:</span> Basic Paragliding Course (P1 & P2)</li>
+                        <li><span>Duration:</span> 6 Days.</li>
+                        <li><span>Location:</span> Landing Ground, Training Hill.</li>
+                        <li><span>Landing Ground:</span> Basic Flight Physics.</li>
+                        <li><span>Landing Ground:</span> Ground Practice.</li>
+                        <li><span>Landing Ground:</span> Introduction to gears and equipments.</li>
+                        <li><span>Landing Ground:</span> Safety and emergency management.</li>
+                        <li><span>Solo Flights:</span> Billing to Bir.</li>
+                        <li><span>Price:</span> INR-20,000/-</li>
                         <li>(which does not include any kind of transportation and accommodation.)</li>
                     </ul>
                 </div>
-                <a class="full button button--white" onclick='document.location.href="#popup-form"'><span>Book Now</span></a>
+                
             </div>
         </div>
     </div>
@@ -714,10 +821,11 @@
         <div class="popup-gen__content">
             <div class="popup-gen__left">
                 <img src="img/1@2x.png" alt="Tour Photo"  class="popup-gen__img--team">
+                <a class="popup-gen__img button button--blue"  onclick='document.location.href="#popup-form"'>Book Now</a>
             </div>
-            <div class="popup-gen__right">
+            <div class="popup-gen__right top">
                 <a href="#section-tours" class="popup-gen__close">&times;</a>
-                <h2 class="heading-secondary u-margin-bottom-medium">Intermediate Paragliding Course (P3)</h2>
+                <h2 class="heading-secondary u-margin-bottom-medium">Intermediate Course (P3)</h2>
                 <p class="popup-gen__text-course" lang="en">
                     This paragliding course is recommended only for people 
                     with fair knowledge of flight physics and techniques. 
@@ -727,17 +835,16 @@
                 </p>
                 <div class="popup-gen__list">
                     <ul>
-                        <li>Activity: Intermediate Paragliding Course (P3)</li>
-                        <li>Duration: 5 Days.</li>
-                        <li>Location: Billing.</li>
-                        <li>Take off Site: Intermediate flight techniques.</li>
-                        <li>Solo Flights: Billing to Bir.</li>
-                        <li>Independent take off and landing techniques.</li>
-                        <li> Price: : INR-20,000/-</li>
-                        <li>(which does not include any kind of transportation and accommodation.)</li>
+                        <li><span>Activity:</span> Intermediate Paragliding Course (P3)</li>
+                        <li><span>Duration:</span> 8 Days.</li>
+                        <li><span>Location:</span> Billing.</li>
+                        <li><span>Take off Site:</span> Intermediate flight techniques.</li>
+                        <li><span>Solo Flights:</span> Billing to Bir.</li>
+                        <li><span></span>Independent take off and landing techniques.</li>
+                        <li><span>Price:</span> INR-25,000/-</li>
+                        <li><span></span>(which does not include any kind of transportation and accommodation.)</li>
                     </ul>
                 </div>
-                <a class="full button button--white" onclick='document.location.href="#popup-form"'><span>Book Now</span></a>
             </div>
         </div>
     </div>
@@ -746,26 +853,26 @@
         <div class="popup-gen__content">
             <div class="popup-gen__left">
                 <img src="img/1@2x.png" alt="Tour Photo" class="popup-gen__img--team">
+                <a class="popup-gen__img button button--blue"  onclick='document.location.href="#popup-form"'>Book Now</a>
             </div>
-            <div class="popup-gen__right">
+            <div class="popup-gen__right top">
                 <a href="#section-tours" class="popup-gen__close">&times;</a>
-                <h2 class="heading-secondary u-margin-bottom-medium">Basic Paragliding Course(P1 & P2)</h2>
+                <h2 class="heading-secondary u-margin-bottom-medium">Advanced Course(P1 & P2)</h2>
                 <p class="popup-gen__text-course" lang="en">
 
                 </p>
                 <div class="popup-gen__list">
                     <ul>
-                        <li>Activity: Advanced Paragliding Course(P4)</li>
-                        <li>Duration: 10 Days.</li>
-                        <li>Location: Billing.</li>
-                        <li>Take off Site: Solo cross country flights.</li>
-                        <li>Wind analysis and flight.</li>
-                        <li>Advanced Emergency landing techniques.</li>
-                        <li>Price: : INR-2500/- Day</li>
-                        <li>(Excluding transportation)</li>
+                        <li><span>Advanced:</span> Paragliding Course(P4)</li>
+                        <li><span>Duration:</span> 10 Days.</li>
+                        <li><span>Location:</span> Billing.</li>
+                        <li><span>Take off Site:</span> Solo cross country flights.</li>
+                        <li><span></span>Wind analysis and flight.</li>
+                        <li><span></span>Advanced Emergency landing techniques.</li>
+                        <li><span>Price:</span> INR-30000</li>
+                        <li><span></span>(Excluding transportation)</li>
                     </ul>
                 </div>
-                <a class="full button button--white" onclick='document.location.href="#popup-form"'><span>Book Now</span></a>
             </div>
         </div>
     </div>
@@ -951,6 +1058,30 @@
                 </form>
             </div>
         </div>
+    </div>
+
+    <div id="fb-root"></div>
+    <script>
+    window.fbAsyncInit = function() {
+        FB.init({
+        xfbml            : true,
+        version          : 'v3.2'
+        });
+    };
+
+    (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;    
+    js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+    fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+
+    <!-- Your customer chat code -->
+    <div class="fb-customerchat"
+    attribution=install_email
+    page_id="586876214725130"
+    theme_color="#3bb4c4">
     </div>
 
     <script src="./js/smooth.js"></script>

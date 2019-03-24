@@ -203,6 +203,25 @@ body {
   .header_box {
     grid-row: 5/7;
     grid-column: 2/6; }
+    .header_box .popupBox {
+      height: 8.1rem !important; }
+      .header_box .popupBox-con {
+        line-height: 1.2; }
+        .header_box .popupBox-con__header {
+          font-size: 2.3rem; }
+        .header_box .popupBox-con__desc {
+          font-size: 1.5rem; }
+    @media only screen and (max-width: 90em) {
+      .header_box .margin-right {
+        transform: translateX(-3rem);
+        width: 15rem;
+        height: 4.8rem; } }
+    @media only screen and (max-width: 90em) {
+      .header_box .left {
+        transform: translateX(1rem); } }
+    .header_box .flex {
+      display: flex;
+      justify-content: space-between; }
     @media only screen and (max-width: 56.25em) {
       .header_box {
         grid-column: 1/-1; } }
@@ -609,6 +628,9 @@ span {
   .courses--card {
     transform: translate(0, -3rem); } }
 
+.card-width {
+  width: 30%; }
+
 .img-svg-coursess-4 {
   grid-column: 12/13;
   grid-row: 10/11;
@@ -642,6 +664,15 @@ span {
   @media only screen and (max-width: 90em) {
     .courses {
       grid-gap: 2rem; } }
+  .courses .courseSlider {
+    grid-column: 1/-1;
+    grid-row: 3/-1;
+    display: flex;
+    justify-content: space-between; }
+    .courses .courseSlider .slick-track {
+      top: 2rem !important; }
+    .courses .courseSlider .slick-prev::before, .courses .courseSlider .slick-next::before {
+      color: black; }
   .courses .img-svg-courses-1 {
     grid-column: 1/2;
     grid-row: 1/2;
@@ -1331,7 +1362,8 @@ span {
     font-weight: 600;
     display: block; }
   .footer .list {
-    list-style: none; }
+    list-style: none;
+    cursor: pointer; }
     .footer .list li {
       margin: 1.7rem 0; }
   .footer .footer-part-rudra {
@@ -1509,8 +1541,10 @@ span {
   opacity: 0;
   visibility: hidden;
   transition: all .3s; }
+  .popup-gen ul {
+    list-style: none; }
   .popup-gen .heading-secondary {
-    font-size: 3.5rem; }
+    font-size: 4.1rem; }
   @supports (-webkit-backdrop-filter: blur(10px)) or (backdrop-filter: blur(10px)) {
     .popup-gen {
       -webkit-backdrop-filter: blur(10px);
@@ -1543,6 +1577,8 @@ span {
     .popup-gen__left a {
       width: 100%;
       margin: 3.8rem 0 !important; }
+  .popup-gen .top {
+    vertical-align: top !important; }
   .popup-gen__right {
     width: 66.6666667%;
     display: table-cell;
@@ -1596,7 +1632,7 @@ span {
         margin-bottom: 1rem; } }
   .popup-gen__text-course {
     font-size: 1.7rem;
-    margin: 2rem 0; }
+    margin: .5rem 0 2rem 0; }
   .popup-gen:target {
     opacity: 1;
     visibility: visible; }
@@ -1619,6 +1655,9 @@ span {
   .popup-gen__list {
     width: 100%;
     font-size: 1.7rem; }
+    .popup-gen__list span {
+      font-weight: 600;
+      display: inline-block; }
 
 .form {
   width: 100%;

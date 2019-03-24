@@ -53,6 +53,10 @@
     }
 }
 
+.card-width{
+    width: 30%;
+}
+
 .img-svg-coursess-4{
     grid-column: 12/13;
     grid-row: 10/11 ;
@@ -95,6 +99,21 @@
 
     @include respond(sd-screen){
         grid-gap: 2rem;       
+    }
+
+    .courseSlider{
+        grid-column: 1/-1;
+        grid-row: 3/-1;
+        display: flex;
+        justify-content: space-between;
+
+        .slick-track{
+            top: 2rem !important;
+        }
+
+        .slick-prev::before, .slick-next::before{
+            color: black;
+        }
     }
 
     .img-svg-courses-1{

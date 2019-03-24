@@ -10,8 +10,12 @@
     visibility: hidden;
     transition: all .3s;
 
+    ul{
+        list-style: none;
+    }
+
     .heading-secondary{
-        font-size: 3.5rem;
+        font-size: 4.1rem;
     }
 
     @supports (-webkit-backdrop-filter: blur(10px)) or (backdrop-filter: blur(10px)) {
@@ -51,6 +55,10 @@
             width: 100%;
             margin: 3.8rem 0 !important;
         }
+    }
+
+    .top{
+        vertical-align: top !important;
     }
 
     &__right {
@@ -129,7 +137,7 @@
 
     &__text-course{
         font-size: 1.7rem;
-        margin: 2rem 0;
+        margin: .5rem 0 2rem 0;
     }
 
     &:target {
@@ -164,6 +172,11 @@
     &__list{
         width: 100%;
         font-size: 1.7rem;
+
+        span{
+            font-weight: 600;
+            display: inline-block;
+        }
     }
 
 }
