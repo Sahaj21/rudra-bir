@@ -1,3 +1,7 @@
+#hotels{
+    margin-top: -12rem;
+}
+
 .img-svg-courses-1{
     grid-column: 1/2;
     grid-row: 10/11;
@@ -90,6 +94,7 @@
 }
 
 .courses{
+    
     //padding-top: 10rem;
     padding: 0rem 10.5rem 0 10.5rem;
     grid-column: 1/15;
@@ -136,8 +141,12 @@
             background-position: 2rem -5rem;
             width: 20rem;
             height: 20rem;
-
+            transform: translate(-7rem, 7rem);
         }
+    }
+
+    .heading-hotel{
+        transform: translate(-10rem, -1rem);
     }
 
     &_desc{
@@ -176,6 +185,16 @@
     display: grid;
     align-items: center;
     align-content: space-around;
+    @include respond(sd-screen){
+        line-height: 1.2;
+    }
+}
+
+.desc-hotel{
+    display: grid;
+    align-items: center;
+    align-content: space-evenly;
+    transform: translateY(10rem);
     @include respond(sd-screen){
         line-height: 1.2;
     }

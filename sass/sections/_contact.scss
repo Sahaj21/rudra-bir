@@ -1,5 +1,5 @@
 .contact{
-	grid-row: 12/13;
+	grid-row: 13/14;
 	grid-column: 1/-1;
 	height: 72vh;
 
@@ -128,7 +128,7 @@
 		justify-self: center;
 
 		@include respond(sd-screen){
-            transform: translate(3.5rem,-5.4rem);
+            transform: translate(3.5rem,-16.4rem);
         }
 
 		&-rect{
@@ -142,7 +142,7 @@
 
 			@include respond(sd-screen){
 				width: 25rem;
-				height: 85%;			}
+				height: 153%;			}
 	
 			img{
 				width: 90%;
@@ -154,14 +154,25 @@
 				bottom: -12px;
 				right: -6px;
 				background-color:white;
+				cursor: pointer;
 				padding :2px 20px;
 				transform:translateY(10px) translateX(20px);
 				box-shadow: rgba(0, 0, 0, 0.1) 1rem 1rem 7rem;
 
+				&:hover{
+					background: $color-primary !important;
+					// color: white !important;
+				}
+
+				
 				p{
 					font-size: 2rem;
 					color: $color-dark-3;
 					font-weight: 700;
+				}
+				
+				&:hover p{
+					color: white !important;
 				}
 
 			}

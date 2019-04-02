@@ -1,21 +1,22 @@
 document.addEventListener("DOMContentLoaded", function() {
 
-    var sHome= document.getElementById('smooth-home');
+    // var sHome= document.getElementById('smooth-home');
     var sTeam= document.getElementById('smooth-team');
     var sCourses= document.getElementById('smooth-courses');
     var sLocate= document.getElementById('smooth-locate');
     var fblogolink= document.getElementById('fb-logo');
     var iglogolink= document.getElementById('ig-logo');
     var twlogolink= document.getElementById('tw-logo');
+    var sHotel= document.getElementById('smooth-rooms');
 
 
     let j =0;
     var text = document.querySelectorAll('.header_list');
-    sHome.addEventListener('click', function(){
-        smoothScroll('.header', 1000);
+    sHotel.addEventListener('click', function(){
+        smoothScroll('#hotels', 1000);
     })
     sTeam.addEventListener('click', function(){
-        smoothScroll('.heading-team-1', 1000);
+        smoothScroll('#scroll', 1000);
     })
     sCourses.addEventListener('click', function(){
         smoothScroll('.courses', 1000);
@@ -24,20 +25,20 @@ document.addEventListener("DOMContentLoaded", function() {
         window.open("https://goo.gl/maps/assDxxgGKFp", '_blank');
     })
     fblogolink.addEventListener('click', function(){
-        window.location = "https://www.facebook.com/rudra.adventures/";
+        window.open("https://www.facebook.com/BirBillingPG/");
     })    
     iglogolink.addEventListener('click', function(){
-        window.location = "https://www.instagram.com/rudra.adventures/";
+        window.open("https://www.instagram.com/rudra.adventures/");
     })    
     twlogolink.addEventListener('click', function(){
-        window.location = "https://twitter.com/AdventuresRudra";
+        window.open("https://twitter.com/AdventuresRudra");
     })
 
     $('.header_slider').slick({
         slidesToShow: 1 ,
         slidesToScroll: 1,
         autoplay: true,
-        autoplaySpeed: 800,
+        autoplaySpeed: 1500,
         dots: true,
     });
 

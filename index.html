@@ -13,7 +13,6 @@
 </head>
 <body class="container">
 
-    <!-- Load Facebook SDK for JavaScript -->
     
     <div class="navigation">
         
@@ -46,10 +45,10 @@
         </div>
         <div class="header_intro"><span>Explore</span><span class="negative-top">Bir Billing</span></div>
         <div class="header_slider">
-            <div><img src="./img/jairph-401393-unsplash@3x.png" alt="asd" srcset=""></div>
-            <div><img src="./img/trekking.jpg" alt="asd" srcset=""></div>
-            <div><img src="./img/biking final.jpg" alt="asd" srcset=""></div>
-            <div><img src="./img/Camping.jpg" alt="asd" srcset=""></div>
+            <div><img src="./img/paragliding.jpg" alt="asd"></div>
+            <div><img src="./img/trekking.jpg" alt="asd"></div>
+            <div><img src="./img/biking final.jpg" alt="asd"></div>
+            <div><img src="./img/Camping final.jpg" alt="asd"></div>
         </div>
         <div class="header_box">
                 <div class="popupBox flex">
@@ -68,8 +67,8 @@
             <div class="aboutRudra_left-know headingLeft leftTranslate-about">KNOW ABOUT</div>
             <h2 class="heading-2">Rudra Adventures</h2>
             <div class="para para-1">Welcome to Rudra Adventures.<br>
-                    Located in Bir,Himachal Pradesh (India) 
-                    we offer tandem flights and paragliding
+                    Located in Bir, Himachal Pradesh (India). 
+                    We offer tandem flights and paragliding
                     lessons to people of all ages.</div>
             <div class="para para-2">
                     Contact us anytime to 
@@ -99,7 +98,7 @@
 
     <section class="aboutBir" id="aboutBir">
             <div class="img left-1">
-                <img src="./img/patrick-hendry-685717-unsplash@3x.jpg" alt="Paragliding" class="left-1">
+                <img src="./img/bir.jpg" alt="Paragliding" class="left-1">
             </div>
             <div class="img-svg">
                 <div class="svg-1"></div>
@@ -107,7 +106,7 @@
             </div>
             <div class="aboutBir_right-about heading-left leftTranslate">ABOUT</div>
             <h2 class="heading-2" id="heading-3">Bir Billing</h2>
-            <div class="para para-1">“Paragliding in Bir Billing, Himachal Pradesh” </span>
+            <div class="para para-1">“Paragliding in Bir Billing, Himachal Pradesh”
                     Bir Billing is a Paragliding destination in the heart of 
                     <span>Himalaya’s near famous tourist destination <span>
                     Dharamshala in Himachal Pradesh.
@@ -307,7 +306,8 @@
         </div>
     
         <div class="team_grid">
-            <div class="team_desc team--desc">
+            <div id="scroll"></div>
+            <div class="team_desc team--desc up">
                 <div class="heading-left leftTranslate heading-team-1">MEET OUR</div>
                 <div class="heading-2 heading-team-2">Team</div>
                 <div class="para para-team">Meet the team members<br>
@@ -352,7 +352,7 @@
 
             <div class="img-container-5 img-container" onclick="location.href='#popup-dkku'">
                 <div class="img-container-rect">
-                    <img src="img/sam.jpg">
+                    <img src="img/budhi final.jpg">
                     <div class="img-container-rect-popup">
                         <p>SAM THAKUR</p>
                     </div>
@@ -361,7 +361,7 @@
 
             <div class="img-container-6 img-container" onclick="location.href='#popup-sam'">
                 <div class="img-container-rect">
-                    <img src="img/Dukkssss.jpg">
+                    <img src="img/Dukkssss final.jpg">
                     <div class="img-container-rect-popup">
                         <p>DKKU</p>
                     </div>
@@ -433,8 +433,6 @@
         </div>
     </section>
 
-
-
     <div class="img-svg-courses-1">
         <div class="svg-1"></div>
     </div>
@@ -447,116 +445,46 @@
     <div class="img-svg-coursess-3">
         <div class="svg-3"></div>
     </div>
-
-    
-    <!-- <section id="hotels" class="courses">
-        <div class="img-svg-courses-1">
-            <div class="svg-1"></div>
-        </div>
-        <div class="courses_desc desc">
-            <div class="heading-left heading-courses-1 leftTranslate">KNOW OUR</div>
-            <div class="heading-2 heading-courses-2">Packages</div>
-            <div class="para  desc-para-heading desc-courses-1">Explore our packages on 
-                    Paragliding and more.</div>
-        </div>
-        <div class="courseSlider">
-            <div class="courses_card-1 courses--card card-width">
-                <div class="card">
-                    <div class="card_duration">
-                        <div class="card--info">Duration</div>
-                        <div class="card--value">6 DAYS</div>
+    <section id="hotels" class="courses">
+            <div class="img-svg-courses-1">
+                <div class="svg-1"></div>
+            </div>
+            <div class="courses_desc desc-hotel">
+                <!-- <div class="heading-left heading-courses-1 leftTranslate">KNOW OUR</div> -->
+                <div class="heading-2 heading-hotel">Himalayan Nest</div>
+                <div class="para  desc-para-heading desc-courses-1">Check our hotel services.</div>
+            </div>
+            <div class="courseSlider">
+                <div class="courses_card-1 courses--card card-width">
+                    <div class="card hotel-paddingUp">
+                        <div class="card_img-hotel">
+                            <img src="./img/1.jpg" alt="as">
+                        </div>
                     </div>
-                    <div class="card_cost">
-                        <div class="card--info">Cost</div>
-                        <div class="card--value">20,000 INR</div>
+                </div>
+                <div class="courses_card-2 courses--card card-width">
+                    <div class="card hotel-paddingUp">
+                        <div class="card_img-hotel">
+                            <img src="./img/2.jpg" alt="as">
+                        </div>
                     </div>
-                    <div class="card_img">
-                        <img src="./img/First_Buy_Paragliders_2.jpg" alt="as">
+                </div>
+                <div class="courses_card-3 courses--card card-width">
+                    <div class="card hotel-paddingUp">
+                        <div class="card_img-hotel">
+                            <img src="./img/3.jpg" alt="as">
+                        </div>
                     </div>
-                    <div class="card_header">01<span>Camping and Trekking</span></div>
-                    <div class="card_btn">
-                        <a class="full button button--white" onclick="location.href='#popup-course1'" onclick='document.location.href="#popup-form"'><span>Book Now</span></a>
+                </div>
+                <div class="courses_card-3 courses--card card-width">
+                    <div class="card hotel-paddingUp">
+                        <div class="card_img-hotel">
+                            <img src="./img/4.jpg" alt="as">
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="courses_card-2 courses--card card-width">
-                <div class="card">
-                    <div class="card_duration">
-                        <div class="card--info">Duration</div>
-                        <div class="card--value">8 DAYS</div>
-                    </div>
-                    <div class="card_cost">
-                        <div class="card--info">Cost</div>
-                        <div class="card--value">25,000 INR</div>
-                    </div>
-                    <div class="card_img">
-                        <img src="./img/Paragliding-fun.jpg" alt="as">
-                    </div>
-                    <div class="card_header">02<span>Camping and Paragliding</span></div>
-                    <div class="card_btn">
-                            <a class="full button button--white" onclick='document.location.href="#popup-course2"'><span>Book Now</span></a>
-                    </div>
-                </div>
-            </div>
-            <div class="courses_card-3 courses--card card-width">
-                <div class="card">
-                    <div class="card_duration">
-                        <div class="card--info">Duration</div>
-                        <div class="card--value">10 DAYS</div>
-                    </div>
-                    <div class="card_cost">
-                        <div class="card--info">Cost</div>
-                        <div class="card--value">30,000 INR</div>
-                    </div>
-                    <div class="card_img">
-                        <img src="./img/mainpage-box-5L.jpg" alt="as">
-                    </div>
-                    <div class="card_header">03<span>Camping , Trekking , Paragliding</span></div>
-                    <div class="card_btn">
-                            <a class="full button button--white" onclick='document.location.href="#popup-course3"'><span>Book Now</span></a>
-                    </div>
-                </div>
-            </div>
-            <div class="courses_card-3 courses--card card-width">
-                <div class="card">
-                    <div class="card_duration">
-                        <div class="card--info">Duration</div>
-                        <div class="card--value">10 DAYS</div>
-                    </div>
-                    <div class="card_cost">
-                        <div class="card--info">Cost</div>
-                        <div class="card--value">30,000 INR</div>
-                    </div>
-                    <div class="card_img">
-                        <img src="./img/mainpage-box-5L.jpg" alt="as">
-                    </div>
-                    <div class="card_header"><span>Advanced Course</span></div>
-                    <div class="card_btn">
-                            <a class="full button button--white" onclick='document.location.href="#popup-course3"'><span>Book Now</span></a>
-                    </div>
-                </div>
-            </div>
-            <div class="courses_card-3 courses--card card-width">
-                <div class="card">
-                    <div class="card_duration">
-                        <div class="card--info">Duration</div>
-                        <div class="card--value">10 DAYS</div>
-                    </div>
-                    <div class="card_cost">
-                        <div class="card--info">Cost</div>
-                        <div class="card--value">30,000 INR</div>
-                    </div>
-                    <div class="card_img">
-                        <img src="./img/mainpage-box-5L.jpg" alt="as">
-                    </div>
-                    <div class="card_header">03<span>Advanced Course</span></div>
-                    <div class="card_btn">
-                            <a class="full button button--white" onclick='document.location.href="#popup-course3"'><span>Book Now</span></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> -->
+        </section>
 
     <section class="blogs">
         <div class="blogs_desc desc">
@@ -681,10 +609,6 @@
                     Near Landing Site<br>
                     BIR, P.O. BIR,TEH. Baijnath ,DISTT.<br>
                     Kangra, PIN Code: 176077
-                <!-- <div class="line-1">Rudra Adventures ,</div>
-                <div class="line-2">Near Landing Site</div>
-                <div class="line-3">BIR, P.O. BIR,TEH. Baijnath ,DISTT.</div>
-                <div class="line-4">Kangra, PIN Code: 176077</div> -->
             </div>
         </div>
 
@@ -698,7 +622,7 @@
         <div class="img-container">
             <div class="img-container-rect">
                 <img src="img/Manjeet.jpg">
-                <div class="img-container-rect-popup-contact">
+                <div class="img-container-rect-popup-contact" onclick='document.location.href="#popup-manjeet"'>
                     <p>Manjeet Thakur</p>
                 </div>
             </div>
@@ -1026,7 +950,7 @@
         <div class="popup-gen__content">
         <div class="popup-gen__left">
             <img src="img/vicky final.jpg" alt="Tour Photo" class="popup-gen__img--team">
-            <a class="popup-gen__img button button--white" href="https://en.wikipedia.org/wiki/Bir,_Himachal_Pradesh">Visit Profile</a>
+            <a class="popup-gen__img button button--blue" href="https://en.wikipedia.org/wiki/Bir,_Himachal_Pradesh">Visit Profile</a>
             <!-- <img src="img/Paragliding-fun.jpg" alt="Tour Photo" class="popup-gen__img"> -->
         </div>
         <div class="popup-gen__right">
@@ -1044,7 +968,7 @@
         <div class="popup-gen__content">
         <div class="popup-gen__left">
             <img src="img/Manjeet.jpg" alt="Tour Photo" class="popup-gen__img--team">
-            <a class="popup-gen__img button button--white" href="https://en.wikipedia.org/wiki/Bir,_Himachal_Pradesh">Visit Profile</a>
+            <a class="popup-gen__img button button--blue" href="https://en.wikipedia.org/wiki/Bir,_Himachal_Pradesh">Visit Profile</a>
             <!-- <img src="img/Paragliding-fun.jpg" alt="Tour Photo" class="popup-gen__img"> -->
         </div>
         <div class="popup-gen__right">
@@ -1054,19 +978,20 @@
                 <b>Work Experience:</b> 15 years</br>
                 <b>Professional Pilot</b></br>
                 <b>Trophies:</b> </br>
-                    1. Indian national open championship 2008.</br>
-                    2. Russian open paragliding cup 2012.</br>
-                    3.paragliding pre World Cup 2013 Bir,  India. </br>
-                    4. Nepal open 2014.</br>
-                    5.sikkim red panda international accuracy championship 2017.</br></br>
-                    6. Paragliding pre World Cup 2017 Nepal. </br>
-                    7. panchgani paragliding open 2017.</br>
-                    8. 2017 Paragliding Asian cup ( INDONESIA). </br>
-                    9. 2018 Panchagani paragliding open. </br>
-                    10. 1st  ACPA  tour Nepal / 18th Nepal open paragliding championship 2018.</br>
-                    11. Indian open 2018 (Bir). </br>
-                    12. Mizoram open paragliding accuracy championship 2018.
-            <        </div>
+                1) Indian National Open championship, 2008</br>
+                2) Russian Open Paragliding Cup, 2012</br>
+                3) Paragliding Pre World Cup, 2013 (Bir, India)</br>
+                4) Nepal Open Cup, 2014</br>
+                5) Sikkim Red Panda International Accuracy Championship, 2017</br>
+                6) Paragliding Pre World Cup, 2017 (Nepal)</br>
+                7) Panchgani Paragliding Open, 2017</br>
+                8) Paragliding Asian Cup, 2017 (Indonesia) </br>
+                9) Panchgani Paragliding Open, 2018 </br>
+                10) 1st ACPA Tour Nepal /18th Nepal Open Paragliding Championship, 2018</br>
+                11) Indian Open, 2018 (Bir). </br>
+                12) Mizoram Open Paragliding Accuracy Championship, 2018.
+            </p>
+        </div>
         </div>
     </div>
     
@@ -1074,7 +999,7 @@
         <div class="popup-gen__content">
         <div class="popup-gen__left">
             <img src="img/Dukkssss.jpg" alt="Tour Photo" class="popup-gen__img--team">
-            <a class="popup-gen__img button button--white" href="https://en.wikipedia.org/wiki/Bir,_Himachal_Pradesh">Visit Profile</a>
+            <a class="popup-gen__img button button--blue" href="https://en.wikipedia.org/wiki/Bir,_Himachal_Pradesh">Visit Profile</a>
             <!-- <img src="img/Paragliding-fun.jpg" alt="Tour Photo" class="popup-gen__img"> -->
         </div>
         <div class="popup-gen__right">
@@ -1091,7 +1016,7 @@
         <div class="popup-gen__content">
         <div class="popup-gen__left">
             <img src="img/mukku.jpg" alt="Tour Photo" class="popup-gen__img--team">
-            <a class="popup-gen__img button button--white" href="https://en.wikipedia.org/wiki/Bir,_Himachal_Pradesh">Visit Profile</a>
+            <a class="popup-gen__img button button--blue" href="https://en.wikipedia.org/wiki/Bir,_Himachal_Pradesh">Visit Profile</a>
             <!-- <img src="img/Paragliding-fun.jpg" alt="Tour Photo" class="popup-gen__img"> -->
         </div>
         <div class="popup-gen__right">
@@ -1108,7 +1033,7 @@
         <div class="popup-gen__content">
         <div class="popup-gen__left">
             <img src="img/ricky final.jpg" alt="Tour Photo" class="popup-gen__img--team">
-            <a class="popup-gen__img button button--white" href="https://en.wikipedia.org/wiki/Bir,_Himachal_Pradesh">Visit Profile</a>
+            <a class="popup-gen__img button button--blue" href="https://en.wikipedia.org/wiki/Bir,_Himachal_Pradesh">Visit Profile</a>
             <!-- <img src="img/Paragliding-fun.jpg" alt="Tour Photo" class="popup-gen__img"> -->
         </div>
         <div class="popup-gen__right">
@@ -1126,7 +1051,7 @@
         <div class="popup-gen__content">
         <div class="popup-gen__left">
             <img src="img/sam.jpg" alt="Tour Photo" class="popup-gen__img--team">
-            <a class="popup-gen__img button button--white" href="https://en.wikipedia.org/wiki/Bir,_Himachal_Pradesh">Visit Profile</a>
+            <a class="popup-gen__img button button--blue" href="https://en.wikipedia.org/wiki/Bir,_Himachal_Pradesh">Visit Profile</a>
             <!-- <img src="img/Paragliding-fun.jpg" alt="Tour Photo" class="popup-gen__img"> -->
         </div>
         <div class="popup-gen__right">
@@ -1152,7 +1077,7 @@
                         </div>
         
                         <div class="form-contact__group email">
-                            <input id="email" type="email" class="form-contact__input" placeholder="email" required>
+                            <input id="email" type="email" class="form-contact__input" placeholder="Email" required>
                             <label for="email" class="form-contact__label">
                             Email
                         </label>
