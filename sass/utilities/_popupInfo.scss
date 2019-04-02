@@ -70,7 +70,7 @@
         padding: 2.5rem 5rem 0rem 5rem;
 
         .weight{
-            font-weight: 600;
+            font-weight: 500;
         }
 
         @include respond(tab-land) {
@@ -106,9 +106,10 @@
     }
 
     &__text {
-        font-size: 1.7rem;
+        font-size: 2rem;
         margin-bottom: 4rem;
         text-align: justify;
+        line-height: 1.8;
 
         -moz-column-count: 2;
         -moz-column-gap: 4rem;
@@ -133,6 +134,7 @@
         column-rule: none;
         margin-bottom: 1rem;
         }
+
     }
 
     &__text-course{

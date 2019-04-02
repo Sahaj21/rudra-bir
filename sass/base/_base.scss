@@ -40,6 +40,6 @@ body {
     grid-row-gap: 5rem;
 
     @include respond(sd-screen){
-        grid-template-rows: min-content 70rem repeat(9, min-content);
+        grid-template-rows: min-content 70rem repeat(10, min-content);
     }
 }
