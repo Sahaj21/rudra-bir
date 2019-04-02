@@ -11,9 +11,9 @@ document.addEventListener("DOMContentLoaded", function() {
 
     let j =0;
     var text = document.querySelectorAll('.header_list');
-    sHome.addEventListener('click', function(){
-        smoothScroll('.header', 1000);
-    })
+    // sHome.addEventListener('click', function(){
+    //     smoothScroll('.header', 1000);
+    // })
     sTeam.addEventListener('click', function(){
         smoothScroll('.heading-team-1', 1000);
     })
@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", function() {
         slidesToShow: 1 ,
         slidesToScroll: 1,
         autoplay: true,
-        autoplaySpeed: 800,
+        autoplaySpeed: 1500,
         dots: true,
     });
 
