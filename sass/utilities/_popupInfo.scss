@@ -36,6 +36,7 @@
         transform: translate(-50%, -50%) scale(.25);
         transition: all .5s .2s;
 
+
         &-email{
             width: 40%;
         }
@@ -182,3 +183,19 @@
     }
 
 }
+
+.gen-courses{
+    width: 50% !important;       
+}
+
+.text-package {
+    font-size: 2rem !important ; 
+}
+
+
+.button-popup {
+    @include respond(sd-screen){
+        margin: 0rem 0rem 2rem 0rem !important;
+    }
+}
+
