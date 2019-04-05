@@ -5,7 +5,8 @@
     outline: none;
     border: 1px solid $color-primary;
     text-decoration: none;
-    height: 7.5rem;
+    padding: 1.4rem 2rem;
+    // height: 7.5rem;
     margin: 1rem 0 1rem 0;
     display: flex;
     justify-content: center;
@@ -48,6 +49,7 @@
         height: 5.5rem;
         font-size: 1.5rem;
         letter-spacing: -0.05rem;
+        padding: 0;
     }
 
     // &--center{

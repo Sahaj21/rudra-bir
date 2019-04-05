@@ -33,12 +33,14 @@ span{
         }
 
         .para-1{
-            grid-row: 3/5;
+            grid-row: 4/5;
             grid-column: 1/5;
             transform: translateY(-4.8rem);
 
             @include respond(sd-screen){
                 font-size: 2rem !important;
+                grid-row: 3/5;
+                grid-column: 1/5;
             }
         }
 
@@ -54,13 +56,16 @@ span{
         }
 
         .btn{
-            grid-row: 6/8;
+            grid-row: 6/10;
             align-self: center;
             grid-column: 1/4;
             margin-left: 2.8rem;
 
             @include respond(sd-screen){
                 transform: translateY(-6rem);
+                grid-row: 6/8;
+                align-self: center;
+                grid-column: 1/4;
             }
         }
 
@@ -104,7 +109,11 @@ span{
         }
 
         .blah{
-            transform: translate(-3rem,-4rem);
+            transform: translate(-6rem, 2rem);
+            
+            @include respond(sd-screen){
+                transform: translate(-3rem,-4rem);
+            }
         }
         .img-2{
 
@@ -140,8 +149,8 @@ span{
             border: none;
             color: $color-primary;
             position: absolute;
-            bottom: 4.1rem;
-            right: -2rem;
+            bottom: 3.1rem;
+            right: 0rem;        
             box-shadow: 1rem 1rem 7rem rgba(0, 0, 0, 0.2);
             opacity: 0;
             transition: opacity .3s ease-in;
