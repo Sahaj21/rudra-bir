@@ -8,7 +8,7 @@
     transform: translate(7rem,-8rem);
 
     @include respond(sd-screen){
-    transform: translate(0,0);    
+    transform: translate(12rem,0);    
     }
 
     .svg-1{
@@ -24,7 +24,7 @@
 .img-svg-courses-2{
     grid-column: 1/2;
     grid-row: 10/11;
-    transform: translate(-2rem,5rem);
+    transform: translate(10rem,5rem);
 
     .svg-2{
         background: url('../../img/Rectangle\ 186.svg');
@@ -39,8 +39,9 @@
 .img-svg-coursess-3{
     grid-column: 12/13;
     grid-row: 10/11;
-    transform: translate(0rem, -10rem);
+    transform: translate(20rem, -10rem);
 
+    
     .svg-3{
         background: url('../../img/Rectangle\ 184.svg');
         background-size: 125%;
@@ -127,6 +128,10 @@
         display: grid;
         justify-items: right;
         align-items: flex-start;
+
+        @include respond(sd-screen){
+        transform: translate(-15rem,0);
+        }
 
         .svg-1{
             background: url('../../img/Rectangle\ 184.svg');
@@ -222,6 +227,7 @@
     // position: relative;
     transform: translate(4rem, -54rem);
 
+  
     .svg-3{
         background: url('../../img/Rectangle\ 186.svg');
         background-size: cover;
@@ -239,7 +245,11 @@
             // background-position: 2rem -5rem;
             width: 20rem;
             height: 20rem;
-            transform: translate(-0.5rem, -8rem);
+            //transform: translate(-0.5rem, -8rem);
+
+            @include respond(sd-screen){
+                transform: translate(20rem, -10rem) !important;
+            }
         }
     }
 }
