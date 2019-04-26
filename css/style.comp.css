@@ -44,6 +44,9 @@ body {
     .container {
       grid-template-rows: min-content 70rem repeat(10, min-content); } }
 
+.hide {
+  display: none; }
+
 .navigation {
   grid-column: 1/-1;
   font-size: 2.2rem;
