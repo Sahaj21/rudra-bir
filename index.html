@@ -224,7 +224,7 @@
                     </div>
                 </div>
             </div>
-            <div class="courses_card-2 courses--card card-width">
+            <!-- <div class="courses_card-2 courses--card card-width">
                 <div class="card">
                     <div class="card_duration">
                         <div class="card--info">Duration</div>
@@ -242,7 +242,7 @@
                             <a class="full button button--white" onclick='document.location.href="#popup-package2"'><span>Book Now</span></a>
                     </div>
                 </div>
-            </div>
+            </div> -->
             <div class="courses_card-3 courses--card card-width">
                 <div class="card">
                     <div class="card_duration">
@@ -256,7 +256,7 @@
                     <div class="card_img">
                         <img src="./img/mainpage-box-5L.jpg" alt="as">
                     </div>
-                    <div class="card_header">03<span>Bir Billing Package</span></div>
+                    <div class="card_header">02<span>Bir Billing Package</span></div>
                     <div class="card_btn">
                             <a class="full button button--white" onclick='document.location.href="#popup-package3"'><span>Book Now</span></a>
                     </div>
@@ -275,7 +275,7 @@
                     <div class="card_img">
                         <img src="./img/mainpage-box-5L.jpg" alt="as">
                     </div>
-                    <div class="card_header">04<span>Camping and Cycling</span></div>
+                    <div class="card_header">03<span>Camping and Cycling</span></div>
                     <div class="card_btn">
                             <a class="full button button--white" onclick='document.location.href="#popup-package4"'><span>Book Now</span></a>
                     </div>
@@ -1145,29 +1145,30 @@
                 </form>
             </div>
         </div>
-    <   <div id="fb-root"></div>
-    <script>
-    window.fbAsyncInit = function() {
-        FB.init({
-        xfbml            : true,
-        version          : 'v3.2'
-        });
-    };
+    <!-- Load Facebook SDK for JavaScript -->
+<div id="fb-root"></div>
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      xfbml            : true,
+      version          : 'v3.2'
+    });
+  };
 
-    (function(d, s, id) {
-    var js, fjs = d.getElementsByTagName(s)[0];
-    if (d.getElementById(id)) return;
-    js = d.createElement(s); js.id = id;    
-    js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
-    fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));</script>
+  (function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 
-    <!-- Your customer chat code -->
-    <div class="fb-customerchat"
-    attribution=install_email
-    page_id="586876214725130"
-    theme_color="#3bb4c4">
-    </div>
+<!-- Your customer chat code -->
+<div class="fb-customerchat"
+  attribution=setup_tool
+  page_id="586876214725130"
+  theme_color="#3bb4c4">
+</div>
 
     <script src="./js/smooth.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
