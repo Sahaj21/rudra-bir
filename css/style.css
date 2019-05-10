@@ -140,10 +140,12 @@ body {
         color: white;
         padding: 0;
         margin: 0 auto;
-        size: 10px; } }
+        size: 10px;
+        transform: translateY(-17.6rem); } }
     @media only screen and (max-width: 37.5em) {
       .header_lists {
-        grid-column: 5/7; } }
+        grid-column: 5/7;
+        grid-row: 5/6; } }
   .header_list {
     padding: 1rem 0;
     font-weight: 500;
@@ -177,6 +179,12 @@ body {
       .header_intro {
         font-size: 5rem;
         transform: translate(-14rem, -11.8rem); } }
+    @media only screen and (max-width: 37.5em) {
+      .header_intro {
+        font-size: 2.9rem;
+        line-height: 3;
+        grid-column: 1/4;
+        transform: translateY(9rem) !important; } }
     @media only screen and (min-width: 90em) {
       .header_intro {
         justify-self: center; } }
@@ -205,6 +213,13 @@ body {
   .header_box {
     grid-row: 5/7;
     grid-column: 2/6; }
+    @media only screen and (max-width: 56.25em) {
+      .header_box {
+        grid-row: 3/5; } }
+    @media only screen and (max-width: 37.5em) {
+      .header_box {
+        grid-row: 6/7;
+        transform: translateY(-10rem); } }
     .header_box .popupBox {
       height: 8.1rem !important; }
       .header_box .popupBox-con {
@@ -218,19 +233,21 @@ body {
         transform: translateX(-3rem);
         width: 15rem;
         height: 4.8rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .header_box .margin-right {
+        transform: translateX(0); } }
     @media only screen and (max-width: 90em) {
       .header_box .left {
         transform: translateX(1rem); } }
+    @media only screen and (max-width: 37.5em) {
+      .header_box .left {
+        transform: translate(0); } }
     .header_box .flex {
       display: flex;
       justify-content: space-between; }
     @media only screen and (max-width: 56.25em) {
       .header_box {
         grid-column: 1/-1; } }
-    @media only screen and (max-width: 37.5em) {
-      .header_box {
-        grid-row: 6/7;
-        transform: translateY(-4rem); } }
   .header .slick-dots {
     position: absolute;
     bottom: 1.5rem;
@@ -1536,6 +1553,11 @@ span {
   background: #ffffff;
   box-shadow: 1rem 1rem 7rem rgba(0, 0, 0, 0.2);
   padding: 0rem 4.5rem; }
+  @media only screen and (max-width: 37.5em) {
+    .popupBox {
+      padding: 1rem; }
+      .popupBox .center {
+        width: auto; } }
   @media only screen and (max-width: 90em) {
     .popupBox {
       height: 9.1rem;
@@ -1549,12 +1571,11 @@ span {
       transform: translate(-50%, -50%); } }
   @media only screen and (max-width: 37.5em) {
     .popupBox {
-      width: 100%;
+      width: 90%;
       height: auto;
       top: 0%;
-      left: 0%;
-      transform: translate(0%, 0%);
-      box-shadow: none; } }
+      left: 50%;
+      transform: translate(-50%, -50%); } }
   .popupBox input[type=number] {
     width: 16rem;
     height: 7rem;
@@ -1585,6 +1606,9 @@ span {
       @media only screen and (max-width: 90em) {
         .popupBox-con__header {
           transform: translate(2rem); } }
+      @media only screen and (max-width: 37.5em) {
+        .popupBox-con__header {
+          transform: translate(0); } }
     .popupBox-con__desc {
       font-size: 2rem; }
       @media only screen and (max-width: 90em) {
@@ -1592,6 +1616,10 @@ span {
           margin-left: 2rem;
           font-weight: 600;
           font-size: 1.8rem; } }
+      @media only screen and (max-width: 37.5em) {
+        .popupBox-con__desc {
+          margin: 0;
+          display: none; } }
 
 .popup-gen {
   height: 100vh;
@@ -2285,9 +2313,15 @@ span {
   display: none; }
 
 .menu-btn:checked ~ .toggle {
-  max-height: 500px;
-  display: block;
-  flex-direction: column; }
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  width: 100%;
+  top: 6rem;
+  z-index: 1000;
+  height: 100%;
+  color: white;
+  background: rgba(1, 1, 1, 0.8); }
 
 .menu-btn:checked ~ .menu-icon .navicon {
   background: transparent; }

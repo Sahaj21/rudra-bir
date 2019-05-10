@@ -8,6 +8,14 @@
     box-shadow: 1rem 1rem 7rem rgba(0, 0, 0, 0.2);
     padding: 0rem 4.5rem;
 
+    @include respond(phone){
+        .center{
+            width: auto;
+        }
+
+        padding: 1rem;
+    }
+
     
     @include respond(sd-screen){
         height: 9.1rem;
@@ -23,12 +31,11 @@
     }
 
     @include respond(phone){
-        width: 100%;
+        width: 90%;
         height: auto;
         top: 0%;
-        left: 0%;
-        transform: translate(0%, 0%);
-        box-shadow: none;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
 
     input[type=number] {
@@ -69,15 +76,25 @@
             @include respond(sd-screen){
                 transform: translate(2rem);
             }
+
+            @include respond(phone){
+                transform: translate(0);
+            }
         }
     
         &__desc{
             font-size: 2rem;
 
+            
             @include respond(sd-screen){
                 margin-left: 2rem;
                 font-weight: 600;
                 font-size: 1.8rem;
+            }
+            
+            @include respond(phone){
+                margin: 0;
+                display: none;
             }
         }
     }
