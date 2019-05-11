@@ -21,6 +21,10 @@ html {
     @media only screen and (max-width: $bp-largest) {
         font-size: 50%;
     }
+
+    @include respond(phone){
+        font-size: 44%;
+    }
 }
 
 body {

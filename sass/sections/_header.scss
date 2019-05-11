@@ -20,6 +20,7 @@
 
     @include respond (phone){
         grid-template-rows: repeat(5, 1fr) min-content;
+        overflow: hidden;
     }
 
     &_lists{
@@ -96,8 +97,8 @@
         @include respond(phone){
             font-size: 2.9rem;
             line-height: 3;
-            grid-column: 1/4;
-            transform: translateY(9rem) !important;
+            grid-column: 1/3;
+            transform: translate(4rem,5rem) !important;
         }
 
         @include respond(big-desktop){
