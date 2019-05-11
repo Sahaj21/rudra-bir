@@ -85,6 +85,10 @@
         font-size: 2.2rem;  
     }
 
+    @include respond(tab-port){
+        transform: translate(2rem, 0);
+    }
+
 }
 
 .heading-courses-2 {
@@ -105,6 +109,16 @@
 
     @include respond(sd-screen){
         grid-gap: 2rem;       
+    }
+
+    @include respond(tab-port){
+        grid-template-columns: .5fr 1fr .5fr;
+        padding: 0;
+        grid-template-rows: repeat(10, min-content);
+    }
+
+    @include respond(phone){
+        grid-template-columns: 5rem 1fr 5rem;
     }
 
     .courseSlider{
@@ -168,16 +182,31 @@
     &_card-1{
         grid-column: 1/2;
         grid-row: 3/6;
+
+        @include respond(tab-port){
+            grid-column: 2/3;
+            grid-row: 3/6;
+        }
     }
 
     &_card-2{
         grid-column: 2/3;
         grid-row: 3/6;
+
+        @include respond(tab-port){
+            grid-column: 2/3;
+            grid-row: 6/8;
+        }
     }
 
     &_card-3{
         grid-column: 3/4;
         grid-row: 3/6;
+
+        @include respond(tab-port){
+            grid-column: 2/3;
+            grid-row: 8/10;
+        }
     }
 }
 
@@ -188,6 +217,10 @@
     @include respond(sd-screen){
         line-height: 1.2;
     }
+
+    @include respond(tab-port){
+        grid-column: 1/3;
+    }   
 }
 
 .desc-hotel{

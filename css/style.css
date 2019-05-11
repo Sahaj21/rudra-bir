@@ -583,14 +583,24 @@ span {
   grid-template-rows: repeat(8, minmax(min-content, 1fr));
   grid-template-columns: repeat(9, minmax(min-content, 1fr));
   transform: translateY(-9rem); }
+  @media only screen and (max-width: 56.25em) {
+    .aboutBir {
+      grid-template-rows: repeat(10, 10rem);
+      overflow-x: hidden; } }
   .aboutBir_right-about {
     grid-row: 1/2;
     grid-column: 5/8;
     align-self: flex-end;
     font-size: 2.2rem; }
+    @media only screen and (max-width: 56.25em) {
+      .aboutBir_right-about {
+        grid-column: 1/-1; } }
   .aboutBir .heading-2 {
     grid-row: 2/3;
     grid-column: 5/10; }
+    @media only screen and (max-width: 56.25em) {
+      .aboutBir .heading-2 {
+        grid-column: 1/-1; } }
   @media only screen and (max-width: 90em) {
     .aboutBir #heading-3 {
       transform: translate(1.5rem, 0.5rem); } }
@@ -599,6 +609,10 @@ span {
     grid-column: 5/10;
     line-height: 1.5;
     transform: translateX(1.5rem); }
+    @media only screen and (max-width: 56.25em) {
+      .aboutBir .para-1 {
+        grid-row: 3/4;
+        grid-column: 1/-1; } }
     .aboutBir .para-1 span {
       display: block; }
   .aboutBir .para-2 {
@@ -606,6 +620,10 @@ span {
     grid-row: 5/7;
     grid-column: 5/10;
     transform: translateX(1.5rem); }
+    @media only screen and (max-width: 56.25em) {
+      .aboutBir .para-2 {
+        grid-column: 1/-1;
+        grid-row: 4/6; } }
     .aboutBir .para-2 span {
       display: block; }
   .aboutBir .btn {
@@ -614,10 +632,18 @@ span {
     align-self: flex-end;
     margin: 0 0 0 2.8rem  !important;
     transform: translate(1.5rem); }
+    @media only screen and (max-width: 56.25em) {
+      .aboutBir .btn {
+        grid-column: 1/9;
+        grid-row: 4/6; } }
   .aboutBir .img {
     grid-row: 2/8;
     grid-column: 1/6;
     width: 63rem; }
+    @media only screen and (max-width: 56.25em) {
+      .aboutBir .img {
+        grid-row: 6/-1;
+        grid-column: 1/-1; } }
     .aboutBir .img-svg {
       grid-column: 5/6;
       grid-row: 8/9;
@@ -629,6 +655,10 @@ span {
           grid-column: 4/5; }
           .aboutBir .img-svg .svg-1 {
             transform: translateY(0rem); } }
+      @media only screen and (max-width: 37.5em) {
+        .aboutBir .img-svg {
+          grid-column: 7/9;
+          grid-row: 5/6; } }
   .aboutBir img {
     padding: 3rem 3rem 0 0;
     width: 100%;
@@ -754,6 +784,10 @@ span {
     transform: translate(-5rem, 0);
     font-size: 2.2rem; } }
 
+@media only screen and (max-width: 56.25em) {
+  .heading-courses-1 {
+    transform: translate(2rem, 0); } }
+
 @media only screen and (max-width: 90em) {
   .heading-courses-2 {
     transform: translate(2.2rem, -3rem); } }
@@ -768,6 +802,14 @@ span {
   @media only screen and (max-width: 90em) {
     .courses {
       grid-gap: 2rem; } }
+  @media only screen and (max-width: 56.25em) {
+    .courses {
+      grid-template-columns: .5fr 1fr .5fr;
+      padding: 0;
+      grid-template-rows: repeat(10, min-content); } }
+  @media only screen and (max-width: 37.5em) {
+    .courses {
+      grid-template-columns: 5rem 1fr 5rem; } }
   .courses .courseSlider {
     grid-column: 1/-1;
     grid-row: 3/-1;
@@ -810,12 +852,24 @@ span {
   .courses_card-1 {
     grid-column: 1/2;
     grid-row: 3/6; }
+    @media only screen and (max-width: 56.25em) {
+      .courses_card-1 {
+        grid-column: 2/3;
+        grid-row: 3/6; } }
   .courses_card-2 {
     grid-column: 2/3;
     grid-row: 3/6; }
+    @media only screen and (max-width: 56.25em) {
+      .courses_card-2 {
+        grid-column: 2/3;
+        grid-row: 6/8; } }
   .courses_card-3 {
     grid-column: 3/4;
     grid-row: 3/6; }
+    @media only screen and (max-width: 56.25em) {
+      .courses_card-3 {
+        grid-column: 2/3;
+        grid-row: 8/10; } }
 
 .desc {
   display: grid;
@@ -824,6 +878,9 @@ span {
   @media only screen and (max-width: 90em) {
     .desc {
       line-height: 1.2; } }
+  @media only screen and (max-width: 56.25em) {
+    .desc {
+      grid-column: 1/3; } }
 
 .desc-hotel {
   display: grid;

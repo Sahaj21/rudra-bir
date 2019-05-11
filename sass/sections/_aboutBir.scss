@@ -5,16 +5,29 @@
     grid-template-columns: repeat(9, minmax(min-content, 1fr));
     transform: translateY(-9rem);
 
+    @include respond(tab-port){
+        grid-template-rows: repeat(10, 10rem);
+        overflow-x: hidden;
+    }
+
         &_right-about{
             grid-row: 1/2;
             grid-column: 5/8;
             align-self: flex-end;
             font-size: 2.2rem;
+
+            @include respond(tab-port){
+                grid-column: 1/-1;
+            }
         }
 
         .heading-2{
             grid-row: 2/3;
             grid-column: 5/10;
+
+            @include respond(tab-port){
+                grid-column: 1/-1;
+            }
 
         }
 
@@ -31,6 +44,11 @@
             line-height: 1.5;
             transform: translateX(1.5rem);
 
+            @include respond(tab-port){
+                grid-row: 3/4;
+                grid-column: 1/-1;
+            }
+
             span{
                 display: block;
             }
@@ -41,6 +59,11 @@
             grid-row: 5/7;
             grid-column: 5/10;
             transform: translateX(1.5rem);
+
+            @include respond(tab-port){
+                grid-column: 1/-1;
+                grid-row: 4/6;
+            }
 
             span{
                 display: block;
@@ -53,12 +76,22 @@
             align-self: flex-end;
             margin:0 0 0 2.8rem  !important;
             transform: translate(1.5rem);
+
+            @include respond(tab-port){
+                grid-column: 1/9;
+                grid-row: 4/6;
+            }
         }
 
         .img{
             grid-row: 2/8;
             grid-column: 1/6;
             width: 63rem;
+
+            @include respond(tab-port){
+                grid-row: 6/-1;
+                grid-column: 1/-1;
+            }
 
             &-svg{
                 grid-column: 5/6;
@@ -73,6 +106,11 @@
                     .svg-1{
                         transform: translateY(0rem);
                     }
+                }
+
+                @include respond(phone){
+                    grid-column: 7/9;
+                    grid-row: 5/6;
                 }
             }
 
