@@ -7,7 +7,7 @@
 
     @include respond(tab-port){
         grid-template-rows: repeat(10, 10rem);
-        overflow-x: hidden;
+        // overflow-x: hidden;
     }
 
         &_right-about{

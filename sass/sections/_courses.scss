@@ -127,6 +127,10 @@
         display: flex;
         justify-content: space-between;
 
+        @include respond(phone){
+            grid-column: 2/3;
+        }
+
         .slick-track{
             top: 2rem !important;
         }

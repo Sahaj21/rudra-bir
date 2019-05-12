@@ -19,11 +19,19 @@
             height: 12.5rem;
             padding-top: 3rem;
         }
+
+        @include respond(tab-port){
+            height: auto;
+        }
     }
 
     .busHeight{
         @include respond(sd-screen){
             height: 11rem;
+        }
+
+        @include respond(tab-port){
+            height: auto;
         }
     }
 
@@ -31,6 +39,11 @@
         @include respond(sd-screen){
             width: 44.9rem;
             height: 10.7rem;
+        }
+
+        @include respond(tab-port){
+            width: auto;
+            // text-align: center;
         }
     }
 
@@ -41,6 +54,10 @@
 
         @include respond(sd-screen){
             transform: translateX(-3rem);
+        }
+
+        @include respond(tab-port){
+            grid-column: 2/-1;
         }
     }
 
@@ -125,6 +142,10 @@
                 line-height: 1.2;
                 border: 2px solid $color-primary;
                 height: 11rem;
+            }
+
+            @include respond(tab-port){
+                height: auto;
             }
         }
     }
@@ -217,18 +238,29 @@
             transform: translateX(-3.2rem);
         }
 
-        
+        @include respond(tab-port){
+            grid-column: 1/-1;
+            transform: translateX(0);
+        }
     }
 
     .bus{
         grid-row: 11/13;
         grid-column: 2/8;
+
+        @include respond(tab-port){
+            grid-column: 1/-1;
+        }
     }
 
     .train{
         grid-row: 8/10;
         grid-column: 5/10;
         text-align: right;
+
+        @include respond(tab-port){
+            grid-column: 1/-1;
+        }
     }
 
     .taxi{
@@ -238,6 +270,10 @@
 
         @include respond(sd-screen){
             transform: translateY(-1rem);
+        }
+
+        @include respond(tab-port){
+            grid-column: 1/-1;
         }
 
         span{
