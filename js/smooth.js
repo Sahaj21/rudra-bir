@@ -45,36 +45,34 @@ document.addEventListener("DOMContentLoaded", function() {
     $('.review_slider').slick({
         slidesToShow: 1 ,
         slidesToScroll: 1,
-        autoplay: true,
+        autoplay: false,
         autoplaySpeed: 800,
         dots: true,
     });
 
 
     $('.courseSlider').slick({
-        centerMode: true,
-  centerPadding: '60px',
-  slidesToShow: 3,
-  responsive: [
-    {
-      breakpoint: 768,
-      settings: {
-        arrows: false,
-        centerMode: true,
-        centerPadding: '40px',
-        slidesToShow: 3
-      }
-    },
-    {
-      breakpoint: 480,
-      settings: {
-        arrows: false,
-        centerMode: true,
-        centerPadding: '40px',
-        slidesToShow: 1
-      }
-    }
-  ]
+        dots: true,
+        infinite: false,
+        speed: 300,
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        responsive: [
+            {
+            breakpoint: 600,
+            settings: {
+                slidesToShow: 3,
+                slidesToScroll: 3
+            }
+            },
+            {
+            breakpoint: 480,
+            settings: {
+                slidesToShow: 3,
+                slidesToScroll: 3
+            }
+            }
+        ]
     });
 
     

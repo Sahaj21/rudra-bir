@@ -337,7 +337,8 @@ span {
       grid-template-rows: repeat(10, 8rem); } }
   @media only screen and (max-width: 37.5em) {
     .aboutRudra {
-      grid-template-rows: repeat(7, 8rem) repeat(3, 1fr); } }
+      grid-template-rows: repeat(7, 8rem) repeat(3, 1fr);
+      grid-column: 1/13; } }
   @media only screen and (max-width: 90em) {
     .aboutRudra {
       margin-top: -9rem;
@@ -358,7 +359,8 @@ span {
         transform: translate(0.7rem, -2.5rem); } }
     @media only screen and (max-width: 37.5em) {
       .aboutRudra .heading-2 {
-        grid-column: 1/-1; } }
+        grid-column: 1/-1;
+        transform: translate(1.7rem, -2.5rem); } }
   .aboutRudra .para-1 {
     grid-row: 4/5;
     grid-column: 1/5;
@@ -372,6 +374,10 @@ span {
       .aboutRudra .para-1 {
         grid-row: 3/6;
         grid-column: 1/-1; } }
+    @media only screen and (max-width: 37.5em) {
+      .aboutRudra .para-1 {
+        transform: translate(1.7rem, -4.8rem);
+        grid-column: 1/-2; } }
   .aboutRudra .para-2 {
     grid-row: 6/8;
     grid-column: 1/5; }
@@ -382,7 +388,8 @@ span {
         font-size: 2rem !important; } }
     @media only screen and (max-width: 37.5em) {
       .aboutRudra .para-2 {
-        grid-column: 1/-1; } }
+        grid-column: 1/-2;
+        transform: translate(1.7rem, -4.8rem); } }
   .aboutRudra .btn {
     grid-row: 6/10;
     align-self: center;
@@ -512,6 +519,9 @@ span {
       .leftTranslate-blog {
         transform: translateX(-6.3rem); } }
 
+.leftTranslate-about {
+  transform: translate(2.2rem) !important; }
+
 .headingLeft {
   font-size: 3.2rem;
   color: #272727; }
@@ -528,6 +538,9 @@ span {
     .heading-2 {
       font-size: 4.1rem !important;
       padding-left: 1.8rem !important; } }
+  @media only screen and (max-width: 37.5em) {
+    .heading-2 {
+      transform: translate(2.7rem, -2.5rem); } }
 
 .para {
   font-size: 2.8rem;
@@ -1385,9 +1398,15 @@ span {
     .blogs {
       grid-template-columns: repeat(6, minmax(min-content, 1fr));
       padding: 0 2rem 0 2rem; } }
+  @media only screen and (max-width: 56.25em) {
+    .blogs {
+      grid-column: 1/-1; } }
   .blogs_desc {
     grid-column: 1/3;
     grid-row: 1/3; }
+    @media only screen and (max-width: 56.25em) {
+      .blogs_desc {
+        grid-column: 1/-1; } }
   .blogs .heading-2 {
     transform: translateX(14rem); }
     @media only screen and (max-width: 90em) {
@@ -1397,6 +1416,9 @@ span {
     .blogs .heading-travel-1 {
       transform: translate(-7.2rem, 0rem);
       font-size: 2.3rem; } }
+  @media only screen and (max-width: 56.25em) {
+    .blogs .heading-travel-1 {
+      transform: translate(1.8rem, 0rem); } }
   @media only screen and (max-width: 90em) {
     .blogs .heading-travel-2 {
       transform: translate(7.7rem, -5.4rem);
@@ -1410,6 +1432,9 @@ span {
   .blogs .review_slider {
     grid-row: 3/6;
     grid-column: 2/6; }
+    @media only screen and (max-width: 37.5em) {
+      .blogs .review_slider {
+        grid-column: 1/-1; } }
   .blogs_svg {
     grid-row: 3/4;
     grid-column: 1/2;
@@ -2168,6 +2193,10 @@ span {
     justify-items: right;
     align-items: center;
     display: grid; }
+    @media only screen and (max-width: 37.5em) {
+      .blog-card-svg {
+        grid-row: 2/3;
+        grid-column: 5/7; } }
   .blog-card--content {
     grid-row: 2/6;
     grid-column: 1/-1;
@@ -2175,6 +2204,9 @@ span {
     display: grid;
     grid-template-rows: repeat(3, 1fr);
     grid-template-columns: .5fr 1fr; }
+    @media only screen and (max-width: 37.5em) {
+      .blog-card--content {
+        grid-template-columns: .7fr 1fr; } }
     .blog-card--content .hr-full {
       grid-column: 1/-1;
       grid-row: 2/3;

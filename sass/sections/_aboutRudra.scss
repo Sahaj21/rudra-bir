@@ -16,6 +16,7 @@ span{
 
     @include respond(phone){
         grid-template-rows: repeat(7, 8rem) repeat(3, 1fr);
+        grid-column: 1/13;
     }
 
     @include respond(sd-screen){
@@ -44,6 +45,7 @@ span{
 
             @include respond(phone){
                 grid-column: 1/-1;
+                transform: translate(1.7rem,-2.5rem);
             }
         }
 
@@ -62,6 +64,11 @@ span{
                 grid-row: 3/6;
                 grid-column: 1/-1;
             }
+
+            @include respond(phone){
+                transform: translate(1.7rem, -4.8rem);
+                grid-column: 1/-2;
+            }
         }
 
         .para-2{
@@ -75,7 +82,8 @@ span{
             }
 
             @include respond(phone){
-                grid-column: 1/-1;
+                grid-column: 1/-2;
+                transform: translate(1.7rem, -4.8rem);
             }
         }
 
@@ -256,6 +264,10 @@ span{
     }
 }
 
+.leftTranslate-about{
+    transform: translate(2.2rem) !important;
+}
+
 .headingLeft{
     font-size: 3.2rem;
     //font-weight: bold;
@@ -275,6 +287,10 @@ span{
     @include respond(sd-screen){
         font-size: 4.1rem !important;
         padding-left: 1.8rem !important;       
+    }
+
+    @include respond(phone){
+        transform: translate(2.7rem, -2.5rem);  
     }
 }
 
