@@ -1,5 +1,6 @@
 .footer{
-    grid-column: 1/-1;
+		grid-column: 1/-1;
+		grid-row: 	13/14;
     background-color:#b2b1b10a;
     height:30rem;
     font-size:2rem;
@@ -19,7 +20,7 @@
 			font-size: inherit;
 		  }
   	}
-  	a{
+  	a{	
 	text-decoration:none;
 	color:$color-grey-1;
 	font-weight:600;
@@ -34,6 +35,15 @@
 		margin: 1.7rem 0;
 	}
 	}
+
+	.footer-part{
+		@include respond(tab-port){
+			width: 50%;
+			display: flex;
+			flex-direction: column;
+		}
+	}
+
 	.footer-part-rudra{
 		display:inline-block;
 		list-style: none;
@@ -46,14 +56,27 @@
 			margin: 0;
 		}
 
+		@include respond(tab-port){
+			text-align: center;
+			display: flex;
+			justify-content: center;
+			align-content: center;
+			width: 100%;
+			flex-wrap: wrap;
+			padding-bottom: 5rem;
+		}
+
 	}
 	.footer__part-1{
 			display:flex;
 			justify-content:space-between;
-			    padding-top: 25rem;
-			    padding-bottom:10rem;
-				padding-right:10rem;
+			padding-top: 25rem;
+			padding-bottom:10rem;
+			padding-right:10rem;
+			flex-wrap: wrap;
 				
+				@include respond(tab-port){
+				}
 				
 				@include respond(sd-screen){
 					padding-top: 10rem;
@@ -91,7 +114,12 @@
 	  @include respond(sd-screen){
 		margin-left: 4rem;
 		font-size: 3rem;
-	  }
+		}
+		
+		@include respond(tab-port){
+			width: auto;
+			height: auto;
+		}
 	}
 	.color-bar{
 	width: 3.7rem;
@@ -142,6 +170,13 @@
     	 font-size:1.7rem;
     	 display:flex;
 			justify-content:space-between;
+
+			@include respond(tab-port){
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				text-align: center;
+			}
 			.copyrigths{
 				width: 21rem;
 
