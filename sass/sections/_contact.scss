@@ -7,6 +7,10 @@
 	grid-template-rows: repeat(12, minmax(min-content, 1fr));
 	grid-template-columns: repeat(8, minmax(min-content, 1fr));
 
+	@include respond(phone){
+		margin-top: 10rem;
+	}
+
 	.desc {
 		@include respond(sd-screen){
 			transform: translate(-2.5rem,0);

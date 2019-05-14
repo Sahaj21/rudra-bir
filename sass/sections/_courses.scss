@@ -112,13 +112,11 @@
     }
 
     @include respond(tab-port){
-        grid-template-columns: .5fr 1fr .5fr;
+        // grid-template-columns: .5fr 1fr .5fr;
         padding: 0;
-        grid-template-rows: repeat(10, min-content);
-    }
-
-    @include respond(phone){
-        grid-template-columns: 5rem 1fr 5rem;
+        // grid-template-rows: repeat(10, min-content);
+        // grid-template-rows: repeat(6, 5rem);
+        // grid-template-columns: repeat(3, 1fr);
     }
 
     .courseSlider{
@@ -127,8 +125,14 @@
         display: flex;
         justify-content: space-between;
 
+        .courseSlide{
+            width: 100%;
+            margin: auto;
+            height: 100%;
+        }
+
         @include respond(phone){
-            grid-column: 2/3;
+            // grid-column: 2/3;
         }
 
         .slick-track{
@@ -146,6 +150,7 @@
         display: grid;
         justify-items: right;
         align-items: flex-start;
+        grid-column: 1/3;
 
         @include respond(sd-screen){
         transform: translate(-15rem,0);
@@ -191,6 +196,10 @@
             grid-column: 2/3;
             grid-row: 3/6;
         }
+
+        @include respond(phone){
+            grid-column: 1/4;
+        }
     }
 
     &_card-2{
@@ -201,6 +210,9 @@
             grid-column: 2/3;
             grid-row: 6/8;
         }
+        @include respond(phone){
+            grid-column: 1/4;
+        }
     }
 
     &_card-3{
@@ -210,6 +222,9 @@
         @include respond(tab-port){
             grid-column: 2/3;
             grid-row: 8/10;
+        }
+        @include respond(phone){
+            grid-column: 1/4;
         }
     }
 }

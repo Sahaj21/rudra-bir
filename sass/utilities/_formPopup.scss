@@ -148,6 +148,13 @@
 
     .popup__content-email {
         width: 36%;
+        @include respond(tab-port){
+            width: 60%;
+        }
+
+        @include respond(phone){
+            width: 90%;
+        }
     }
 
     .form-contact__group:not(:last-child) {
