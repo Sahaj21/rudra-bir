@@ -10,6 +10,11 @@
 		padding: 0 5rem 0 5rem;
 		font-size: 1.6rem;
 	}
+
+	@include respond(phone){
+		overflow-x: hidden;
+		height: auto;
+	}
 	
 	p{
 	    font-weight:bold;
@@ -214,4 +219,8 @@
 }
 	
 	
-  
+	
+
+#heart{
+	color: red;
+}

@@ -13,6 +13,10 @@
 		grid-template-rows: repeat(8, 22rem);
 	}
 
+	@include respond(phone){
+		overflow-x: hidden;
+	}
+
 	&_grid{
 		position: relative;
 		grid-column: 3/10;

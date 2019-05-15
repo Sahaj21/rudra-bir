@@ -8,6 +8,10 @@
         padding: 0 5.5rem 0 5.5rem;
     }
 
+    @include respond(phone){
+        overflow-x: hidden;
+    }
+
     .taxilogo{
         @include respond(sd-screen){
             top: 6.5rem !important;

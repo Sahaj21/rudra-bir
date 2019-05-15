@@ -119,6 +119,10 @@
         // grid-template-columns: repeat(3, 1fr);
     }
 
+    @include respond(phone){
+        overflow-x: hidden;
+    }
+
     .courseSlider{
         grid-column: 1/-1;
         grid-row: 3/-1;

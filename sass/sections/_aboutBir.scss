@@ -10,6 +10,10 @@
         // overflow-x: hidden;
     }
 
+    @include respond(phone){
+        overflow-x: hidden;
+    }
+
         &_right-about{
             grid-row: 1/2;
             grid-column: 5/8;

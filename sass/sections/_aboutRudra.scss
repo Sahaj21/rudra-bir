@@ -17,6 +17,7 @@ span{
     @include respond(phone){
         grid-template-rows: repeat(7, 8rem) repeat(3, 1fr);
         grid-column: 1/13;
+        overflow-x: hidden;
     }
 
     @include respond(sd-screen){

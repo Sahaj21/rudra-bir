@@ -9,6 +9,7 @@
 
 	@include respond(phone){
 		margin-top: 10rem;
+		overflow-x: hidden;
 	}
 
 	.desc {

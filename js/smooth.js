@@ -12,27 +12,27 @@ document.addEventListener("DOMContentLoaded", function() {
 
     let j =0;
     var text = document.querySelectorAll('.header_list');
-    // sHotel.addEventListener('click', function(){
-    //     smoothScroll('#hotels', 1000);
-    // })
-    // sTeam.addEventListener('click', function(){
-    //     smoothScroll('#scroll', 1000);
-    // })
-    // sCourses.addEventListener('click', function(){
-    //     smoothScroll('.courses', 1000);
-    // })
-    // sLocate.addEventListener('click', function(){
-    //     window.open("https://goo.gl/maps/assDxxgGKFp", '_blank');
-    // })
-    // fblogolink.addEventListener('click', function(){
-    //     window.open("https://www.facebook.com/BirBillingPG/");
-    // })    
-    // iglogolink.addEventListener('click', function(){
-    //     window.open("https://www.instagram.com/rudra.adventures/");
-    // })    
-    // twlogolink.addEventListener('click', function(){
-    //     window.open("https://twitter.com/AdventuresRudra");
-    // })
+    sHotel.addEventListener('click', function(){
+        smoothScroll('#hotels', 1000);
+    })
+    sTeam.addEventListener('click', function(){
+        smoothScroll('#scroll', 1000);
+    })
+    sCourses.addEventListener('click', function(){
+        smoothScroll('.courses', 1000);
+    })
+    sLocate.addEventListener('click', function(){
+        window.open("https://goo.gl/maps/assDxxgGKFp", '_blank');
+    })
+    fblogolink.addEventListener('click', function(){
+        window.open("https://www.facebook.com/BirBillingPG/");
+    })    
+    iglogolink.addEventListener('click', function(){
+        window.open("https://www.instagram.com/rudra.adventures/");
+    })    
+    twlogolink.addEventListener('click', function(){
+        window.open("https://twitter.com/AdventuresRudra");
+    })
 
     $('.header_slider').slick({
         slidesToShow: 1 ,
