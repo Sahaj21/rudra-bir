@@ -254,15 +254,6 @@
 		grid-column: 1/2;
 		grid-row: 2/3;
 		transform: translate(-2rem,5rem);
-
-		.svg-2{
-			background: url('../../img/Rectangle\ 186.svg');
-			background-size: 100%;
-			background-position: center;
-			background-repeat: no-repeat;
-			width: 20rem;
-			height: 20rem;
-		}
 	}
 
 	.img-svg-team-3{
@@ -309,15 +300,6 @@
 		align-self: flex-end;
 		transform: rotate(60deg) scale(2);
 		z-index: -5;
-
-		.svg-2{
-			background: url('../../img/Rectangle\ 189.svg');
-			background-size: 100%;
-			background-position: center;
-			background-repeat: no-repeat;
-			width: 47rem;
-			height: 64rem;
-		}
 	}
 
 }
