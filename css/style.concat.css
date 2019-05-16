@@ -925,9 +925,6 @@ span {
   @media only screen and (max-width: 56.25em) {
     .aboutBir {
       grid-template-rows: repeat(10, 10rem); } }
-  @media only screen and (max-width: 37.5em) {
-    .aboutBir {
-      overflow-x: hidden; } }
   .aboutBir_right-about {
     grid-row: 1/2;
     grid-column: 5/8;
@@ -1508,14 +1505,6 @@ span {
     grid-column: 1/3;
     grid-row: 3/9;
     z-index: -5; }
-    .team .img-svg-team-back-1 .svg-1 {
-      background: url("../../img/Rectangle 189.svg");
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-      width: 20rem;
-      height: 48rem;
-      transform: scale(2); }
   .team .img-svg-team-back-2 {
     grid-column: 9/11;
     grid-row: 3/8;

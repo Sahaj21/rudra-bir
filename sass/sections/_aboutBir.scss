@@ -4,14 +4,11 @@
     grid-template-rows: repeat(8, minmax(min-content, 1fr));
     grid-template-columns: repeat(9, minmax(min-content, 1fr));
     transform: translateY(-9rem);
+    overflow-x: hidden;
 
     @include respond(tab-port){
         grid-template-rows: repeat(10, 10rem);
         // overflow-x: hidden;
-    }
-
-    @include respond(phone){
-        overflow-x: hidden;
     }
 
         &_right-about{
