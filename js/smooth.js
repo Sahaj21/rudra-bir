@@ -10,16 +10,19 @@ document.addEventListener("DOMContentLoaded", function() {
     var sHotel= document.getElementById('smooth-rooms');
 
 
-    let j =0;
+    var j =0;
     var text = document.querySelectorAll('.header_list');
     sHotel.addEventListener('click', function(){
         smoothScroll('#hotels', 1000);
+        document.getElementById("menu-btn").checked = false;
     })
     sTeam.addEventListener('click', function(){
         smoothScroll('#scroll', 1000);
+        document.getElementById("menu-btn").checked = false;
     })
     sCourses.addEventListener('click', function(){
         smoothScroll('.courses', 1000);
+        document.getElementById("menu-btn").checked = false;
     })
     sLocate.addEventListener('click', function(){
         window.open("https://goo.gl/maps/assDxxgGKFp", '_blank');
