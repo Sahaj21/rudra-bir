@@ -34,6 +34,10 @@
 
         &-email{
             width: 34%;
+
+            @include respond(tab-port){
+                width: 80%;
+            }
         }
     }
 

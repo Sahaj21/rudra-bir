@@ -2304,8 +2304,9 @@ span {
     padding: 3.9rem 0 0 4rem; }
     @media only screen and (max-width: 75em) {
       .popup-gen__left {
-        width: 100%;
-        display: block; } }
+        width: 40%;
+        display: block;
+        margin: auto; } }
     .popup-gen__left a {
       width: 100%;
       margin: 3.8rem 0 !important; }
@@ -2322,7 +2323,9 @@ span {
     @media only screen and (max-width: 75em) {
       .popup-gen__right {
         width: 100%;
-        display: block; } }
+        display: block;
+        overflow-y: scroll;
+        height: 60rem; } }
     @media only screen and (max-width: 37.5em) {
       .popup-gen__right {
         display: block;
@@ -2334,8 +2337,9 @@ span {
     display: block; }
     @media only screen and (max-width: 75em) {
       .popup-gen__img {
-        display: inline-block;
-        width: 49%; } }
+        display: block;
+        width: 49%;
+        margin: auto; } }
     .popup-gen__img--team {
       width: 100%;
       display: block; }
@@ -2356,13 +2360,15 @@ span {
     hyphens: auto; }
     @media only screen and (max-width: 56.25em) {
       .popup-gen__text {
-        -moz-column-count: 1;
+        -moz-column-count: 0;
         -moz-column-gap: 0rem;
         -moz-column-rule: none;
         column-count: 1;
         column-gap: 0rem;
         column-rule: none;
-        margin-bottom: 1rem; } }
+        margin-bottom: 1rem;
+        height: 50rem;
+        overflow-y: scroll; } }
   .popup-gen__text-course {
     font-size: 1.7rem;
     margin: .5rem 0 2rem 0; }
@@ -2394,6 +2400,12 @@ span {
 
 .gen-courses {
   width: 50% !important; }
+  @media only screen and (max-width: 56.25em) {
+    .gen-courses {
+      width: 90% !important; } }
+  @media only screen and (max-width: 37.5em) {
+    .gen-courses {
+      width: 99% !important; } }
 
 .text-package {
   font-size: 2rem !important; }
@@ -2749,6 +2761,9 @@ span {
     transition: all .5s .2s; }
     .popup__content-email {
       width: 34%; }
+      @media only screen and (max-width: 56.25em) {
+        .popup__content-email {
+          width: 80%; } }
   .popup__left {
     width: 33.3333333%;
     display: table-cell; }
